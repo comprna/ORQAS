@@ -16,7 +16,7 @@ Here you can find a set of tools for **OR**F **Q**uantification pipeline for **A
 **ORQAS** includes a modified pipeline for isoform quantification based on [Ribomap](https://github.com/Kingsford-Group/ribomap) pipeline ([Wang et al. 2016](https://academic.oup.com/bioinformatics/article/32/12/1880/1744291)) and **ORQAStoolkit**, a set of additional tools for abundance calculation and other utilities.
 
  
- ```mermaid
+```mermaid
 graph TD
 A[RNA-seq fastq]  --> B((Salmon)) 
 B--> C[RNA-seq abundance in TPM]
@@ -93,6 +93,7 @@ This script takes ribosome counts from one or multiple Ribomap *.stats* output f
 If an identifier do not appear in a file, the corresponding field will be set to 0.
 
 The abundance values are calculated similarly to the TPM (Transcripts Per Million) values in RNA-seq, but in this case they will be called **OPM (ORFs Per Million)**.
+
 $$
  A_{i} =  10^{6}  \frac{\frac{n_{i}}{l_{i}}}{ \sum_j \frac{n_{j}}{l_{j}} }
 $$
@@ -153,10 +154,10 @@ python ORQAStoolkit validateORF -i input-files -o output-file -c txt-to-cds-file
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NDkzMDE5MCwxMzIxMTk5NjY0LDIwMT
-E3MDQwNDQsLTE3ODQyNzQ0MjIsLTE4NDYyMTM2NDIsLTIwODk3
-ODI5NzQsMjA4MTMzODE2MiwtNjk1MDQyODQ4LC0xNDQ2Njg0Nj
-k0LDkwNjU1NjU2OCwzNTI2ODU0NTcsMTEyNTc4MTkxMCwxNzI2
-MDI5NTY2LC0yNjc1NzY4OSwtNDMwNDA2NzM3LC0xMzY2MjI2OT
-FdfQ==
+eyJoaXN0b3J5IjpbMTMxMDUyNTQ0LC0zOTQ5MzAxOTAsMTMyMT
+E5OTY2NCwyMDExNzA0MDQ0LC0xNzg0Mjc0NDIyLC0xODQ2MjEz
+NjQyLC0yMDg5NzgyOTc0LDIwODEzMzgxNjIsLTY5NTA0Mjg0OC
+wtMTQ0NjY4NDY5NCw5MDY1NTY1NjgsMzUyNjg1NDU3LDExMjU3
+ODE5MTAsMTcyNjAyOTU2NiwtMjY3NTc2ODksLTQzMDQwNjczNy
+wtMTM2NjIyNjkxXX0=
 -->
