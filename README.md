@@ -3,12 +3,12 @@ Here you can find a set of tools for **OR**F **Q**uantification pipeline for **A
 
 - [Overview](#overview)
 - [Requirements](#requirements)
--  [ORQAS pipeline](#ribomap-pipeline)
-	* [ORQAStoolkit](#ribotoolkit)
-	   + [ribomaptoOPM](#ribomaptoopm)
-	    + [TXTtoCDS](#txttocds)
-	    + [aggregateCDS](#aggregatecds)
-	    + [validateORF](#validateORF)
+-  [ORQAS pipeline](#orqas-pipeline)
+	* [ORQAStoolkit](#3-orqastoolkit)
+	   + [OPMcalculator](#3.1-OPMcalculator)
+	    + [TXTtoCDS](#3.2-txttocds)
+	    + [aggregateCDS](#3.3-aggregatecds)
+	    + [validateORF](#3.4-validateorf)
 
 
 ## Overview
@@ -16,7 +16,7 @@ Here you can find a set of tools for **OR**F **Q**uantification pipeline for **A
 **ORQAS** includes a modified pipeline for isoform quantification based on [Ribomap](https://github.com/Kingsford-Group/ribomap) pipeline ([Wang et al. 2016](https://academic.oup.com/bioinformatics/article/32/12/1880/1744291)) and **ORQAStoolkit**, a set of additional tools for abundance calculation and other utilities.
 
  
-![ORQASpipeline](img/mermaid-diagram-20190301153002.svg)
+![ORQASpipeline](img/pipeline.png)
 
 ## Requirements
 
@@ -72,7 +72,7 @@ For a better understanding of ribomap and it's arguments please check [Ribomap G
 
 ### 3 ORQAStoolkit
 
-### 3.1 ribomaptoOPM
+### 3.1 OPMcalculator
 
 ```
 python ORQAStoolkit.py OPMcalculator -i orqas_output_directory -o output-prefix
@@ -141,10 +141,11 @@ python ORQAStoolkit validateORF -i input-files -o output-file -c txt-to-cds-file
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcyNjY2MDMxLC0xMzEzMTQzMDY5LDEzMT
-A1MjU0NCwtMzk0OTMwMTkwLDEzMjExOTk2NjQsMjAxMTcwNDA0
-NCwtMTc4NDI3NDQyMiwtMTg0NjIxMzY0MiwtMjA4OTc4Mjk3NC
-wyMDgxMzM4MTYyLC02OTUwNDI4NDgsLTE0NDY2ODQ2OTQsOTA2
-NTU2NTY4LDM1MjY4NTQ1NywxMTI1NzgxOTEwLDE3MjYwMjk1Nj
-YsLTI2NzU3Njg5LC00MzA0MDY3MzcsLTEzNjYyMjY5MV19
+eyJoaXN0b3J5IjpbMTg3MTU3MTU0OCwxNDUxODU1MjIsMjcyNj
+Y2MDMxLC0xMzEzMTQzMDY5LDEzMTA1MjU0NCwtMzk0OTMwMTkw
+LDEzMjExOTk2NjQsMjAxMTcwNDA0NCwtMTc4NDI3NDQyMiwtMT
+g0NjIxMzY0MiwtMjA4OTc4Mjk3NCwyMDgxMzM4MTYyLC02OTUw
+NDI4NDgsLTE0NDY2ODQ2OTQsOTA2NTU2NTY4LDM1MjY4NTQ1Ny
+wxMTI1NzgxOTEwLDE3MjYwMjk1NjYsLTI2NzU3Njg5LC00MzA0
+MDY3MzddfQ==
 -->

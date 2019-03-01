@@ -1,0 +1,2137 @@
+STAR version=STAR_2.4.0j
+STAR compilation time,server,dir=Wed Feb 4 18:15:30 EST 2015 modena.cshl.edu:/sonas-hs/gingeras/nlsas_norepl/user/dobin/STAR/Releases/STAR_2.4.0j/source
+##### DEFAULT parameters:
+versionSTAR                       20201
+versionGenome                     20101   20200   
+parametersFiles                   -   
+sysShell                          -
+runMode                           alignReads
+runThreadN                        1
+genomeDir                         ./GenomeDir/
+genomeLoad                        NoSharedMemory
+genomeFastaFiles                  -   
+genomeSAindexNbases               14
+genomeChrBinNbits                 18
+genomeSAsparseD                   1
+readFilesIn                       Read1   Read2   
+readFilesCommand                  -   
+readMatesLengthsIn                NotEqual
+readMapNumber                     18446744073709551615
+inputBAMfile                      -
+bamRemoveDuplicatesType           -
+bamRemoveDuplicatesMate2basesN    0
+limitGenomeGenerateRAM            31000000000
+limitIObufferSize                 150000000
+limitOutSAMoneReadBytes           100000
+limitOutSJcollapsed               1000000
+limitOutSJoneRead                 1000
+limitBAMsortRAM                   0
+outFileNamePrefix                 ./
+outTmpDir                         -
+outStd                            Log
+outReadsUnmapped                  None
+outQSconversionAdd                0
+outSAMtype                        SAM   
+outSAMmode                        Full
+outSAMstrandField                 None
+outSAMattributes                  Standard   
+outSAMunmapped                    None
+outSAMorder                       Paired
+outSAMprimaryFlag                 OneBestScore
+outSAMreadID                      Standard
+outSAMmapqUnique                  255
+outSAMflagOR                      0
+outSAMflagAND                     65535
+outSAMattrRGline                  -   
+outSAMheaderHD                    -   
+outSAMheaderPG                    -   
+outSAMheaderCommentFile           -
+outBAMcompression                 1
+outBAMsortingThreadN              0
+outSJfilterReads                  All
+outSJfilterCountUniqueMin         3   1   1   1   
+outSJfilterCountTotalMin          3   1   1   1   
+outSJfilterOverhangMin            30   12   12   12   
+outSJfilterDistToOtherSJmin       10   0   5   10   
+outSJfilterIntronMaxVsReadN       50000   100000   200000   
+outWigType                        None   
+outWigStrand                      Stranded   
+outWigReferencesPrefix            -
+outWigNorm                        RPM   
+outFilterType                     Normal
+outFilterMultimapNmax             10
+outFilterMultimapScoreRange       1
+outFilterScoreMin                 0
+outFilterScoreMinOverLread        0.66
+outFilterMatchNmin                0
+outFilterMatchNminOverLread       0.66
+outFilterMismatchNmax             10
+outFilterMismatchNoverLmax        0.3
+outFilterMismatchNoverReadLmax    1
+outFilterIntronMotifs             None
+clip5pNbases                      0   
+clip3pNbases                      0   
+clip3pAfterAdapterNbases          0   
+clip3pAdapterSeq                  -   
+clip3pAdapterMMp                  0.1   
+winBinNbits                       16
+winAnchorDistNbins                9
+winFlankNbins                     4
+winAnchorMultimapNmax             50
+scoreGap                          0
+scoreGapNoncan                    -8
+scoreGapGCAG                      -4
+scoreGapATAC                      -8
+scoreStitchSJshift                1
+scoreGenomicLengthLog2scale       -0.25
+scoreDelBase                      -2
+scoreDelOpen                      -2
+scoreInsOpen                      -2
+scoreInsBase                      -2
+seedSearchLmax                    0
+seedSearchStartLmax               50
+seedSearchStartLmaxOverLread      1
+seedPerReadNmax                   1000
+seedPerWindowNmax                 50
+seedNoneLociPerWindow             10
+seedMultimapNmax                  10000
+alignIntronMin                    21
+alignIntronMax                    0
+alignMatesGapMax                  0
+alignTranscriptsPerReadNmax       10000
+alignSJoverhangMin                5
+alignSJDBoverhangMin              3
+alignSplicedMateMapLmin           0
+alignSplicedMateMapLminOverLmate    0.66
+alignWindowsPerReadNmax           10000
+alignTranscriptsPerWindowNmax     100
+alignEndsType                     Local
+alignSoftClipAtReferenceEnds      Yes
+chimSegmentMin                    0
+chimScoreMin                      0
+chimScoreDropMax                  20
+chimScoreSeparation               10
+chimScoreJunctionNonGTAG          -1
+chimJunctionOverhangMin           20
+sjdbFileChrStartEnd               -   
+sjdbGTFfile                       -
+sjdbGTFchrPrefix                  -
+sjdbGTFfeatureExon                exon
+sjdbGTFtagExonParentTranscript    transcript_id
+sjdbGTFtagExonParentGene          gene_id
+sjdbOverhang                      0
+sjdbScore                         2
+quantMode                         -   
+quantTranscriptomeBAMcompression    1
+twopass1readsN                    0
+twopassSJlimit                    1000000
+##### Command Line:
+STAR --runThreadN 15 --runMode genomeGenerate --genomeDir StarIndex/contaminant/ --genomeFastaFiles ./../ref/human_contaminant.fa --genomeSAindexNbases 5 --genomeChrBinNbits 11
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runThreadN                    15     ~RE-DEFINED
+runMode                       genomeGenerate     ~RE-DEFINED
+genomeDir                     StarIndex/contaminant/     ~RE-DEFINED
+genomeFastaFiles              ./../ref/human_contaminant.fa        ~RE-DEFINED
+genomeSAindexNbases           5     ~RE-DEFINED
+genomeChrBinNbits             11     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate
+runThreadN                        15
+genomeDir                         StarIndex/contaminant/
+genomeFastaFiles                  ./../ref/human_contaminant.fa   
+genomeSAindexNbases               5
+genomeChrBinNbits                 11
+
+-------------------------------
+##### Final effective command line:
+STAR   --runMode genomeGenerate   --runThreadN 15   --genomeDir StarIndex/contaminant/   --genomeFastaFiles ./../ref/human_contaminant.fa      --genomeSAindexNbases 5   --genomeChrBinNbits 11
+
+##### Final parameters after user input--------------------------------:
+versionSTAR                       20201
+versionGenome                     20101   20200   
+parametersFiles                   -   
+sysShell                          -
+runMode                           genomeGenerate
+runThreadN                        15
+genomeDir                         StarIndex/contaminant/
+genomeLoad                        NoSharedMemory
+genomeFastaFiles                  ./../ref/human_contaminant.fa   
+genomeSAindexNbases               5
+genomeChrBinNbits                 11
+genomeSAsparseD                   1
+readFilesIn                       Read1   Read2   
+readFilesCommand                  -   
+readMatesLengthsIn                NotEqual
+readMapNumber                     18446744073709551615
+inputBAMfile                      -
+bamRemoveDuplicatesType           -
+bamRemoveDuplicatesMate2basesN    0
+limitGenomeGenerateRAM            31000000000
+limitIObufferSize                 150000000
+limitOutSAMoneReadBytes           100000
+limitOutSJcollapsed               1000000
+limitOutSJoneRead                 1000
+limitBAMsortRAM                   0
+outFileNamePrefix                 ./
+outTmpDir                         -
+outStd                            Log
+outReadsUnmapped                  None
+outQSconversionAdd                0
+outSAMtype                        SAM   
+outSAMmode                        Full
+outSAMstrandField                 None
+outSAMattributes                  Standard   
+outSAMunmapped                    None
+outSAMorder                       Paired
+outSAMprimaryFlag                 OneBestScore
+outSAMreadID                      Standard
+outSAMmapqUnique                  255
+outSAMflagOR                      0
+outSAMflagAND                     65535
+outSAMattrRGline                  -   
+outSAMheaderHD                    -   
+outSAMheaderPG                    -   
+outSAMheaderCommentFile           -
+outBAMcompression                 1
+outBAMsortingThreadN              0
+outSJfilterReads                  All
+outSJfilterCountUniqueMin         3   1   1   1   
+outSJfilterCountTotalMin          3   1   1   1   
+outSJfilterOverhangMin            30   12   12   12   
+outSJfilterDistToOtherSJmin       10   0   5   10   
+outSJfilterIntronMaxVsReadN       50000   100000   200000   
+outWigType                        None   
+outWigStrand                      Stranded   
+outWigReferencesPrefix            -
+outWigNorm                        RPM   
+outFilterType                     Normal
+outFilterMultimapNmax             10
+outFilterMultimapScoreRange       1
+outFilterScoreMin                 0
+outFilterScoreMinOverLread        0.66
+outFilterMatchNmin                0
+outFilterMatchNminOverLread       0.66
+outFilterMismatchNmax             10
+outFilterMismatchNoverLmax        0.3
+outFilterMismatchNoverReadLmax    1
+outFilterIntronMotifs             None
+clip5pNbases                      0   
+clip3pNbases                      0   
+clip3pAfterAdapterNbases          0   
+clip3pAdapterSeq                  -   
+clip3pAdapterMMp                  0.1   
+winBinNbits                       16
+winAnchorDistNbins                9
+winFlankNbins                     4
+winAnchorMultimapNmax             50
+scoreGap                          0
+scoreGapNoncan                    -8
+scoreGapGCAG                      -4
+scoreGapATAC                      -8
+scoreStitchSJshift                1
+scoreGenomicLengthLog2scale       -0.25
+scoreDelBase                      -2
+scoreDelOpen                      -2
+scoreInsOpen                      -2
+scoreInsBase                      -2
+seedSearchLmax                    0
+seedSearchStartLmax               50
+seedSearchStartLmaxOverLread      1
+seedPerReadNmax                   1000
+seedPerWindowNmax                 50
+seedNoneLociPerWindow             10
+seedMultimapNmax                  10000
+alignIntronMin                    21
+alignIntronMax                    0
+alignMatesGapMax                  0
+alignTranscriptsPerReadNmax       10000
+alignSJoverhangMin                5
+alignSJDBoverhangMin              3
+alignSplicedMateMapLmin           0
+alignSplicedMateMapLminOverLmate    0.66
+alignWindowsPerReadNmax           10000
+alignTranscriptsPerWindowNmax     100
+alignEndsType                     Local
+alignSoftClipAtReferenceEnds      Yes
+chimSegmentMin                    0
+chimScoreMin                      0
+chimScoreDropMax                  20
+chimScoreSeparation               10
+chimScoreJunctionNonGTAG          -1
+chimJunctionOverhangMin           20
+sjdbFileChrStartEnd               -   
+sjdbGTFfile                       -
+sjdbGTFchrPrefix                  -
+sjdbGTFfeatureExon                exon
+sjdbGTFtagExonParentTranscript    transcript_id
+sjdbGTFtagExonParentGene          gene_id
+sjdbOverhang                      0
+sjdbScore                         2
+quantMode                         -   
+quantTranscriptomeBAMcompression    1
+twopass1readsN                    0
+twopassSJlimit                    1000000
+----------------------------------------
+
+Finished loading and checking parameters
+Nov 09 19:54:56 ... Starting to generate Genome files
+./../ref/human_contaminant.fa : chr # 0  "Homo_sapiens_chr6.trna95-AlaAGC" chrStart: 0
+./../ref/human_contaminant.fa : chr # 1  "Homo_sapiens_chr6.trna25-AlaAGC" chrStart: 2048
+./../ref/human_contaminant.fa : chr # 2  "Homo_sapiens_chr1.trna87-AlaAGC" chrStart: 4096
+./../ref/human_contaminant.fa : chr # 3  "Homo_sapiens_chr6.trna94-AlaAGC" chrStart: 6144
+./../ref/human_contaminant.fa : chr # 4  "Homo_sapiens_chr6.trna160-AlaAGC" chrStart: 8192
+./../ref/human_contaminant.fa : chr # 5  "Homo_sapiens_chr6.trna23-AlaAGC" chrStart: 10240
+./../ref/human_contaminant.fa : chr # 6  "Homo_sapiens_chr6.trna90-AlaAGC" chrStart: 12288
+./../ref/human_contaminant.fa : chr # 7  "Homo_sapiens_chr6.trna89-AlaAGC" chrStart: 14336
+./../ref/human_contaminant.fa : chr # 8  "Homo_sapiens_chr14.trna9-AlaAGC" chrStart: 16384
+./../ref/human_contaminant.fa : chr # 9  "Homo_sapiens_chr6.trna18-AlaAGC" chrStart: 18432
+./../ref/human_contaminant.fa : chr # 10  "Homo_sapiens_chr6.trna22-AlaAGC" chrStart: 20480
+./../ref/human_contaminant.fa : chr # 11  "Homo_sapiens_chr6.trna93-AlaAGC" chrStart: 22528
+./../ref/human_contaminant.fa : chr # 12  "Homo_sapiens_chr6.trna159-AlaAGC" chrStart: 24576
+./../ref/human_contaminant.fa : chr # 13  "Homo_sapiens_chr6.trna19-AlaAGC" chrStart: 26624
+./../ref/human_contaminant.fa : chr # 14  "Homo_sapiens_chr6.trna91-AlaAGC" chrStart: 28672
+./../ref/human_contaminant.fa : chr # 15  "Homo_sapiens_chr6.trna166-AlaAGC" chrStart: 30720
+./../ref/human_contaminant.fa : chr # 16  "Homo_sapiens_chr6.trna20-AlaAGC" chrStart: 32768
+./../ref/human_contaminant.fa : chr # 17  "Homo_sapiens_chr6.trna161-AlaAGC" chrStart: 34816
+./../ref/human_contaminant.fa : chr # 18  "Homo_sapiens_chr6.trna24-AlaAGC" chrStart: 36864
+./../ref/human_contaminant.fa : chr # 19  "Homo_sapiens_chr2.trna3-AlaAGC" chrStart: 38912
+./../ref/human_contaminant.fa : chr # 20  "Homo_sapiens_chr8.trna6-AlaAGC" chrStart: 40960
+./../ref/human_contaminant.fa : chr # 21  "Homo_sapiens_chr6.trna68-AlaAGC" chrStart: 43008
+./../ref/human_contaminant.fa : chr # 22  "Homo_sapiens_chr6.trna105-AlaAGC" chrStart: 45056
+./../ref/human_contaminant.fa : chr # 23  "Homo_sapiens_chr6.trna67-AlaAGC" chrStart: 47104
+./../ref/human_contaminant.fa : chr # 24  "Homo_sapiens_chr6.trna120-AlaAGC" chrStart: 49152
+./../ref/human_contaminant.fa : chr # 25  "Homo_sapiens_chr6.trna65-AlaAGC" chrStart: 51200
+./../ref/human_contaminant.fa : chr # 26  "Homo_sapiens_chr6.trna101-AlaAGC" chrStart: 53248
+./../ref/human_contaminant.fa : chr # 27  "Homo_sapiens_chr6.trna102-AlaAGC" chrStart: 55296
+./../ref/human_contaminant.fa : chr # 28  "Homo_sapiens_chr6.trna108-AlaAGC" chrStart: 57344
+./../ref/human_contaminant.fa : chr # 29  "Homo_sapiens_chr6.trna117-AlaCGC" chrStart: 59392
+./../ref/human_contaminant.fa : chr # 30  "Homo_sapiens_chr6.trna70-AlaCGC" chrStart: 61440
+./../ref/human_contaminant.fa : chr # 31  "Homo_sapiens_chr2.trna13-AlaCGC" chrStart: 63488
+./../ref/human_contaminant.fa : chr # 32  "Homo_sapiens_chr6.trna119-AlaCGC" chrStart: 65536
+./../ref/human_contaminant.fa : chr # 33  "Homo_sapiens_chr6.trna10-AlaCGC" chrStart: 67584
+./../ref/human_contaminant.fa : chr # 34  "Homo_sapiens_chr11.trna18-AlaTGC" chrStart: 69632
+./../ref/human_contaminant.fa : chr # 35  "Homo_sapiens_chr6.trna107-AlaTGC" chrStart: 71680
+./../ref/human_contaminant.fa : chr # 36  "Homo_sapiens_chr6.trna113-AlaTGC" chrStart: 73728
+./../ref/human_contaminant.fa : chr # 37  "Homo_sapiens_chr6.trna104-AlaTGC" chrStart: 75776
+./../ref/human_contaminant.fa : chr # 38  "Homo_sapiens_chr12.trna8-AlaTGC" chrStart: 77824
+./../ref/human_contaminant.fa : chr # 39  "Homo_sapiens_chr12.trna13-AlaTGC" chrStart: 79872
+./../ref/human_contaminant.fa : chr # 40  "Homo_sapiens_chr5.trna8-AlaTGC" chrStart: 81920
+./../ref/human_contaminant.fa : chr # 41  "Homo_sapiens_chr6.trna66-AlaTGC" chrStart: 83968
+./../ref/human_contaminant.fa : chr # 42  "Homo_sapiens_chr6.trna110-AlaTGC" chrStart: 86016
+./../ref/human_contaminant.fa : chr # 43  "Homo_sapiens_chr3.trna11-ArgACG" chrStart: 88064
+./../ref/human_contaminant.fa : chr # 44  "Homo_sapiens_chr6.trna138-ArgACG" chrStart: 90112
+./../ref/human_contaminant.fa : chr # 45  "Homo_sapiens_chr6.trna156-ArgACG" chrStart: 92160
+./../ref/human_contaminant.fa : chr # 46  "Homo_sapiens_chr6.trna36-ArgACG" chrStart: 94208
+./../ref/human_contaminant.fa : chr # 47  "Homo_sapiens_chr14.trna7-ArgACG" chrStart: 96256
+./../ref/human_contaminant.fa : chr # 48  "Homo_sapiens_chr6.trna6-ArgACG" chrStart: 98304
+./../ref/human_contaminant.fa : chr # 49  "Homo_sapiens_chr6.trna8-ArgACG" chrStart: 100352
+./../ref/human_contaminant.fa : chr # 50  "Homo_sapiens_chr17.trna23-ArgCCG" chrStart: 102400
+./../ref/human_contaminant.fa : chr # 51  "Homo_sapiens_chr17_random.trna1-ArgCCG" chrStart: 104448
+./../ref/human_contaminant.fa : chr # 52  "Homo_sapiens_chr16.trna1-ArgCCG" chrStart: 106496
+./../ref/human_contaminant.fa : chr # 53  "Homo_sapiens_chr6.trna114-ArgCCG" chrStart: 108544
+./../ref/human_contaminant.fa : chr # 54  "Homo_sapiens_chr6.trna73-ArgCCG" chrStart: 110592
+./../ref/human_contaminant.fa : chr # 55  "Homo_sapiens_chr16.trna12-ArgCCT" chrStart: 112640
+./../ref/human_contaminant.fa : chr # 56  "Homo_sapiens_chr7.trna3-ArgCCT" chrStart: 114688
+./../ref/human_contaminant.fa : chr # 57  "Homo_sapiens_chr16.trna2-ArgCCT" chrStart: 116736
+./../ref/human_contaminant.fa : chr # 58  "Homo_sapiens_chr17.trna21-ArgCCT" chrStart: 118784
+./../ref/human_contaminant.fa : chr # 59  "Homo_sapiens_chr17.trna18-ArgCCT" chrStart: 120832
+./../ref/human_contaminant.fa : chr # 60  "Homo_sapiens_chr9.trna2-ArgTCG" chrStart: 122880
+./../ref/human_contaminant.fa : chr # 61  "Homo_sapiens_chr6.trna124-ArgTCG" chrStart: 124928
+./../ref/human_contaminant.fa : chr # 62  "Homo_sapiens_chr6.trna3-ArgTCG" chrStart: 126976
+./../ref/human_contaminant.fa : chr # 63  "Homo_sapiens_chr17.trna19-ArgTCG" chrStart: 129024
+./../ref/human_contaminant.fa : chr # 64  "Homo_sapiens_chr6.trna4-ArgTCG" chrStart: 131072
+./../ref/human_contaminant.fa : chr # 65  "Homo_sapiens_chr15.trna4-ArgTCG" chrStart: 133120
+./../ref/human_contaminant.fa : chr # 66  "Homo_sapiens_chr1.trna86-ArgTCT" chrStart: 135168
+./../ref/human_contaminant.fa : chr # 67  "Homo_sapiens_chr9.trna4-ArgTCT" chrStart: 137216
+./../ref/human_contaminant.fa : chr # 68  "Homo_sapiens_chr6.trna52-ArgTCT" chrStart: 139264
+./../ref/human_contaminant.fa : chr # 69  "Homo_sapiens_chr11.trna3-ArgTCT" chrStart: 141312
+./../ref/human_contaminant.fa : chr # 70  "Homo_sapiens_chr17.trna4-ArgTCT" chrStart: 143360
+./../ref/human_contaminant.fa : chr # 71  "Homo_sapiens_chr1.trna9-ArgTCT" chrStart: 145408
+./../ref/human_contaminant.fa : chr # 72  "Homo_sapiens_chr1.trna20-AsnATT" chrStart: 147456
+./../ref/human_contaminant.fa : chr # 73  "Homo_sapiens_chr1.trna13-AsnGTT" chrStart: 149504
+./../ref/human_contaminant.fa : chr # 74  "Homo_sapiens_chr1.trna93-AsnGTT" chrStart: 151552
+./../ref/human_contaminant.fa : chr # 75  "Homo_sapiens_chr1.trna134-AsnGTT" chrStart: 153600
+./../ref/human_contaminant.fa : chr # 76  "Homo_sapiens_chr1.trna50-AsnGTT" chrStart: 155648
+./../ref/human_contaminant.fa : chr # 77  "Homo_sapiens_chr1.trna10-AsnGTT" chrStart: 157696
+./../ref/human_contaminant.fa : chr # 78  "Homo_sapiens_chr1.trna122-AsnGTT" chrStart: 159744
+./../ref/human_contaminant.fa : chr # 79  "Homo_sapiens_chr1.trna123-AsnGTT" chrStart: 161792
+./../ref/human_contaminant.fa : chr # 80  "Homo_sapiens_chr1.trna24-AsnGTT" chrStart: 163840
+./../ref/human_contaminant.fa : chr # 81  "Homo_sapiens_chr1.trna30-AsnGTT" chrStart: 165888
+./../ref/human_contaminant.fa : chr # 82  "Homo_sapiens_chr1.trna101-AsnGTT" chrStart: 167936
+./../ref/human_contaminant.fa : chr # 83  "Homo_sapiens_chr1.trna12-AsnGTT" chrStart: 169984
+./../ref/human_contaminant.fa : chr # 84  "Homo_sapiens_chr1.trna6-AsnGTT" chrStart: 172032
+./../ref/human_contaminant.fa : chr # 85  "Homo_sapiens_chr1.trna97-AsnGTT" chrStart: 174080
+./../ref/human_contaminant.fa : chr # 86  "Homo_sapiens_chr1.trna11-AsnGTT" chrStart: 176128
+./../ref/human_contaminant.fa : chr # 87  "Homo_sapiens_chr1.trna95-AsnGTT" chrStart: 178176
+./../ref/human_contaminant.fa : chr # 88  "Homo_sapiens_chr1_random.trna2-AsnGTT" chrStart: 180224
+./../ref/human_contaminant.fa : chr # 89  "Homo_sapiens_chr1.trna113-AsnGTT" chrStart: 182272
+./../ref/human_contaminant.fa : chr # 90  "Homo_sapiens_chr1.trna115-AsnGTT" chrStart: 184320
+./../ref/human_contaminant.fa : chr # 91  "Homo_sapiens_chr1.trna89-AsnGTT" chrStart: 186368
+./../ref/human_contaminant.fa : chr # 92  "Homo_sapiens_chr1.trna25-AsnGTT" chrStart: 188416
+./../ref/human_contaminant.fa : chr # 93  "Homo_sapiens_chr1.trna103-AsnGTT" chrStart: 190464
+./../ref/human_contaminant.fa : chr # 94  "Homo_sapiens_chr1.trna135-AsnGTT" chrStart: 192512
+./../ref/human_contaminant.fa : chr # 95  "Homo_sapiens_chr1.trna7-AsnGTT" chrStart: 194560
+./../ref/human_contaminant.fa : chr # 96  "Homo_sapiens_chr1.trna107-AsnGTT" chrStart: 196608
+./../ref/human_contaminant.fa : chr # 97  "Homo_sapiens_chr1.trna108-AsnGTT" chrStart: 198656
+./../ref/human_contaminant.fa : chr # 98  "Homo_sapiens_chr1.trna26-AsnGTT" chrStart: 200704
+./../ref/human_contaminant.fa : chr # 99  "Homo_sapiens_chr1.trna83-AsnGTT" chrStart: 202752
+./../ref/human_contaminant.fa : chr # 100  "Homo_sapiens_chr10.trna4-AsnGTT" chrStart: 204800
+./../ref/human_contaminant.fa : chr # 101  "Homo_sapiens_chr13.trna7-AsnGTT" chrStart: 206848
+./../ref/human_contaminant.fa : chr # 102  "Homo_sapiens_chr17.trna31-AsnGTT" chrStart: 208896
+./../ref/human_contaminant.fa : chr # 103  "Homo_sapiens_chr19.trna1-AsnGTT" chrStart: 210944
+./../ref/human_contaminant.fa : chr # 104  "Homo_sapiens_chr1.trna47-AsnGTT" chrStart: 212992
+./../ref/human_contaminant.fa : chr # 105  "Homo_sapiens_chr1.trna48-AspGTC" chrStart: 215040
+./../ref/human_contaminant.fa : chr # 106  "Homo_sapiens_chr12.trna7-AspGTC" chrStart: 217088
+./../ref/human_contaminant.fa : chr # 107  "Homo_sapiens_chr1.trna46-AspGTC" chrStart: 219136
+./../ref/human_contaminant.fa : chr # 108  "Homo_sapiens_chr3.trna3-AspGTC" chrStart: 221184
+./../ref/human_contaminant.fa : chr # 109  "Homo_sapiens_chr5.trna22-AspGTC" chrStart: 223232
+./../ref/human_contaminant.fa : chr # 110  "Homo_sapiens_chr9.trna6-AspGTC" chrStart: 225280
+./../ref/human_contaminant.fa : chr # 111  "Homo_sapiens_chr6.trna144-AspGTC" chrStart: 227328
+./../ref/human_contaminant.fa : chr # 112  "Homo_sapiens_chr1.trna69-AspGTC" chrStart: 229376
+./../ref/human_contaminant.fa : chr # 113  "Homo_sapiens_chr1.trna72-AspGTC" chrStart: 231424
+./../ref/human_contaminant.fa : chr # 114  "Homo_sapiens_chr1.trna75-AspGTC" chrStart: 233472
+./../ref/human_contaminant.fa : chr # 115  "Homo_sapiens_chr1.trna78-AspGTC" chrStart: 235520
+./../ref/human_contaminant.fa : chr # 116  "Homo_sapiens_chr1.trna81-AspGTC" chrStart: 237568
+./../ref/human_contaminant.fa : chr # 117  "Homo_sapiens_chr12.trna10-AspGTC" chrStart: 239616
+./../ref/human_contaminant.fa : chr # 118  "Homo_sapiens_chr12.trna12-AspGTC" chrStart: 241664
+./../ref/human_contaminant.fa : chr # 119  "Homo_sapiens_chr12.trna4-AspGTC" chrStart: 243712
+./../ref/human_contaminant.fa : chr # 120  "Homo_sapiens_chr17.trna38-AspGTC" chrStart: 245760
+./../ref/human_contaminant.fa : chr # 121  "Homo_sapiens_chr6.trna45-AspGTC" chrStart: 247808
+./../ref/human_contaminant.fa : chr # 122  "Homo_sapiens_chr6.trna48-AspGTC" chrStart: 249856
+./../ref/human_contaminant.fa : chr # 123  "Homo_sapiens_chr12.trna5-AspGTC" chrStart: 251904
+./../ref/human_contaminant.fa : chr # 124  "Homo_sapiens_chr17.trna30-CysGCA" chrStart: 253952
+./../ref/human_contaminant.fa : chr # 125  "Homo_sapiens_chr7.trna19-CysGCA" chrStart: 256000
+./../ref/human_contaminant.fa : chr # 126  "Homo_sapiens_chr7.trna8-CysGCA" chrStart: 258048
+./../ref/human_contaminant.fa : chr # 127  "Homo_sapiens_chr7.trna14-CysGCA" chrStart: 260096
+./../ref/human_contaminant.fa : chr # 128  "Homo_sapiens_chr7.trna11-CysGCA" chrStart: 262144
+./../ref/human_contaminant.fa : chr # 129  "Homo_sapiens_chr7.trna18-CysGCA" chrStart: 264192
+./../ref/human_contaminant.fa : chr # 130  "Homo_sapiens_chr7.trna23-CysGCA" chrStart: 266240
+./../ref/human_contaminant.fa : chr # 131  "Homo_sapiens_chr7.trna16-CysGCA" chrStart: 268288
+./../ref/human_contaminant.fa : chr # 132  "Homo_sapiens_chr7.trna7-CysGCA" chrStart: 270336
+./../ref/human_contaminant.fa : chr # 133  "Homo_sapiens_chr7.trna10-CysGCA" chrStart: 272384
+./../ref/human_contaminant.fa : chr # 134  "Homo_sapiens_chr17.trna29-CysGCA" chrStart: 274432
+./../ref/human_contaminant.fa : chr # 135  "Homo_sapiens_chr7.trna25-CysGCA" chrStart: 276480
+./../ref/human_contaminant.fa : chr # 136  "Homo_sapiens_chr7.trna17-CysGCA" chrStart: 278528
+./../ref/human_contaminant.fa : chr # 137  "Homo_sapiens_chr7.trna21-CysGCA" chrStart: 280576
+./../ref/human_contaminant.fa : chr # 138  "Homo_sapiens_chr7.trna22-CysGCA" chrStart: 282624
+./../ref/human_contaminant.fa : chr # 139  "Homo_sapiens_chr3.trna6-CysGCA" chrStart: 284672
+./../ref/human_contaminant.fa : chr # 140  "Homo_sapiens_chr7.trna13-CysGCA" chrStart: 286720
+./../ref/human_contaminant.fa : chr # 141  "Homo_sapiens_chr7.trna15-CysGCA" chrStart: 288768
+./../ref/human_contaminant.fa : chr # 142  "Homo_sapiens_chr7.trna6-CysGCA" chrStart: 290816
+./../ref/human_contaminant.fa : chr # 143  "Homo_sapiens_chr14.trna8-CysGCA" chrStart: 292864
+./../ref/human_contaminant.fa : chr # 144  "Homo_sapiens_chr1.trna126-CysGCA" chrStart: 294912
+./../ref/human_contaminant.fa : chr # 145  "Homo_sapiens_chr3.trna7-CysGCA" chrStart: 296960
+./../ref/human_contaminant.fa : chr # 146  "Homo_sapiens_chr15.trna3-CysGCA" chrStart: 299008
+./../ref/human_contaminant.fa : chr # 147  "Homo_sapiens_chr17.trna28-CysGCA" chrStart: 301056
+./../ref/human_contaminant.fa : chr # 148  "Homo_sapiens_chr7.trna20-CysGCA" chrStart: 303104
+./../ref/human_contaminant.fa : chr # 149  "Homo_sapiens_chr17.trna15-CysGCA" chrStart: 305152
+./../ref/human_contaminant.fa : chr # 150  "Homo_sapiens_chr17.trna26-CysGCA" chrStart: 307200
+./../ref/human_contaminant.fa : chr # 151  "Homo_sapiens_chr17.trna27-CysGCA" chrStart: 309248
+./../ref/human_contaminant.fa : chr # 152  "Homo_sapiens_chr4.trna3-CysGCA" chrStart: 311296
+./../ref/human_contaminant.fa : chr # 153  "Homo_sapiens_chr7.trna5-CysGCA" chrStart: 313344
+./../ref/human_contaminant.fa : chr # 154  "Homo_sapiens_chr16.trna21-GlnCTG" chrStart: 315392
+./../ref/human_contaminant.fa : chr # 155  "Homo_sapiens_chr20.trna1-GlnCTG" chrStart: 317440
+./../ref/human_contaminant.fa : chr # 156  "Homo_sapiens_chr9.trna5-GlnCTG" chrStart: 319488
+./../ref/human_contaminant.fa : chr # 157  "Homo_sapiens_chr12.trna3-GlnCTG" chrStart: 321536
+./../ref/human_contaminant.fa : chr # 158  "Homo_sapiens_chr1.trna114-GlnCTG" chrStart: 323584
+./../ref/human_contaminant.fa : chr # 159  "Homo_sapiens_chr1.trna120-GlnCTG" chrStart: 325632
+./../ref/human_contaminant.fa : chr # 160  "Homo_sapiens_chr1.trna121-GlnCTG" chrStart: 327680
+./../ref/human_contaminant.fa : chr # 161  "Homo_sapiens_chr1_random.trna1-GlnCTG" chrStart: 329728
+./../ref/human_contaminant.fa : chr # 162  "Homo_sapiens_chr1.trna22-GlnCTG" chrStart: 331776
+./../ref/human_contaminant.fa : chr # 163  "Homo_sapiens_chr6.trna131-GlnCTG" chrStart: 333824
+./../ref/human_contaminant.fa : chr # 164  "Homo_sapiens_chr6.trna42-GlnCTG" chrStart: 335872
+./../ref/human_contaminant.fa : chr # 165  "Homo_sapiens_chr1.trna112-GlnCTG" chrStart: 337920
+./../ref/human_contaminant.fa : chr # 166  "Homo_sapiens_chr1.trna28-GlnCTG" chrStart: 339968
+./../ref/human_contaminant.fa : chr # 167  "Homo_sapiens_chr1.trna15-GlnCTG" chrStart: 342016
+./../ref/human_contaminant.fa : chr # 168  "Homo_sapiens_chr1.trna19-GlnCTG" chrStart: 344064
+./../ref/human_contaminant.fa : chr # 169  "Homo_sapiens_chr6.trna146-GlnCTG" chrStart: 346112
+./../ref/human_contaminant.fa : chr # 170  "Homo_sapiens_chr15.trna7-GlnCTG" chrStart: 348160
+./../ref/human_contaminant.fa : chr # 171  "Homo_sapiens_chr17.trna3-GlnCTG" chrStart: 350208
+./../ref/human_contaminant.fa : chr # 172  "Homo_sapiens_chr6.trna1-GlnCTG" chrStart: 352256
+./../ref/human_contaminant.fa : chr # 173  "Homo_sapiens_chr6.trna49-GlnCTG" chrStart: 354304
+./../ref/human_contaminant.fa : chr # 174  "Homo_sapiens_chr6.trna99-GlnCTG" chrStart: 356352
+./../ref/human_contaminant.fa : chr # 175  "Homo_sapiens_chr9.trna8-GlnTTG" chrStart: 358400
+./../ref/human_contaminant.fa : chr # 176  "Homo_sapiens_chr6.trna79-GlnTTG" chrStart: 360448
+./../ref/human_contaminant.fa : chr # 177  "Homo_sapiens_chr16.trna14-GlnTTG" chrStart: 362496
+./../ref/human_contaminant.fa : chr # 178  "Homo_sapiens_chr4.trna4-GlnTTG" chrStart: 364544
+./../ref/human_contaminant.fa : chr # 179  "Homo_sapiens_chr2.trna23-GlnTTG" chrStart: 366592
+./../ref/human_contaminant.fa : chr # 180  "Homo_sapiens_chr6.trna84-GlnTTG" chrStart: 368640
+./../ref/human_contaminant.fa : chr # 181  "Homo_sapiens_chr6.trna130-GlnTTG" chrStart: 370688
+./../ref/human_contaminant.fa : chr # 182  "Homo_sapiens_chr6.trna173-GlnTTG" chrStart: 372736
+./../ref/human_contaminant.fa : chr # 183  "Homo_sapiens_chr6.trna174-GlnTTG" chrStart: 374784
+./../ref/human_contaminant.fa : chr # 184  "Homo_sapiens_chr6.trna64-GlnTTG" chrStart: 376832
+./../ref/human_contaminant.fa : chr # 185  "Homo_sapiens_chr17.trna16-GlnTTG" chrStart: 378880
+./../ref/human_contaminant.fa : chr # 186  "Homo_sapiens_chr1.trna29-GluCTC" chrStart: 380928
+./../ref/human_contaminant.fa : chr # 187  "Homo_sapiens_chr3.trna8-GluCTC" chrStart: 382976
+./../ref/human_contaminant.fa : chr # 188  "Homo_sapiens_chr18.trna1-GluCTC" chrStart: 385024
+./../ref/human_contaminant.fa : chr # 189  "Homo_sapiens_chr8.trna3-GluCTC" chrStart: 387072
+./../ref/human_contaminant.fa : chr # 190  "Homo_sapiens_chr13.trna4-GluCTC" chrStart: 389120
+./../ref/human_contaminant.fa : chr # 191  "Homo_sapiens_chr1.trna59-GluCTC" chrStart: 391168
+./../ref/human_contaminant.fa : chr # 192  "Homo_sapiens_chr1.trna116-GluCTC" chrStart: 393216
+./../ref/human_contaminant.fa : chr # 193  "Homo_sapiens_chr1.trna71-GluCTC" chrStart: 395264
+./../ref/human_contaminant.fa : chr # 194  "Homo_sapiens_chr1.trna74-GluCTC" chrStart: 397312
+./../ref/human_contaminant.fa : chr # 195  "Homo_sapiens_chr1.trna77-GluCTC" chrStart: 399360
+./../ref/human_contaminant.fa : chr # 196  "Homo_sapiens_chr1.trna80-GluCTC" chrStart: 401408
+./../ref/human_contaminant.fa : chr # 197  "Homo_sapiens_chr6.trna77-GluCTC" chrStart: 403456
+./../ref/human_contaminant.fa : chr # 198  "Homo_sapiens_chr6.trna87-GluCTC" chrStart: 405504
+./../ref/human_contaminant.fa : chr # 199  "Homo_sapiens_chr1.trna31-GluTTC" chrStart: 407552
+./../ref/human_contaminant.fa : chr # 200  "Homo_sapiens_chr2.trna6-GluTTC" chrStart: 409600
+./../ref/human_contaminant.fa : chr # 201  "Homo_sapiens_chr1.trna64-GluTTC" chrStart: 411648
+./../ref/human_contaminant.fa : chr # 202  "Homo_sapiens_chr14.trna14-GluTTC" chrStart: 413696
+./../ref/human_contaminant.fa : chr # 203  "Homo_sapiens_chr1.trna94-GluTTC" chrStart: 415744
+./../ref/human_contaminant.fa : chr # 204  "Homo_sapiens_chr1.trna49-GluTTC" chrStart: 417792
+./../ref/human_contaminant.fa : chr # 205  "Homo_sapiens_chr1.trna133-GluTTC" chrStart: 419840
+./../ref/human_contaminant.fa : chr # 206  "Homo_sapiens_chr1.trna84-GluTTC" chrStart: 421888
+./../ref/human_contaminant.fa : chr # 207  "Homo_sapiens_chr1.trna5-GluTTC" chrStart: 423936
+./../ref/human_contaminant.fa : chr # 208  "Homo_sapiens_chr13.trna3-GluTTC" chrStart: 425984
+./../ref/human_contaminant.fa : chr # 209  "Homo_sapiens_chr15.trna11-GluTTC" chrStart: 428032
+./../ref/human_contaminant.fa : chr # 210  "Homo_sapiens_chr13.trna5-GluTTC" chrStart: 430080
+./../ref/human_contaminant.fa : chr # 211  "Homo_sapiens_chr2.trna20-GluTTC" chrStart: 432128
+./../ref/human_contaminant.fa : chr # 212  "Homo_sapiens_chr1.trna2-GlyCCC" chrStart: 434176
+./../ref/human_contaminant.fa : chr # 213  "Homo_sapiens_chr1.trna130-GlyCCC" chrStart: 436224
+./../ref/human_contaminant.fa : chr # 214  "Homo_sapiens_chr17.trna13-GlyCCC" chrStart: 438272
+./../ref/human_contaminant.fa : chr # 215  "Homo_sapiens_chr16.trna34-GlyCCC" chrStart: 440320
+./../ref/human_contaminant.fa : chr # 216  "Homo_sapiens_chr2.trna27-GlyCCC" chrStart: 442368
+./../ref/human_contaminant.fa : chr # 217  "Homo_sapiens_chr1.trna132-GlyCCC" chrStart: 444416
+./../ref/human_contaminant.fa : chr # 218  "Homo_sapiens_chr1.trna4-GlyCCC" chrStart: 446464
+./../ref/human_contaminant.fa : chr # 219  "Homo_sapiens_chr6.trna82-GlyGCC" chrStart: 448512
+./../ref/human_contaminant.fa : chr # 220  "Homo_sapiens_chr16.trna18-GlyGCC" chrStart: 450560
+./../ref/human_contaminant.fa : chr # 221  "Homo_sapiens_chr1.trna43-GlyGCC" chrStart: 452608
+./../ref/human_contaminant.fa : chr # 222  "Homo_sapiens_chr16.trna25-GlyGCC" chrStart: 454656
+./../ref/human_contaminant.fa : chr # 223  "Homo_sapiens_chr1.trna68-GlyGCC" chrStart: 456704
+./../ref/human_contaminant.fa : chr # 224  "Homo_sapiens_chr16.trna19-GlyGCC" chrStart: 458752
+./../ref/human_contaminant.fa : chr # 225  "Homo_sapiens_chr16.trna24-GlyGCC" chrStart: 460800
+./../ref/human_contaminant.fa : chr # 226  "Homo_sapiens_chr17.trna5-GlyGCC" chrStart: 462848
+./../ref/human_contaminant.fa : chr # 227  "Homo_sapiens_chr2.trna19-GlyGCC" chrStart: 464896
+./../ref/human_contaminant.fa : chr # 228  "Homo_sapiens_chr6.trna128-GlyGCC" chrStart: 466944
+./../ref/human_contaminant.fa : chr # 229  "Homo_sapiens_chr1.trna35-GlyGCC" chrStart: 468992
+./../ref/human_contaminant.fa : chr # 230  "Homo_sapiens_chr1.trna37-GlyGCC" chrStart: 471040
+./../ref/human_contaminant.fa : chr # 231  "Homo_sapiens_chr1.trna39-GlyGCC" chrStart: 473088
+./../ref/human_contaminant.fa : chr # 232  "Homo_sapiens_chr1.trna41-GlyGCC" chrStart: 475136
+./../ref/human_contaminant.fa : chr # 233  "Homo_sapiens_chr21.trna2-GlyGCC" chrStart: 477184
+./../ref/human_contaminant.fa : chr # 234  "Homo_sapiens_chr1.trna82-GlyTCC" chrStart: 479232
+./../ref/human_contaminant.fa : chr # 235  "Homo_sapiens_chr17.trna10-GlyTCC" chrStart: 481280
+./../ref/human_contaminant.fa : chr # 236  "Homo_sapiens_chr1.trna117-GlyTCC" chrStart: 483328
+./../ref/human_contaminant.fa : chr # 237  "Homo_sapiens_chr1.trna45-GlyTCC" chrStart: 485376
+./../ref/human_contaminant.fa : chr # 238  "Homo_sapiens_chr1.trna70-GlyTCC" chrStart: 487424
+./../ref/human_contaminant.fa : chr # 239  "Homo_sapiens_chr1.trna73-GlyTCC" chrStart: 489472
+./../ref/human_contaminant.fa : chr # 240  "Homo_sapiens_chr1.trna76-GlyTCC" chrStart: 491520
+./../ref/human_contaminant.fa : chr # 241  "Homo_sapiens_chr1.trna79-GlyTCC" chrStart: 493568
+./../ref/human_contaminant.fa : chr # 242  "Homo_sapiens_chr19.trna2-GlyTCC" chrStart: 495616
+./../ref/human_contaminant.fa : chr # 243  "Homo_sapiens_chr3.trna4-HisGTG" chrStart: 497664
+./../ref/human_contaminant.fa : chr # 244  "Homo_sapiens_chr1.trna106-HisGTG" chrStart: 499712
+./../ref/human_contaminant.fa : chr # 245  "Homo_sapiens_chr1.trna111-HisGTG" chrStart: 501760
+./../ref/human_contaminant.fa : chr # 246  "Homo_sapiens_chr1.trna118-HisGTG" chrStart: 503808
+./../ref/human_contaminant.fa : chr # 247  "Homo_sapiens_chr1.trna16-HisGTG" chrStart: 505856
+./../ref/human_contaminant.fa : chr # 248  "Homo_sapiens_chr1.trna21-HisGTG" chrStart: 507904
+./../ref/human_contaminant.fa : chr # 249  "Homo_sapiens_chr15.trna1-HisGTG" chrStart: 509952
+./../ref/human_contaminant.fa : chr # 250  "Homo_sapiens_chr15.trna8-HisGTG" chrStart: 512000
+./../ref/human_contaminant.fa : chr # 251  "Homo_sapiens_chr15.trna9-HisGTG" chrStart: 514048
+./../ref/human_contaminant.fa : chr # 252  "Homo_sapiens_chr6.trna33-HisGTG" chrStart: 516096
+./../ref/human_contaminant.fa : chr # 253  "Homo_sapiens_chr9.trna7-HisGTG" chrStart: 518144
+./../ref/human_contaminant.fa : chr # 254  "Homo_sapiens_chr6.trna38-IleAAT" chrStart: 520192
+./../ref/human_contaminant.fa : chr # 255  "Homo_sapiens_chr6.trna57-IleAAT" chrStart: 522240
+./../ref/human_contaminant.fa : chr # 256  "Homo_sapiens_chr6.trna165-IleAAT" chrStart: 524288
+./../ref/human_contaminant.fa : chr # 257  "Homo_sapiens_chr6.trna28-IleAAT" chrStart: 526336
+./../ref/human_contaminant.fa : chr # 258  "Homo_sapiens_chr6.trna163-IleAAT" chrStart: 528384
+./../ref/human_contaminant.fa : chr # 259  "Homo_sapiens_chr14.trna10-IleAAT" chrStart: 530432
+./../ref/human_contaminant.fa : chr # 260  "Homo_sapiens_chr17.trna9-IleAAT" chrStart: 532480
+./../ref/human_contaminant.fa : chr # 261  "Homo_sapiens_chr6.trna11-IleAAT" chrStart: 534528
+./../ref/human_contaminant.fa : chr # 262  "Homo_sapiens_chr6.trna154-IleAAT" chrStart: 536576
+./../ref/human_contaminant.fa : chr # 263  "Homo_sapiens_chr6.trna158-IleAAT" chrStart: 538624
+./../ref/human_contaminant.fa : chr # 264  "Homo_sapiens_chr17.trna34-IleAAT" chrStart: 540672
+./../ref/human_contaminant.fa : chr # 265  "Homo_sapiens_chr6.trna153-IleAAT" chrStart: 542720
+./../ref/human_contaminant.fa : chr # 266  "Homo_sapiens_chr6.trna59-IleAAT" chrStart: 544768
+./../ref/human_contaminant.fa : chr # 267  "Homo_sapiens_chr6.trna80-IleAAT" chrStart: 546816
+./../ref/human_contaminant.fa : chr # 268  "Homo_sapiens_chrX.trna5-IleGAT" chrStart: 548864
+./../ref/human_contaminant.fa : chr # 269  "Homo_sapiens_chrX.trna6-IleGAT" chrStart: 550912
+./../ref/human_contaminant.fa : chr # 270  "Homo_sapiens_chrX.trna7-IleGAT" chrStart: 552960
+./../ref/human_contaminant.fa : chr # 271  "Homo_sapiens_chrX_random.trna1-IleGAT" chrStart: 555008
+./../ref/human_contaminant.fa : chr # 272  "Homo_sapiens_chrX_random.trna2-IleGAT" chrStart: 557056
+./../ref/human_contaminant.fa : chr # 273  "Homo_sapiens_chrX_random.trna3-IleGAT" chrStart: 559104
+./../ref/human_contaminant.fa : chr # 274  "Homo_sapiens_chrX_random.trna4-IleGAT" chrStart: 561152
+./../ref/human_contaminant.fa : chr # 275  "Homo_sapiens_chrX_random.trna5-IleGAT" chrStart: 563200
+./../ref/human_contaminant.fa : chr # 276  "Homo_sapiens_chr6.trna29-IleTAT" chrStart: 565248
+./../ref/human_contaminant.fa : chr # 277  "Homo_sapiens_chr6.trna55-IleTAT" chrStart: 567296
+./../ref/human_contaminant.fa : chr # 278  "Homo_sapiens_chr6.trna63-IleTAT" chrStart: 569344
+./../ref/human_contaminant.fa : chr # 279  "Homo_sapiens_chr2.trna5-IleTAT" chrStart: 571392
+./../ref/human_contaminant.fa : chr # 280  "Homo_sapiens_chr19.trna10-IleTAT" chrStart: 573440
+./../ref/human_contaminant.fa : chr # 281  "Homo_sapiens_chr3.trna5-LeuAAG" chrStart: 575488
+./../ref/human_contaminant.fa : chr # 282  "Homo_sapiens_chr20.trna6-LeuAAG" chrStart: 577536
+./../ref/human_contaminant.fa : chr # 283  "Homo_sapiens_chr2.trna4-LeuAAG" chrStart: 579584
+./../ref/human_contaminant.fa : chr # 284  "Homo_sapiens_chr6.trna126-LeuAAG" chrStart: 581632
+./../ref/human_contaminant.fa : chr # 285  "Homo_sapiens_chr6.trna78-LeuAAG" chrStart: 583680
+./../ref/human_contaminant.fa : chr # 286  "Homo_sapiens_chr14.trna1-LeuAAG" chrStart: 585728
+./../ref/human_contaminant.fa : chr # 287  "Homo_sapiens_chr16.trna16-LeuAAG" chrStart: 587776
+./../ref/human_contaminant.fa : chr # 288  "Homo_sapiens_chr5.trna7-LeuAAG" chrStart: 589824
+./../ref/human_contaminant.fa : chr # 289  "Homo_sapiens_chr6.trna98-LeuAAG" chrStart: 591872
+./../ref/human_contaminant.fa : chr # 290  "Homo_sapiens_chr5.trna16-LeuAAG" chrStart: 593920
+./../ref/human_contaminant.fa : chr # 291  "Homo_sapiens_chr5.trna19-LeuAAG" chrStart: 595968
+./../ref/human_contaminant.fa : chr # 292  "Homo_sapiens_chr5.trna3-LeuAAG" chrStart: 598016
+./../ref/human_contaminant.fa : chr # 293  "Homo_sapiens_chr1.trna66-LeuCAA" chrStart: 600064
+./../ref/human_contaminant.fa : chr # 294  "Homo_sapiens_chr11.trna1-LeuCAA" chrStart: 602112
+./../ref/human_contaminant.fa : chr # 295  "Homo_sapiens_chr1.trna58-LeuCAA" chrStart: 604160
+./../ref/human_contaminant.fa : chr # 296  "Homo_sapiens_chr6.trna141-LeuCAA" chrStart: 606208
+./../ref/human_contaminant.fa : chr # 297  "Homo_sapiens_chr6.trna140-LeuCAA" chrStart: 608256
+./../ref/human_contaminant.fa : chr # 298  "Homo_sapiens_chr6.trna100-LeuCAA" chrStart: 610304
+./../ref/human_contaminant.fa : chr # 299  "Homo_sapiens_chr6.trna74-LeuCAA" chrStart: 612352
+./../ref/human_contaminant.fa : chr # 300  "Homo_sapiens_chr5.trna20-LeuCAG" chrStart: 614400
+./../ref/human_contaminant.fa : chr # 301  "Homo_sapiens_chr16.trna17-LeuCAG" chrStart: 616448
+./../ref/human_contaminant.fa : chr # 302  "Homo_sapiens_chr16.trna26-LeuCAG" chrStart: 618496
+./../ref/human_contaminant.fa : chr # 303  "Homo_sapiens_chr1.trna34-LeuCAG" chrStart: 620544
+./../ref/human_contaminant.fa : chr # 304  "Homo_sapiens_chr1.trna36-LeuCAG" chrStart: 622592
+./../ref/human_contaminant.fa : chr # 305  "Homo_sapiens_chr1.trna38-LeuCAG" chrStart: 624640
+./../ref/human_contaminant.fa : chr # 306  "Homo_sapiens_chr1.trna40-LeuCAG" chrStart: 626688
+./../ref/human_contaminant.fa : chr # 307  "Homo_sapiens_chr1.trna42-LeuCAG" chrStart: 628736
+./../ref/human_contaminant.fa : chr # 308  "Homo_sapiens_chr1.trna67-LeuCAG" chrStart: 630784
+./../ref/human_contaminant.fa : chr # 309  "Homo_sapiens_chr6.trna7-LeuCAG" chrStart: 632832
+./../ref/human_contaminant.fa : chr # 310  "Homo_sapiens_chrX.trna2-LeuTAA" chrStart: 634880
+./../ref/human_contaminant.fa : chr # 311  "Homo_sapiens_chr6.trna81-LeuTAA" chrStart: 636928
+./../ref/human_contaminant.fa : chr # 312  "Homo_sapiens_chr4.trna2-LeuTAA" chrStart: 638976
+./../ref/human_contaminant.fa : chr # 313  "Homo_sapiens_chr6.trna155-LeuTAA" chrStart: 641024
+./../ref/human_contaminant.fa : chr # 314  "Homo_sapiens_chr11.trna4-LeuTAA" chrStart: 643072
+./../ref/human_contaminant.fa : chr # 315  "Homo_sapiens_chr6.trna134-LeuTAA" chrStart: 645120
+./../ref/human_contaminant.fa : chr # 316  "Homo_sapiens_chr6.trna83-LeuTAA" chrStart: 647168
+./../ref/human_contaminant.fa : chr # 317  "Homo_sapiens_chr16.trna27-LeuTAG" chrStart: 649216
+./../ref/human_contaminant.fa : chr # 318  "Homo_sapiens_chr14.trna2-LeuTAG" chrStart: 651264
+./../ref/human_contaminant.fa : chr # 319  "Homo_sapiens_chr17.trna42-LeuTAG" chrStart: 653312
+./../ref/human_contaminant.fa : chr # 320  "Homo_sapiens_chr11.trna2-LysCTT" chrStart: 655360
+./../ref/human_contaminant.fa : chr # 321  "Homo_sapiens_chr19.trna6-LysCTT" chrStart: 657408
+./../ref/human_contaminant.fa : chr # 322  "Homo_sapiens_chr19.trna5-LysCTT" chrStart: 659456
+./../ref/human_contaminant.fa : chr # 323  "Homo_sapiens_chr5.trna24-LysCTT" chrStart: 661504
+./../ref/human_contaminant.fa : chr # 324  "Homo_sapiens_chr16.trna5-LysCTT" chrStart: 663552
+./../ref/human_contaminant.fa : chr # 325  "Homo_sapiens_chr1.trna127-LysCTT" chrStart: 665600
+./../ref/human_contaminant.fa : chr # 326  "Homo_sapiens_chr18.trna4-LysCTT" chrStart: 667648
+./../ref/human_contaminant.fa : chr # 327  "Homo_sapiens_chr16.trna30-LysCTT" chrStart: 669696
+./../ref/human_contaminant.fa : chr # 328  "Homo_sapiens_chr16.trna10-LysCTT" chrStart: 671744
+./../ref/human_contaminant.fa : chr # 329  "Homo_sapiens_chr16.trna32-LysCTT" chrStart: 673792
+./../ref/human_contaminant.fa : chr # 330  "Homo_sapiens_chr1.trna119-LysCTT" chrStart: 675840
+./../ref/human_contaminant.fa : chr # 331  "Homo_sapiens_chr16.trna7-LysCTT" chrStart: 677888
+./../ref/human_contaminant.fa : chr # 332  "Homo_sapiens_chr5.trna11-LysCTT" chrStart: 679936
+./../ref/human_contaminant.fa : chr # 333  "Homo_sapiens_chr5.trna9-LysCTT" chrStart: 681984
+./../ref/human_contaminant.fa : chr # 334  "Homo_sapiens_chr6.trna13-LysCTT" chrStart: 684032
+./../ref/human_contaminant.fa : chr # 335  "Homo_sapiens_chr14.trna13-LysCTT" chrStart: 686080
+./../ref/human_contaminant.fa : chr # 336  "Homo_sapiens_chr15.trna2-LysCTT" chrStart: 688128
+./../ref/human_contaminant.fa : chr # 337  "Homo_sapiens_chr19.trna3-LysTTT" chrStart: 690176
+./../ref/human_contaminant.fa : chr # 338  "Homo_sapiens_chr19.trna7-LysTTT" chrStart: 692224
+./../ref/human_contaminant.fa : chr # 339  "Homo_sapiens_chr12.trna1-LysTTT" chrStart: 694272
+./../ref/human_contaminant.fa : chr # 340  "Homo_sapiens_chr6.trna53-LysTTT" chrStart: 696320
+./../ref/human_contaminant.fa : chr # 341  "Homo_sapiens_chr1.trna55-LysTTT" chrStart: 698368
+./../ref/human_contaminant.fa : chr # 342  "Homo_sapiens_chr7_random.trna1-LysTTT" chrStart: 700416
+./../ref/human_contaminant.fa : chr # 343  "Homo_sapiens_chr6.trna71-LysTTT" chrStart: 702464
+./../ref/human_contaminant.fa : chr # 344  "Homo_sapiens_chr6.trna149-LysTTT" chrStart: 704512
+./../ref/human_contaminant.fa : chr # 345  "Homo_sapiens_chr11.trna5-LysTTT" chrStart: 706560
+./../ref/human_contaminant.fa : chr # 346  "Homo_sapiens_chr6.trna143-LysTTT" chrStart: 708608
+./../ref/human_contaminant.fa : chr # 347  "Homo_sapiens_chr1.trna54-LysTTT" chrStart: 710656
+./../ref/human_contaminant.fa : chr # 348  "Homo_sapiens_chr1.trna62-LysTTT" chrStart: 712704
+./../ref/human_contaminant.fa : chr # 349  "Homo_sapiens_chr11.trna14-LysTTT" chrStart: 714752
+./../ref/human_contaminant.fa : chr # 350  "Homo_sapiens_chr17.trna2-LysTTT" chrStart: 716800
+./../ref/human_contaminant.fa : chr # 351  "Homo_sapiens_chr6.trna76-LysTTT" chrStart: 718848
+./../ref/human_contaminant.fa : chr # 352  "Homo_sapiens_chr11.trna11-LysTTT" chrStart: 720896
+./../ref/human_contaminant.fa : chr # 353  "Homo_sapiens_chr16.trna23-LysTTT" chrStart: 722944
+./../ref/human_contaminant.fa : chr # 354  "Homo_sapiens_chr9.trna1-MetCAT" chrStart: 724992
+./../ref/human_contaminant.fa : chr # 355  "Homo_sapiens_chr6.trna61-MetCAT" chrStart: 727040
+./../ref/human_contaminant.fa : chr # 356  "Homo_sapiens_chr6.trna92-MetCAT" chrStart: 729088
+./../ref/human_contaminant.fa : chr # 357  "Homo_sapiens_chr1.trna32-MetCAT" chrStart: 731136
+./../ref/human_contaminant.fa : chr # 358  "Homo_sapiens_chr17.trna20-MetCAT" chrStart: 733184
+./../ref/human_contaminant.fa : chr # 359  "Homo_sapiens_chr6.trna129-MetCAT" chrStart: 735232
+./../ref/human_contaminant.fa : chr # 360  "Homo_sapiens_chr6.trna142-MetCAT" chrStart: 737280
+./../ref/human_contaminant.fa : chr # 361  "Homo_sapiens_chr6.trna150-MetCAT" chrStart: 739328
+./../ref/human_contaminant.fa : chr # 362  "Homo_sapiens_chr6.trna169-MetCAT" chrStart: 741376
+./../ref/human_contaminant.fa : chr # 363  "Homo_sapiens_chr6.trna171-MetCAT" chrStart: 743424
+./../ref/human_contaminant.fa : chr # 364  "Homo_sapiens_chr6.trna2-MetCAT" chrStart: 745472
+./../ref/human_contaminant.fa : chr # 365  "Homo_sapiens_chr16.trna22-MetCAT" chrStart: 747520
+./../ref/human_contaminant.fa : chr # 366  "Homo_sapiens_chr6.trna21-MetCAT" chrStart: 749568
+./../ref/human_contaminant.fa : chr # 367  "Homo_sapiens_chr6.trna162-MetCAT" chrStart: 751616
+./../ref/human_contaminant.fa : chr # 368  "Homo_sapiens_chr6.trna164-MetCAT" chrStart: 753664
+./../ref/human_contaminant.fa : chr # 369  "Homo_sapiens_chr6.trna27-MetCAT" chrStart: 755712
+./../ref/human_contaminant.fa : chr # 370  "Homo_sapiens_chr6.trna75-MetCAT" chrStart: 757760
+./../ref/human_contaminant.fa : chr # 371  "Homo_sapiens_chr6.trna97-MetCAT" chrStart: 759808
+./../ref/human_contaminant.fa : chr # 372  "Homo_sapiens_chr16.trna20-MetCAT" chrStart: 761856
+./../ref/human_contaminant.fa : chr # 373  "Homo_sapiens_chr8.trna10-MetCAT" chrStart: 763904
+./../ref/human_contaminant.fa : chr # 374  "Homo_sapiens_chr6.trna56-PheGAA" chrStart: 765952
+./../ref/human_contaminant.fa : chr # 375  "Homo_sapiens_chr6.trna112-PheGAA" chrStart: 768000
+./../ref/human_contaminant.fa : chr # 376  "Homo_sapiens_chr6.trna72-PheGAA" chrStart: 770048
+./../ref/human_contaminant.fa : chr # 377  "Homo_sapiens_chr6.trna103-PheGAA" chrStart: 772096
+./../ref/human_contaminant.fa : chr # 378  "Homo_sapiens_chr6.trna106-PheGAA" chrStart: 774144
+./../ref/human_contaminant.fa : chr # 379  "Homo_sapiens_chr11.trna13-PheGAA" chrStart: 776192
+./../ref/human_contaminant.fa : chr # 380  "Homo_sapiens_chr11.trna15-PheGAA" chrStart: 778240
+./../ref/human_contaminant.fa : chr # 381  "Homo_sapiens_chr12.trna11-PheGAA" chrStart: 780288
+./../ref/human_contaminant.fa : chr # 382  "Homo_sapiens_chr13.trna1-PheGAA" chrStart: 782336
+./../ref/human_contaminant.fa : chr # 383  "Homo_sapiens_chr19.trna14-PheGAA" chrStart: 784384
+./../ref/human_contaminant.fa : chr # 384  "Homo_sapiens_chr6.trna109-PheGAA" chrStart: 786432
+./../ref/human_contaminant.fa : chr # 385  "Homo_sapiens_chr6.trna96-PheGAA" chrStart: 788480
+./../ref/human_contaminant.fa : chr # 386  "Homo_sapiens_chr1.trna65-ProAGG" chrStart: 790528
+./../ref/human_contaminant.fa : chr # 387  "Homo_sapiens_chr11.trna9-ProAGG" chrStart: 792576
+./../ref/human_contaminant.fa : chr # 388  "Homo_sapiens_chr14.trna22-ProAGG" chrStart: 794624
+./../ref/human_contaminant.fa : chr # 389  "Homo_sapiens_chr14.trna23-ProAGG" chrStart: 796672
+./../ref/human_contaminant.fa : chr # 390  "Homo_sapiens_chr16.trna29-ProAGG" chrStart: 798720
+./../ref/human_contaminant.fa : chr # 391  "Homo_sapiens_chr16.trna9-ProAGG" chrStart: 800768
+./../ref/human_contaminant.fa : chr # 392  "Homo_sapiens_chr6.trna12-ProAGG" chrStart: 802816
+./../ref/human_contaminant.fa : chr # 393  "Homo_sapiens_chr7.trna2-ProAGG" chrStart: 804864
+./../ref/human_contaminant.fa : chr # 394  "Homo_sapiens_chr16.trna11-ProAGG" chrStart: 806912
+./../ref/human_contaminant.fa : chr # 395  "Homo_sapiens_chr16.trna4-ProAGG" chrStart: 808960
+./../ref/human_contaminant.fa : chr # 396  "Homo_sapiens_chr6.trna30-ProCGG" chrStart: 811008
+./../ref/human_contaminant.fa : chr # 397  "Homo_sapiens_chr1.trna52-ProCGG" chrStart: 813056
+./../ref/human_contaminant.fa : chr # 398  "Homo_sapiens_chr16.trna6-ProCGG" chrStart: 815104
+./../ref/human_contaminant.fa : chr # 399  "Homo_sapiens_chr17.trna37-ProCGG" chrStart: 817152
+./../ref/human_contaminant.fa : chr # 400  "Homo_sapiens_chr14.trna6-ProTGG" chrStart: 819200
+./../ref/human_contaminant.fa : chr # 401  "Homo_sapiens_chr16.trna28-ProTGG" chrStart: 821248
+./../ref/human_contaminant.fa : chr # 402  "Homo_sapiens_chr16.trna3-ProTGG" chrStart: 823296
+./../ref/human_contaminant.fa : chr # 403  "Homo_sapiens_chr16.trna8-ProTGG" chrStart: 825344
+./../ref/human_contaminant.fa : chr # 404  "Homo_sapiens_chr5.trna14-ProTGG" chrStart: 827392
+./../ref/human_contaminant.fa : chr # 405  "Homo_sapiens_chr11.trna12-ProTGG" chrStart: 829440
+./../ref/human_contaminant.fa : chr # 406  "Homo_sapiens_chr14.trna3-ProTGG" chrStart: 831488
+./../ref/human_contaminant.fa : chr # 407  "Homo_sapiens_chr19.trna11-Undet???" chrStart: 833536
+./../ref/human_contaminant.fa : chr # 408  "Homo_sapiens_chr2.trna26-Undet???" chrStart: 835584
+./../ref/human_contaminant.fa : chr # 409  "Homo_sapiens_chr1.trna125-Undet???" chrStart: 837632
+./../ref/human_contaminant.fa : chr # 410  "Homo_sapiens_chr1.trna53-Undet???" chrStart: 839680
+./../ref/human_contaminant.fa : chr # 411  "Homo_sapiens_chr17.trna1-Undet???" chrStart: 841728
+./../ref/human_contaminant.fa : chr # 412  "Homo_sapiens_chr1.trna136-Undet???" chrStart: 843776
+./../ref/human_contaminant.fa : chr # 413  "Homo_sapiens_chr1.trna33-Undet???" chrStart: 845824
+./../ref/human_contaminant.fa : chr # 414  "Homo_sapiens_chr5.trna17-LeuAAG" chrStart: 847872
+./../ref/human_contaminant.fa : chr # 415  "Homo_sapiens_chr20.trna5-IleAAT" chrStart: 849920
+./../ref/human_contaminant.fa : chr # 416  "Homo_sapiens_chr12.trna9-IleAAT" chrStart: 851968
+./../ref/human_contaminant.fa : chr # 417  "Homo_sapiens_chr6.trna39-IleAAT" chrStart: 854016
+./../ref/human_contaminant.fa : chr # 418  "Homo_sapiens_chr5.trna1-CysACA" chrStart: 856064
+./../ref/human_contaminant.fa : chr # 419  "Homo_sapiens_chr6.trna41-SerACT" chrStart: 858112
+./../ref/human_contaminant.fa : chr # 420  "Homo_sapiens_chr20.trna2-SerAGA" chrStart: 860160
+./../ref/human_contaminant.fa : chr # 421  "Homo_sapiens_chr6.trna111-AlaAGC" chrStart: 862208
+./../ref/human_contaminant.fa : chr # 422  "Homo_sapiens_chr16.trna33-ProAGG" chrStart: 864256
+./../ref/human_contaminant.fa : chr # 423  "Homo_sapiens_chr2.trna7-ProAGG" chrStart: 866304
+./../ref/human_contaminant.fa : chr # 424  "Homo_sapiens_chr2.trna8-ProAGG" chrStart: 868352
+./../ref/human_contaminant.fa : chr # 425  "Homo_sapiens_chr10.trna3-LeuCAA" chrStart: 870400
+./../ref/human_contaminant.fa : chr # 426  "Homo_sapiens_chr20.trna3-ValCAC" chrStart: 872448
+./../ref/human_contaminant.fa : chr # 427  "Homo_sapiens_chr1.trna1-ValCAC" chrStart: 874496
+./../ref/human_contaminant.fa : chr # 428  "Homo_sapiens_chr1.trna131-ValCAC" chrStart: 876544
+./../ref/human_contaminant.fa : chr # 429  "Homo_sapiens_chr1.trna3-ValCAC" chrStart: 878592
+./../ref/human_contaminant.fa : chr # 430  "Homo_sapiens_chr2.trna1-GlyCCC" chrStart: 880640
+./../ref/human_contaminant.fa : chr # 431  "Homo_sapiens_chr1.trna91-GlyCCC" chrStart: 882688
+./../ref/human_contaminant.fa : chr # 432  "Homo_sapiens_chr11.trna7-ArgCCT" chrStart: 884736
+./../ref/human_contaminant.fa : chr # 433  "Homo_sapiens_chr1.trna88-ArgCCT" chrStart: 886784
+./../ref/human_contaminant.fa : chr # 434  "Homo_sapiens_chr1.trna96-ArgCCT" chrStart: 888832
+./../ref/human_contaminant.fa : chr # 435  "Homo_sapiens_chr1.trna14-ArgCCT" chrStart: 890880
+./../ref/human_contaminant.fa : chr # 436  "Homo_sapiens_chr1.trna18-ArgCCT" chrStart: 892928
+./../ref/human_contaminant.fa : chr # 437  "Homo_sapiens_chr14.trna11-SupCTA" chrStart: 894976
+./../ref/human_contaminant.fa : chr # 438  "Homo_sapiens_chr3.trna1-SupCTA" chrStart: 897024
+./../ref/human_contaminant.fa : chr # 439  "Homo_sapiens_chrX.trna3-GluCTC" chrStart: 899072
+./../ref/human_contaminant.fa : chr # 440  "Homo_sapiens_chr12.trna14-GluCTC" chrStart: 901120
+./../ref/human_contaminant.fa : chr # 441  "Homo_sapiens_chr2.trna25-GluCTC" chrStart: 903168
+./../ref/human_contaminant.fa : chr # 442  "Homo_sapiens_chr8.trna7-GluCTC" chrStart: 905216
+./../ref/human_contaminant.fa : chr # 443  "Homo_sapiens_chr2.trna24-GluCTC" chrStart: 907264
+./../ref/human_contaminant.fa : chr # 444  "Homo_sapiens_chr3.trna10-GluCTC" chrStart: 909312
+./../ref/human_contaminant.fa : chr # 445  "Homo_sapiens_chr8.trna1-GluCTC" chrStart: 911360
+./../ref/human_contaminant.fa : chr # 446  "Homo_sapiens_chr20.trna7-GluCTC" chrStart: 913408
+./../ref/human_contaminant.fa : chr # 447  "Homo_sapiens_chr2.trna12-GluCTC" chrStart: 915456
+./../ref/human_contaminant.fa : chr # 448  "Homo_sapiens_chr2.trna18-GluCTC" chrStart: 917504
+./../ref/human_contaminant.fa : chr # 449  "Homo_sapiens_chr13.trna2-GluCTC" chrStart: 919552
+./../ref/human_contaminant.fa : chr # 450  "Homo_sapiens_chr2.trna15-GlnCTG" chrStart: 921600
+./../ref/human_contaminant.fa : chr # 451  "Homo_sapiens_chr1.trna128-GlnCTG" chrStart: 923648
+./../ref/human_contaminant.fa : chr # 452  "Homo_sapiens_chr5.trna21-GlnCTG" chrStart: 925696
+./../ref/human_contaminant.fa : chr # 453  "Homo_sapiens_chr10.trna5-GlnCTG" chrStart: 927744
+./../ref/human_contaminant.fa : chr # 454  "Homo_sapiens_chr1.trna27-GlnCTG" chrStart: 929792
+./../ref/human_contaminant.fa : chr # 455  "Homo_sapiens_chr1.trna23-GlnCTG" chrStart: 931840
+./../ref/human_contaminant.fa : chr # 456  "Homo_sapiens_chr15.trna6-LysCTT" chrStart: 933888
+./../ref/human_contaminant.fa : chr # 457  "Homo_sapiens_chr16.trna13-LysCTT" chrStart: 935936
+./../ref/human_contaminant.fa : chr # 458  "Homo_sapiens_chr1.trna51-LysCTT" chrStart: 937984
+./../ref/human_contaminant.fa : chr # 459  "Homo_sapiens_chr1.trna8-LysCTT" chrStart: 940032
+./../ref/human_contaminant.fa : chr # 460  "Homo_sapiens_chr8.trna9-PheGAA" chrStart: 942080
+./../ref/human_contaminant.fa : chr # 461  "Homo_sapiens_chr6.trna116-PheGAA" chrStart: 944128
+./../ref/human_contaminant.fa : chr # 462  "Homo_sapiens_chr1.trna92-PheGAA" chrStart: 946176
+./../ref/human_contaminant.fa : chr # 463  "Homo_sapiens_chr1.trna100-PheGAA" chrStart: 948224
+./../ref/human_contaminant.fa : chr # 464  "Homo_sapiens_chr6.trna88-PheGAA" chrStart: 950272
+./../ref/human_contaminant.fa : chr # 465  "Homo_sapiens_chr3.trna12-CysGCA" chrStart: 952320
+./../ref/human_contaminant.fa : chr # 466  "Homo_sapiens_chr10.trna1-ProGGG" chrStart: 954368
+./../ref/human_contaminant.fa : chr # 467  "Homo_sapiens_chr15.trna5-TyrGTA" chrStart: 956416
+./../ref/human_contaminant.fa : chr # 468  "Homo_sapiens_chr7.trna24-TyrGTA" chrStart: 958464
+./../ref/human_contaminant.fa : chr # 469  "Homo_sapiens_chr1.trna44-AspGTC" chrStart: 960512
+./../ref/human_contaminant.fa : chr # 470  "Homo_sapiens_chr1.trna109-AsnGTT" chrStart: 962560
+./../ref/human_contaminant.fa : chr # 471  "Homo_sapiens_chr1.trna104-AsnGTT" chrStart: 964608
+./../ref/human_contaminant.fa : chr # 472  "Homo_sapiens_chr1.trna124-AsnGTT" chrStart: 966656
+./../ref/human_contaminant.fa : chr # 473  "Homo_sapiens_chr8.trna13-LeuTAA" chrStart: 968704
+./../ref/human_contaminant.fa : chr # 474  "Homo_sapiens_chr20.trna4-LeuTAA" chrStart: 970752
+./../ref/human_contaminant.fa : chr # 475  "Homo_sapiens_chr1.trna60-LeuTAA" chrStart: 972800
+./../ref/human_contaminant.fa : chr # 476  "Homo_sapiens_chr2.trna9-LeuTAA" chrStart: 974848
+./../ref/human_contaminant.fa : chr # 477  "Homo_sapiens_chr6.trna86-ValTAC" chrStart: 976896
+./../ref/human_contaminant.fa : chr # 478  "Homo_sapiens_chr14.trna15-LeuTAG" chrStart: 978944
+./../ref/human_contaminant.fa : chr # 479  "Homo_sapiens_chr18.trna3-GlyTCC" chrStart: 980992
+./../ref/human_contaminant.fa : chr # 480  "Homo_sapiens_chr18.trna2-GlyTCC" chrStart: 983040
+./../ref/human_contaminant.fa : chr # 481  "Homo_sapiens_chr17.trna32-SerTGA" chrStart: 985088
+./../ref/human_contaminant.fa : chr # 482  "Homo_sapiens_chr2.trna10-SerTGA" chrStart: 987136
+./../ref/human_contaminant.fa : chr # 483  "Homo_sapiens_chr11.trna6-AlaTGC" chrStart: 989184
+./../ref/human_contaminant.fa : chr # 484  "Homo_sapiens_chr6.trna122-AlaTGC" chrStart: 991232
+./../ref/human_contaminant.fa : chr # 485  "Homo_sapiens_chr1.trna61-ProTGG" chrStart: 993280
+./../ref/human_contaminant.fa : chr # 486  "Homo_sapiens_chr1.trna57-ProTGG" chrStart: 995328
+./../ref/human_contaminant.fa : chr # 487  "Homo_sapiens_chr16.trna31-ProTGG" chrStart: 997376
+./../ref/human_contaminant.fa : chr # 488  "Homo_sapiens_chr4.trna5-SupTTA" chrStart: 999424
+./../ref/human_contaminant.fa : chr # 489  "Homo_sapiens_chr6.trna85-GluTTC" chrStart: 1001472
+./../ref/human_contaminant.fa : chr # 490  "Homo_sapiens_chr1.trna17-GluTTC" chrStart: 1003520
+./../ref/human_contaminant.fa : chr # 491  "Homo_sapiens_chr1.trna102-GluTTC" chrStart: 1005568
+./../ref/human_contaminant.fa : chr # 492  "Homo_sapiens_chr2.trna17-GluTTC" chrStart: 1007616
+./../ref/human_contaminant.fa : chr # 493  "Homo_sapiens_chr1.trna105-GluTTC" chrStart: 1009664
+./../ref/human_contaminant.fa : chr # 494  "Homo_sapiens_chr1.trna110-GluTTC" chrStart: 1011712
+./../ref/human_contaminant.fa : chr # 495  "Homo_sapiens_chr4.trna1-GlnTTG" chrStart: 1013760
+./../ref/human_contaminant.fa : chr # 496  "Homo_sapiens_chr7.trna26-GlnTTG" chrStart: 1015808
+./../ref/human_contaminant.fa : chr # 497  "Homo_sapiens_chr12.trna15-GlnTTG" chrStart: 1017856
+./../ref/human_contaminant.fa : chr # 498  "Homo_sapiens_chr17.trna33-GlnTTG" chrStart: 1019904
+./../ref/human_contaminant.fa : chr # 499  "Homo_sapiens_chr8.trna14-GlnTTG" chrStart: 1021952
+./../ref/human_contaminant.fa : chr # 500  "Homo_sapiens_chr19.trna12-GlnTTG" chrStart: 1024000
+./../ref/human_contaminant.fa : chr # 501  "Homo_sapiens_chr13.trna6-GlnTTG" chrStart: 1026048
+./../ref/human_contaminant.fa : chr # 502  "Homo_sapiens_chr5.trna23-GlnTTG" chrStart: 1028096
+./../ref/human_contaminant.fa : chr # 503  "Homo_sapiens_chr2.trna11-GlnTTG" chrStart: 1030144
+./../ref/human_contaminant.fa : chr # 504  "Homo_sapiens_chrY.trna1-GlnTTG" chrStart: 1032192
+./../ref/human_contaminant.fa : chr # 505  "Homo_sapiens_chr2.trna22-GlnTTG" chrStart: 1034240
+./../ref/human_contaminant.fa : chr # 506  "Homo_sapiens_chr12.trna16-GlnTTG" chrStart: 1036288
+./../ref/human_contaminant.fa : chr # 507  "Homo_sapiens_chr3.trna9-GlnTTG" chrStart: 1038336
+./../ref/human_contaminant.fa : chr # 508  "Homo_sapiens_chr7.trna4-GlnTTG" chrStart: 1040384
+./../ref/human_contaminant.fa : chr # 509  "Homo_sapiens_chrX.trna1-GlnTTG" chrStart: 1042432
+./../ref/human_contaminant.fa : chr # 510  "Homo_sapiens_chr2.trna28-GlnTTG" chrStart: 1044480
+./../ref/human_contaminant.fa : chr # 511  "Homo_sapiens_chr8.trna2-LysTTT" chrStart: 1046528
+./../ref/human_contaminant.fa : chr # 512  "Homo_sapiens_chr2.trna16-LysTTT" chrStart: 1048576
+./../ref/human_contaminant.fa : chr # 513  "Homo_sapiens_chr14.trna12-LysTTT" chrStart: 1050624
+./../ref/human_contaminant.fa : chr # 514  "Homo_sapiens_chr6.trna118-LysTTT" chrStart: 1052672
+./../ref/human_contaminant.fa : chr # 515  "Homo_sapiens_chr19.trna9-LysTTT" chrStart: 1054720
+./../ref/human_contaminant.fa : chr # 516  "Homo_sapiens_chr17.trna25-SeCTCA" chrStart: 1056768
+./../ref/human_contaminant.fa : chr # 517  "Homo_sapiens_chr22.trna1-SeC(e)TCA" chrStart: 1058816
+./../ref/human_contaminant.fa : chr # 518  "Homo_sapiens_chr19.trna8-SeC(e)TCA" chrStart: 1060864
+./../ref/human_contaminant.fa : chr # 519  "Homo_sapiens_chr11.trna10-SerAGA" chrStart: 1062912
+./../ref/human_contaminant.fa : chr # 520  "Homo_sapiens_chr7.trna12-SerAGA" chrStart: 1064960
+./../ref/human_contaminant.fa : chr # 521  "Homo_sapiens_chr6.trna145-SerAGA" chrStart: 1067008
+./../ref/human_contaminant.fa : chr # 522  "Homo_sapiens_chr6.trna50-SerAGA" chrStart: 1069056
+./../ref/human_contaminant.fa : chr # 523  "Homo_sapiens_chr17.trna35-SerAGA" chrStart: 1071104
+./../ref/human_contaminant.fa : chr # 524  "Homo_sapiens_chr6.trna44-SerAGA" chrStart: 1073152
+./../ref/human_contaminant.fa : chr # 525  "Homo_sapiens_chr6.trna46-SerAGA" chrStart: 1075200
+./../ref/human_contaminant.fa : chr # 526  "Homo_sapiens_chr6.trna47-SerAGA" chrStart: 1077248
+./../ref/human_contaminant.fa : chr # 527  "Homo_sapiens_chr6.trna5-SerAGA" chrStart: 1079296
+./../ref/human_contaminant.fa : chr # 528  "Homo_sapiens_chr8.trna11-SerAGA" chrStart: 1081344
+./../ref/human_contaminant.fa : chr # 529  "Homo_sapiens_chr6.trna147-SerAGA" chrStart: 1083392
+./../ref/human_contaminant.fa : chr # 530  "Homo_sapiens_chr12.trna2-SerCGA" chrStart: 1085440
+./../ref/human_contaminant.fa : chr # 531  "Homo_sapiens_chr6.trna137-SerCGA" chrStart: 1087488
+./../ref/human_contaminant.fa : chr # 532  "Homo_sapiens_chr6.trna35-SerCGA" chrStart: 1089536
+./../ref/human_contaminant.fa : chr # 533  "Homo_sapiens_chr17.trna41-SerCGA" chrStart: 1091584
+./../ref/human_contaminant.fa : chr # 534  "Homo_sapiens_chr6.trna175-SerGCT" chrStart: 1093632
+./../ref/human_contaminant.fa : chr # 535  "Homo_sapiens_chr6.trna62-SerGCT" chrStart: 1095680
+./../ref/human_contaminant.fa : chr # 536  "Homo_sapiens_chr15.trna10-SerGCT" chrStart: 1097728
+./../ref/human_contaminant.fa : chr # 537  "Homo_sapiens_chr17.trna7-SerGCT" chrStart: 1099776
+./../ref/human_contaminant.fa : chr # 538  "Homo_sapiens_chr6.trna123-SerGCT" chrStart: 1101824
+./../ref/human_contaminant.fa : chr # 539  "Homo_sapiens_chr11.trna8-SerGCT" chrStart: 1103872
+./../ref/human_contaminant.fa : chr # 540  "Homo_sapiens_chr6.trna43-SerGCT" chrStart: 1105920
+./../ref/human_contaminant.fa : chr # 541  "Homo_sapiens_chr6.trna31-SerGCT" chrStart: 1107968
+./../ref/human_contaminant.fa : chr # 542  "Homo_sapiens_chr2.trna21-SerTGA" chrStart: 1110016
+./../ref/human_contaminant.fa : chr # 543  "Homo_sapiens_chr6.trna148-SerTGA" chrStart: 1112064
+./../ref/human_contaminant.fa : chr # 544  "Homo_sapiens_chr6.trna172-SerTGA" chrStart: 1114112
+./../ref/human_contaminant.fa : chr # 545  "Homo_sapiens_chr6.trna51-SerTGA" chrStart: 1116160
+./../ref/human_contaminant.fa : chr # 546  "Homo_sapiens_chr10.trna2-SerTGA" chrStart: 1118208
+./../ref/human_contaminant.fa : chr # 547  "Homo_sapiens_chr17.trna11-SupCTA" chrStart: 1120256
+./../ref/human_contaminant.fa : chr # 548  "Homo_sapiens_chr21.trna1-SupTTA" chrStart: 1122304
+./../ref/human_contaminant.fa : chr # 549  "Homo_sapiens_chr17.trna17-SupTTA" chrStart: 1124352
+./../ref/human_contaminant.fa : chr # 550  "Homo_sapiens_chr17.trna24-ThrAGT" chrStart: 1126400
+./../ref/human_contaminant.fa : chr # 551  "Homo_sapiens_chr6.trna34-ThrAGT" chrStart: 1128448
+./../ref/human_contaminant.fa : chr # 552  "Homo_sapiens_chr6.trna60-ThrAGT" chrStart: 1130496
+./../ref/human_contaminant.fa : chr # 553  "Homo_sapiens_chr17.trna40-ThrAGT" chrStart: 1132544
+./../ref/human_contaminant.fa : chr # 554  "Homo_sapiens_chr6.trna69-ThrAGT" chrStart: 1134592
+./../ref/human_contaminant.fa : chr # 555  "Homo_sapiens_chr6.trna135-ThrAGT" chrStart: 1136640
+./../ref/human_contaminant.fa : chr # 556  "Homo_sapiens_chr6.trna167-ThrAGT" chrStart: 1138688
+./../ref/human_contaminant.fa : chr # 557  "Homo_sapiens_chr17.trna36-ThrAGT" chrStart: 1140736
+./../ref/human_contaminant.fa : chr # 558  "Homo_sapiens_chr17.trna8-ThrAGT" chrStart: 1142784
+./../ref/human_contaminant.fa : chr # 559  "Homo_sapiens_chr19.trna4-ThrAGT" chrStart: 1144832
+./../ref/human_contaminant.fa : chr # 560  "Homo_sapiens_chr6.trna151-ThrCGT" chrStart: 1146880
+./../ref/human_contaminant.fa : chr # 561  "Homo_sapiens_chr6.trna54-ThrCGT" chrStart: 1148928
+./../ref/human_contaminant.fa : chr # 562  "Homo_sapiens_chr17.trna14-ThrCGT" chrStart: 1150976
+./../ref/human_contaminant.fa : chr # 563  "Homo_sapiens_chr6.trna121-ThrCGT" chrStart: 1153024
+./../ref/human_contaminant.fa : chr # 564  "Homo_sapiens_chr16.trna15-ThrCGT" chrStart: 1155072
+./../ref/human_contaminant.fa : chr # 565  "Homo_sapiens_chr6.trna125-ThrCGT" chrStart: 1157120
+./../ref/human_contaminant.fa : chr # 566  "Homo_sapiens_chr5.trna13-ThrTGT" chrStart: 1159168
+./../ref/human_contaminant.fa : chr # 567  "Homo_sapiens_chr14.trna4-ThrTGT" chrStart: 1161216
+./../ref/human_contaminant.fa : chr # 568  "Homo_sapiens_chr14.trna20-ThrTGT" chrStart: 1163264
+./../ref/human_contaminant.fa : chr # 569  "Homo_sapiens_chr14.trna21-ThrTGT" chrStart: 1165312
+./../ref/human_contaminant.fa : chr # 570  "Homo_sapiens_chr1.trna56-ThrTGT" chrStart: 1167360
+./../ref/human_contaminant.fa : chr # 571  "Homo_sapiens_chr6.trna127-ThrTGT" chrStart: 1169408
+./../ref/human_contaminant.fa : chr # 572  "Homo_sapiens_chr11.trna19-TrpCCA" chrStart: 1171456
+./../ref/human_contaminant.fa : chr # 573  "Homo_sapiens_chr7.trna1-TrpCCA" chrStart: 1173504
+./../ref/human_contaminant.fa : chr # 574  "Homo_sapiens_chr12.trna6-TrpCCA" chrStart: 1175552
+./../ref/human_contaminant.fa : chr # 575  "Homo_sapiens_chr17.trna6-TrpCCA" chrStart: 1177600
+./../ref/human_contaminant.fa : chr # 576  "Homo_sapiens_chr6.trna168-TrpCCA" chrStart: 1179648
+./../ref/human_contaminant.fa : chr # 577  "Homo_sapiens_chr6.trna170-TrpCCA" chrStart: 1181696
+./../ref/human_contaminant.fa : chr # 578  "Homo_sapiens_chr17.trna12-TrpCCA" chrStart: 1183744
+./../ref/human_contaminant.fa : chr # 579  "Homo_sapiens_chr17.trna39-TrpCCA" chrStart: 1185792
+./../ref/human_contaminant.fa : chr # 580  "Homo_sapiens_chr9.trna3-TrpCCA" chrStart: 1187840
+./../ref/human_contaminant.fa : chr # 581  "Homo_sapiens_chr2.trna14-TyrATA" chrStart: 1189888
+./../ref/human_contaminant.fa : chr # 582  "Homo_sapiens_chr7.trna9-TyrGTA" chrStart: 1191936
+./../ref/human_contaminant.fa : chr # 583  "Homo_sapiens_chr14.trna19-TyrGTA" chrStart: 1193984
+./../ref/human_contaminant.fa : chr # 584  "Homo_sapiens_chr14.trna18-TyrGTA" chrStart: 1196032
+./../ref/human_contaminant.fa : chr # 585  "Homo_sapiens_chr14.trna17-TyrGTA" chrStart: 1198080
+./../ref/human_contaminant.fa : chr # 586  "Homo_sapiens_chr14.trna16-TyrGTA" chrStart: 1200128
+./../ref/human_contaminant.fa : chr # 587  "Homo_sapiens_chr14.trna5-TyrGTA" chrStart: 1202176
+./../ref/human_contaminant.fa : chr # 588  "Homo_sapiens_chr6.trna14-TyrGTA" chrStart: 1204224
+./../ref/human_contaminant.fa : chr # 589  "Homo_sapiens_chr6.trna15-TyrGTA" chrStart: 1206272
+./../ref/human_contaminant.fa : chr # 590  "Homo_sapiens_chr6.trna16-TyrGTA" chrStart: 1208320
+./../ref/human_contaminant.fa : chr # 591  "Homo_sapiens_chr6.trna17-TyrGTA" chrStart: 1210368
+./../ref/human_contaminant.fa : chr # 592  "Homo_sapiens_chr2.trna2-TyrGTA" chrStart: 1212416
+./../ref/human_contaminant.fa : chr # 593  "Homo_sapiens_chr8.trna12-TyrGTA" chrStart: 1214464
+./../ref/human_contaminant.fa : chr # 594  "Homo_sapiens_chr8.trna4-TyrGTA" chrStart: 1216512
+./../ref/human_contaminant.fa : chr # 595  "Homo_sapiens_chr8.trna5-TyrGTA" chrStart: 1218560
+./../ref/human_contaminant.fa : chr # 596  "Homo_sapiens_chr17.trna22-Undet???" chrStart: 1220608
+./../ref/human_contaminant.fa : chr # 597  "Homo_sapiens_chr8.trna8-Undet???" chrStart: 1222656
+./../ref/human_contaminant.fa : chr # 598  "Homo_sapiens_chr6.trna26-Undet???" chrStart: 1224704
+./../ref/human_contaminant.fa : chr # 599  "Homo_sapiens_chr1.trna63-ValAAC" chrStart: 1226752
+./../ref/human_contaminant.fa : chr # 600  "Homo_sapiens_chr6.trna115-ValAAC" chrStart: 1228800
+./../ref/human_contaminant.fa : chr # 601  "Homo_sapiens_chr6.trna37-ValAAC" chrStart: 1230848
+./../ref/human_contaminant.fa : chr # 602  "Homo_sapiens_chr6.trna136-ValAAC" chrStart: 1232896
+./../ref/human_contaminant.fa : chr # 603  "Homo_sapiens_chr6.trna139-ValAAC" chrStart: 1234944
+./../ref/human_contaminant.fa : chr # 604  "Homo_sapiens_chr5.trna15-ValAAC" chrStart: 1236992
+./../ref/human_contaminant.fa : chr # 605  "Homo_sapiens_chr3.trna2-ValAAC" chrStart: 1239040
+./../ref/human_contaminant.fa : chr # 606  "Homo_sapiens_chr5.trna12-ValAAC" chrStart: 1241088
+./../ref/human_contaminant.fa : chr # 607  "Homo_sapiens_chr5.trna4-ValAAC" chrStart: 1243136
+./../ref/human_contaminant.fa : chr # 608  "Homo_sapiens_chr5.trna5-ValAAC" chrStart: 1245184
+./../ref/human_contaminant.fa : chr # 609  "Homo_sapiens_chr6.trna132-ValAAC" chrStart: 1247232
+./../ref/human_contaminant.fa : chr # 610  "Homo_sapiens_chr6.trna58-ValCAC" chrStart: 1249280
+./../ref/human_contaminant.fa : chr # 611  "Homo_sapiens_chr1.trna129-ValCAC" chrStart: 1251328
+./../ref/human_contaminant.fa : chr # 612  "Homo_sapiens_chr6.trna32-ValCAC" chrStart: 1253376
+./../ref/human_contaminant.fa : chr # 613  "Homo_sapiens_chr1.trna99-ValCAC" chrStart: 1255424
+./../ref/human_contaminant.fa : chr # 614  "Homo_sapiens_chr6.trna133-ValCAC" chrStart: 1257472
+./../ref/human_contaminant.fa : chr # 615  "Homo_sapiens_chr6.trna157-ValCAC" chrStart: 1259520
+./../ref/human_contaminant.fa : chr # 616  "Homo_sapiens_chr1.trna90-ValCAC" chrStart: 1261568
+./../ref/human_contaminant.fa : chr # 617  "Homo_sapiens_chr1.trna98-ValCAC" chrStart: 1263616
+./../ref/human_contaminant.fa : chr # 618  "Homo_sapiens_chr19.trna13-ValCAC" chrStart: 1265664
+./../ref/human_contaminant.fa : chr # 619  "Homo_sapiens_chr6.trna152-ValCAC" chrStart: 1267712
+./../ref/human_contaminant.fa : chr # 620  "Homo_sapiens_chr1.trna85-ValCAC" chrStart: 1269760
+./../ref/human_contaminant.fa : chr # 621  "Homo_sapiens_chr5.trna10-ValCAC" chrStart: 1271808
+./../ref/human_contaminant.fa : chr # 622  "Homo_sapiens_chr5.trna18-ValCAC" chrStart: 1273856
+./../ref/human_contaminant.fa : chr # 623  "Homo_sapiens_chr5.trna2-ValCAC" chrStart: 1275904
+./../ref/human_contaminant.fa : chr # 624  "Homo_sapiens_chr5.trna6-ValCAC" chrStart: 1277952
+./../ref/human_contaminant.fa : chr # 625  "Homo_sapiens_chr6.trna9-ValCAC" chrStart: 1280000
+./../ref/human_contaminant.fa : chr # 626  "Homo_sapiens_chr6.trna40-ValTAC" chrStart: 1282048
+./../ref/human_contaminant.fa : chr # 627  "Homo_sapiens_chr10.trna6-ValTAC" chrStart: 1284096
+./../ref/human_contaminant.fa : chr # 628  "Homo_sapiens_chr11.trna16-ValTAC" chrStart: 1286144
+./../ref/human_contaminant.fa : chr # 629  "Homo_sapiens_chr11.trna17-ValTAC" chrStart: 1288192
+./../ref/human_contaminant.fa : chr # 630  "Homo_sapiens_chrX.trna4-ValTAC" chrStart: 1290240
+./../ref/human_contaminant.fa : chr # 631  "Homo_sapiens_chr6.trna95-AlaAGC" chrStart: 1292288
+./../ref/human_contaminant.fa : chr # 632  "Homo_sapiens_chr6.trna25-AlaAGC" chrStart: 1294336
+./../ref/human_contaminant.fa : chr # 633  "Homo_sapiens_chr1.trna87-AlaAGC" chrStart: 1296384
+./../ref/human_contaminant.fa : chr # 634  "Homo_sapiens_chr6.trna94-AlaAGC" chrStart: 1298432
+./../ref/human_contaminant.fa : chr # 635  "Homo_sapiens_chr6.trna160-AlaAGC" chrStart: 1300480
+./../ref/human_contaminant.fa : chr # 636  "Homo_sapiens_chr6.trna23-AlaAGC" chrStart: 1302528
+./../ref/human_contaminant.fa : chr # 637  "Homo_sapiens_chr6.trna90-AlaAGC" chrStart: 1304576
+./../ref/human_contaminant.fa : chr # 638  "Homo_sapiens_chr6.trna89-AlaAGC" chrStart: 1306624
+./../ref/human_contaminant.fa : chr # 639  "Homo_sapiens_chr14.trna9-AlaAGC" chrStart: 1308672
+./../ref/human_contaminant.fa : chr # 640  "Homo_sapiens_chr6.trna18-AlaAGC" chrStart: 1310720
+./../ref/human_contaminant.fa : chr # 641  "Homo_sapiens_chr6.trna22-AlaAGC" chrStart: 1312768
+./../ref/human_contaminant.fa : chr # 642  "Homo_sapiens_chr6.trna93-AlaAGC" chrStart: 1314816
+./../ref/human_contaminant.fa : chr # 643  "Homo_sapiens_chr6.trna159-AlaAGC" chrStart: 1316864
+./../ref/human_contaminant.fa : chr # 644  "Homo_sapiens_chr6.trna19-AlaAGC" chrStart: 1318912
+./../ref/human_contaminant.fa : chr # 645  "Homo_sapiens_chr6.trna91-AlaAGC" chrStart: 1320960
+./../ref/human_contaminant.fa : chr # 646  "Homo_sapiens_chr6.trna166-AlaAGC" chrStart: 1323008
+./../ref/human_contaminant.fa : chr # 647  "Homo_sapiens_chr6.trna20-AlaAGC" chrStart: 1325056
+./../ref/human_contaminant.fa : chr # 648  "Homo_sapiens_chr6.trna161-AlaAGC" chrStart: 1327104
+./../ref/human_contaminant.fa : chr # 649  "Homo_sapiens_chr6.trna24-AlaAGC" chrStart: 1329152
+./../ref/human_contaminant.fa : chr # 650  "Homo_sapiens_chr2.trna3-AlaAGC" chrStart: 1331200
+./../ref/human_contaminant.fa : chr # 651  "Homo_sapiens_chr8.trna6-AlaAGC" chrStart: 1333248
+./../ref/human_contaminant.fa : chr # 652  "Homo_sapiens_chr6.trna68-AlaAGC" chrStart: 1335296
+./../ref/human_contaminant.fa : chr # 653  "Homo_sapiens_chr6.trna105-AlaAGC" chrStart: 1337344
+./../ref/human_contaminant.fa : chr # 654  "Homo_sapiens_chr6.trna67-AlaAGC" chrStart: 1339392
+./../ref/human_contaminant.fa : chr # 655  "Homo_sapiens_chr6.trna120-AlaAGC" chrStart: 1341440
+./../ref/human_contaminant.fa : chr # 656  "Homo_sapiens_chr6.trna65-AlaAGC" chrStart: 1343488
+./../ref/human_contaminant.fa : chr # 657  "Homo_sapiens_chr6.trna101-AlaAGC" chrStart: 1345536
+./../ref/human_contaminant.fa : chr # 658  "Homo_sapiens_chr6.trna102-AlaAGC" chrStart: 1347584
+./../ref/human_contaminant.fa : chr # 659  "Homo_sapiens_chr6.trna108-AlaAGC" chrStart: 1349632
+./../ref/human_contaminant.fa : chr # 660  "Homo_sapiens_chr6.trna117-AlaCGC" chrStart: 1351680
+./../ref/human_contaminant.fa : chr # 661  "Homo_sapiens_chr6.trna70-AlaCGC" chrStart: 1353728
+./../ref/human_contaminant.fa : chr # 662  "Homo_sapiens_chr2.trna13-AlaCGC" chrStart: 1355776
+./../ref/human_contaminant.fa : chr # 663  "Homo_sapiens_chr6.trna119-AlaCGC" chrStart: 1357824
+./../ref/human_contaminant.fa : chr # 664  "Homo_sapiens_chr6.trna10-AlaCGC" chrStart: 1359872
+./../ref/human_contaminant.fa : chr # 665  "Homo_sapiens_chr11.trna18-AlaTGC" chrStart: 1361920
+./../ref/human_contaminant.fa : chr # 666  "Homo_sapiens_chr6.trna107-AlaTGC" chrStart: 1363968
+./../ref/human_contaminant.fa : chr # 667  "Homo_sapiens_chr6.trna113-AlaTGC" chrStart: 1366016
+./../ref/human_contaminant.fa : chr # 668  "Homo_sapiens_chr6.trna104-AlaTGC" chrStart: 1368064
+./../ref/human_contaminant.fa : chr # 669  "Homo_sapiens_chr12.trna8-AlaTGC" chrStart: 1370112
+./../ref/human_contaminant.fa : chr # 670  "Homo_sapiens_chr12.trna13-AlaTGC" chrStart: 1372160
+./../ref/human_contaminant.fa : chr # 671  "Homo_sapiens_chr5.trna8-AlaTGC" chrStart: 1374208
+./../ref/human_contaminant.fa : chr # 672  "Homo_sapiens_chr6.trna66-AlaTGC" chrStart: 1376256
+./../ref/human_contaminant.fa : chr # 673  "Homo_sapiens_chr6.trna110-AlaTGC" chrStart: 1378304
+./../ref/human_contaminant.fa : chr # 674  "Homo_sapiens_chr3.trna11-ArgACG" chrStart: 1380352
+./../ref/human_contaminant.fa : chr # 675  "Homo_sapiens_chr6.trna138-ArgACG" chrStart: 1382400
+./../ref/human_contaminant.fa : chr # 676  "Homo_sapiens_chr6.trna156-ArgACG" chrStart: 1384448
+./../ref/human_contaminant.fa : chr # 677  "Homo_sapiens_chr6.trna36-ArgACG" chrStart: 1386496
+./../ref/human_contaminant.fa : chr # 678  "Homo_sapiens_chr14.trna7-ArgACG" chrStart: 1388544
+./../ref/human_contaminant.fa : chr # 679  "Homo_sapiens_chr6.trna6-ArgACG" chrStart: 1390592
+./../ref/human_contaminant.fa : chr # 680  "Homo_sapiens_chr6.trna8-ArgACG" chrStart: 1392640
+./../ref/human_contaminant.fa : chr # 681  "Homo_sapiens_chr17.trna23-ArgCCG" chrStart: 1394688
+./../ref/human_contaminant.fa : chr # 682  "Homo_sapiens_chr16.trna1-ArgCCG" chrStart: 1396736
+./../ref/human_contaminant.fa : chr # 683  "Homo_sapiens_chr6.trna114-ArgCCG" chrStart: 1398784
+./../ref/human_contaminant.fa : chr # 684  "Homo_sapiens_chr6.trna73-ArgCCG" chrStart: 1400832
+./../ref/human_contaminant.fa : chr # 685  "Homo_sapiens_chr16.trna12-ArgCCT" chrStart: 1402880
+./../ref/human_contaminant.fa : chr # 686  "Homo_sapiens_chr7.trna3-ArgCCT" chrStart: 1404928
+./../ref/human_contaminant.fa : chr # 687  "Homo_sapiens_chr16.trna2-ArgCCT" chrStart: 1406976
+./../ref/human_contaminant.fa : chr # 688  "Homo_sapiens_chr17.trna21-ArgCCT" chrStart: 1409024
+./../ref/human_contaminant.fa : chr # 689  "Homo_sapiens_chr17.trna18-ArgCCT" chrStart: 1411072
+./../ref/human_contaminant.fa : chr # 690  "Homo_sapiens_chr9.trna2-ArgTCG" chrStart: 1413120
+./../ref/human_contaminant.fa : chr # 691  "Homo_sapiens_chr6.trna124-ArgTCG" chrStart: 1415168
+./../ref/human_contaminant.fa : chr # 692  "Homo_sapiens_chr6.trna3-ArgTCG" chrStart: 1417216
+./../ref/human_contaminant.fa : chr # 693  "Homo_sapiens_chr17.trna19-ArgTCG" chrStart: 1419264
+./../ref/human_contaminant.fa : chr # 694  "Homo_sapiens_chr6.trna4-ArgTCG" chrStart: 1421312
+./../ref/human_contaminant.fa : chr # 695  "Homo_sapiens_chr15.trna4-ArgTCG" chrStart: 1423360
+./../ref/human_contaminant.fa : chr # 696  "Homo_sapiens_chr1.trna86-ArgTCT" chrStart: 1425408
+./../ref/human_contaminant.fa : chr # 697  "Homo_sapiens_chr9.trna4-ArgTCT" chrStart: 1427456
+./../ref/human_contaminant.fa : chr # 698  "Homo_sapiens_chr6.trna52-ArgTCT" chrStart: 1429504
+./../ref/human_contaminant.fa : chr # 699  "Homo_sapiens_chr11.trna3-ArgTCT" chrStart: 1431552
+./../ref/human_contaminant.fa : chr # 700  "Homo_sapiens_chr17.trna4-ArgTCT" chrStart: 1433600
+./../ref/human_contaminant.fa : chr # 701  "Homo_sapiens_chr1.trna9-ArgTCT" chrStart: 1435648
+./../ref/human_contaminant.fa : chr # 702  "Homo_sapiens_chr1.trna20-AsnATT" chrStart: 1437696
+./../ref/human_contaminant.fa : chr # 703  "Homo_sapiens_chr1_gl000192_random.trna1-AsnATT" chrStart: 1439744
+./../ref/human_contaminant.fa : chr # 704  "Homo_sapiens_chr1.trna13-AsnGTT" chrStart: 1441792
+./../ref/human_contaminant.fa : chr # 705  "Homo_sapiens_chr1.trna93-AsnGTT" chrStart: 1443840
+./../ref/human_contaminant.fa : chr # 706  "Homo_sapiens_chr1.trna135-AsnGTT" chrStart: 1445888
+./../ref/human_contaminant.fa : chr # 707  "Homo_sapiens_chr1.trna50-AsnGTT" chrStart: 1447936
+./../ref/human_contaminant.fa : chr # 708  "Homo_sapiens_chr1.trna10-AsnGTT" chrStart: 1449984
+./../ref/human_contaminant.fa : chr # 709  "Homo_sapiens_chr1.trna122-AsnGTT" chrStart: 1452032
+./../ref/human_contaminant.fa : chr # 710  "Homo_sapiens_chr1.trna123-AsnGTT" chrStart: 1454080
+./../ref/human_contaminant.fa : chr # 711  "Homo_sapiens_chr1.trna24-AsnGTT" chrStart: 1456128
+./../ref/human_contaminant.fa : chr # 712  "Homo_sapiens_chr1.trna30-AsnGTT" chrStart: 1458176
+./../ref/human_contaminant.fa : chr # 713  "Homo_sapiens_chr1.trna101-AsnGTT" chrStart: 1460224
+./../ref/human_contaminant.fa : chr # 714  "Homo_sapiens_chr1.trna12-AsnGTT" chrStart: 1462272
+./../ref/human_contaminant.fa : chr # 715  "Homo_sapiens_chr1.trna6-AsnGTT" chrStart: 1464320
+./../ref/human_contaminant.fa : chr # 716  "Homo_sapiens_chr1.trna97-AsnGTT" chrStart: 1466368
+./../ref/human_contaminant.fa : chr # 717  "Homo_sapiens_chr1.trna11-AsnGTT" chrStart: 1468416
+./../ref/human_contaminant.fa : chr # 718  "Homo_sapiens_chr1.trna95-AsnGTT" chrStart: 1470464
+./../ref/human_contaminant.fa : chr # 719  "Homo_sapiens_chr1.trna124-AsnGTT" chrStart: 1472512
+./../ref/human_contaminant.fa : chr # 720  "Homo_sapiens_chr1.trna113-AsnGTT" chrStart: 1474560
+./../ref/human_contaminant.fa : chr # 721  "Homo_sapiens_chr1.trna115-AsnGTT" chrStart: 1476608
+./../ref/human_contaminant.fa : chr # 722  "Homo_sapiens_chr1.trna89-AsnGTT" chrStart: 1478656
+./../ref/human_contaminant.fa : chr # 723  "Homo_sapiens_chr1.trna25-AsnGTT" chrStart: 1480704
+./../ref/human_contaminant.fa : chr # 724  "Homo_sapiens_chr1.trna103-AsnGTT" chrStart: 1482752
+./../ref/human_contaminant.fa : chr # 725  "Homo_sapiens_chr1.trna136-AsnGTT" chrStart: 1484800
+./../ref/human_contaminant.fa : chr # 726  "Homo_sapiens_chr1.trna7-AsnGTT" chrStart: 1486848
+./../ref/human_contaminant.fa : chr # 727  "Homo_sapiens_chr1.trna107-AsnGTT" chrStart: 1488896
+./../ref/human_contaminant.fa : chr # 728  "Homo_sapiens_chr1.trna108-AsnGTT" chrStart: 1490944
+./../ref/human_contaminant.fa : chr # 729  "Homo_sapiens_chr1.trna26-AsnGTT" chrStart: 1492992
+./../ref/human_contaminant.fa : chr # 730  "Homo_sapiens_chr1.trna83-AsnGTT" chrStart: 1495040
+./../ref/human_contaminant.fa : chr # 731  "Homo_sapiens_chr10.trna4-AsnGTT" chrStart: 1497088
+./../ref/human_contaminant.fa : chr # 732  "Homo_sapiens_chr13.trna7-AsnGTT" chrStart: 1499136
+./../ref/human_contaminant.fa : chr # 733  "Homo_sapiens_chr17.trna31-AsnGTT" chrStart: 1501184
+./../ref/human_contaminant.fa : chr # 734  "Homo_sapiens_chr19.trna1-AsnGTT" chrStart: 1503232
+./../ref/human_contaminant.fa : chr # 735  "Homo_sapiens_chr1.trna47-AsnGTT" chrStart: 1505280
+./../ref/human_contaminant.fa : chr # 736  "Homo_sapiens_chr1.trna48-AspGTC" chrStart: 1507328
+./../ref/human_contaminant.fa : chr # 737  "Homo_sapiens_chr12.trna7-AspGTC" chrStart: 1509376
+./../ref/human_contaminant.fa : chr # 738  "Homo_sapiens_chr1.trna46-AspGTC" chrStart: 1511424
+./../ref/human_contaminant.fa : chr # 739  "Homo_sapiens_chr3.trna3-AspGTC" chrStart: 1513472
+./../ref/human_contaminant.fa : chr # 740  "Homo_sapiens_chr5.trna22-AspGTC" chrStart: 1515520
+./../ref/human_contaminant.fa : chr # 741  "Homo_sapiens_chr9.trna6-AspGTC" chrStart: 1517568
+./../ref/human_contaminant.fa : chr # 742  "Homo_sapiens_chr6.trna144-AspGTC" chrStart: 1519616
+./../ref/human_contaminant.fa : chr # 743  "Homo_sapiens_chr1.trna69-AspGTC" chrStart: 1521664
+./../ref/human_contaminant.fa : chr # 744  "Homo_sapiens_chr1.trna72-AspGTC" chrStart: 1523712
+./../ref/human_contaminant.fa : chr # 745  "Homo_sapiens_chr1.trna75-AspGTC" chrStart: 1525760
+./../ref/human_contaminant.fa : chr # 746  "Homo_sapiens_chr1.trna78-AspGTC" chrStart: 1527808
+./../ref/human_contaminant.fa : chr # 747  "Homo_sapiens_chr1.trna81-AspGTC" chrStart: 1529856
+./../ref/human_contaminant.fa : chr # 748  "Homo_sapiens_chr12.trna10-AspGTC" chrStart: 1531904
+./../ref/human_contaminant.fa : chr # 749  "Homo_sapiens_chr12.trna12-AspGTC" chrStart: 1533952
+./../ref/human_contaminant.fa : chr # 750  "Homo_sapiens_chr12.trna4-AspGTC" chrStart: 1536000
+./../ref/human_contaminant.fa : chr # 751  "Homo_sapiens_chr17.trna38-AspGTC" chrStart: 1538048
+./../ref/human_contaminant.fa : chr # 752  "Homo_sapiens_chr6.trna45-AspGTC" chrStart: 1540096
+./../ref/human_contaminant.fa : chr # 753  "Homo_sapiens_chr6.trna48-AspGTC" chrStart: 1542144
+./../ref/human_contaminant.fa : chr # 754  "Homo_sapiens_chr12.trna5-AspGTC" chrStart: 1544192
+./../ref/human_contaminant.fa : chr # 755  "Homo_sapiens_chr17.trna30-CysGCA" chrStart: 1546240
+./../ref/human_contaminant.fa : chr # 756  "Homo_sapiens_chr7.trna19-CysGCA" chrStart: 1548288
+./../ref/human_contaminant.fa : chr # 757  "Homo_sapiens_chr7.trna8-CysGCA" chrStart: 1550336
+./../ref/human_contaminant.fa : chr # 758  "Homo_sapiens_chr7.trna14-CysGCA" chrStart: 1552384
+./../ref/human_contaminant.fa : chr # 759  "Homo_sapiens_chr7.trna11-CysGCA" chrStart: 1554432
+./../ref/human_contaminant.fa : chr # 760  "Homo_sapiens_chr7.trna18-CysGCA" chrStart: 1556480
+./../ref/human_contaminant.fa : chr # 761  "Homo_sapiens_chr7.trna23-CysGCA" chrStart: 1558528
+./../ref/human_contaminant.fa : chr # 762  "Homo_sapiens_chr7.trna16-CysGCA" chrStart: 1560576
+./../ref/human_contaminant.fa : chr # 763  "Homo_sapiens_chr7.trna7-CysGCA" chrStart: 1562624
+./../ref/human_contaminant.fa : chr # 764  "Homo_sapiens_chr7.trna10-CysGCA" chrStart: 1564672
+./../ref/human_contaminant.fa : chr # 765  "Homo_sapiens_chr17.trna29-CysGCA" chrStart: 1566720
+./../ref/human_contaminant.fa : chr # 766  "Homo_sapiens_chr7.trna25-CysGCA" chrStart: 1568768
+./../ref/human_contaminant.fa : chr # 767  "Homo_sapiens_chr7.trna17-CysGCA" chrStart: 1570816
+./../ref/human_contaminant.fa : chr # 768  "Homo_sapiens_chr7.trna21-CysGCA" chrStart: 1572864
+./../ref/human_contaminant.fa : chr # 769  "Homo_sapiens_chr7.trna22-CysGCA" chrStart: 1574912
+./../ref/human_contaminant.fa : chr # 770  "Homo_sapiens_chr3.trna6-CysGCA" chrStart: 1576960
+./../ref/human_contaminant.fa : chr # 771  "Homo_sapiens_chr7.trna13-CysGCA" chrStart: 1579008
+./../ref/human_contaminant.fa : chr # 772  "Homo_sapiens_chr7.trna15-CysGCA" chrStart: 1581056
+./../ref/human_contaminant.fa : chr # 773  "Homo_sapiens_chr7.trna6-CysGCA" chrStart: 1583104
+./../ref/human_contaminant.fa : chr # 774  "Homo_sapiens_chr14.trna8-CysGCA" chrStart: 1585152
+./../ref/human_contaminant.fa : chr # 775  "Homo_sapiens_chr1.trna127-CysGCA" chrStart: 1587200
+./../ref/human_contaminant.fa : chr # 776  "Homo_sapiens_chr3.trna7-CysGCA" chrStart: 1589248
+./../ref/human_contaminant.fa : chr # 777  "Homo_sapiens_chr15.trna3-CysGCA" chrStart: 1591296
+./../ref/human_contaminant.fa : chr # 778  "Homo_sapiens_chr17.trna28-CysGCA" chrStart: 1593344
+./../ref/human_contaminant.fa : chr # 779  "Homo_sapiens_chr7.trna20-CysGCA" chrStart: 1595392
+./../ref/human_contaminant.fa : chr # 780  "Homo_sapiens_chr17.trna15-CysGCA" chrStart: 1597440
+./../ref/human_contaminant.fa : chr # 781  "Homo_sapiens_chr17.trna26-CysGCA" chrStart: 1599488
+./../ref/human_contaminant.fa : chr # 782  "Homo_sapiens_chr17.trna27-CysGCA" chrStart: 1601536
+./../ref/human_contaminant.fa : chr # 783  "Homo_sapiens_chr4.trna3-CysGCA" chrStart: 1603584
+./../ref/human_contaminant.fa : chr # 784  "Homo_sapiens_chr7.trna5-CysGCA" chrStart: 1605632
+./../ref/human_contaminant.fa : chr # 785  "Homo_sapiens_chr16.trna21-GlnCTG" chrStart: 1607680
+./../ref/human_contaminant.fa : chr # 786  "Homo_sapiens_chr20.trna1-GlnCTG" chrStart: 1609728
+./../ref/human_contaminant.fa : chr # 787  "Homo_sapiens_chr9.trna5-GlnCTG" chrStart: 1611776
+./../ref/human_contaminant.fa : chr # 788  "Homo_sapiens_chr12.trna3-GlnCTG" chrStart: 1613824
+./../ref/human_contaminant.fa : chr # 789  "Homo_sapiens_chr1.trna114-GlnCTG" chrStart: 1615872
+./../ref/human_contaminant.fa : chr # 790  "Homo_sapiens_chr1.trna120-GlnCTG" chrStart: 1617920
+./../ref/human_contaminant.fa : chr # 791  "Homo_sapiens_chr1.trna121-GlnCTG" chrStart: 1619968
+./../ref/human_contaminant.fa : chr # 792  "Homo_sapiens_chr1.trna22-GlnCTG" chrStart: 1622016
+./../ref/human_contaminant.fa : chr # 793  "Homo_sapiens_chr6.trna131-GlnCTG" chrStart: 1624064
+./../ref/human_contaminant.fa : chr # 794  "Homo_sapiens_chr6.trna42-GlnCTG" chrStart: 1626112
+./../ref/human_contaminant.fa : chr # 795  "Homo_sapiens_chr1.trna112-GlnCTG" chrStart: 1628160
+./../ref/human_contaminant.fa : chr # 796  "Homo_sapiens_chr1.trna28-GlnCTG" chrStart: 1630208
+./../ref/human_contaminant.fa : chr # 797  "Homo_sapiens_chr1.trna15-GlnCTG" chrStart: 1632256
+./../ref/human_contaminant.fa : chr # 798  "Homo_sapiens_chr1.trna19-GlnCTG" chrStart: 1634304
+./../ref/human_contaminant.fa : chr # 799  "Homo_sapiens_chr6.trna146-GlnCTG" chrStart: 1636352
+./../ref/human_contaminant.fa : chr # 800  "Homo_sapiens_chr15.trna7-GlnCTG" chrStart: 1638400
+./../ref/human_contaminant.fa : chr # 801  "Homo_sapiens_chr17.trna3-GlnCTG" chrStart: 1640448
+./../ref/human_contaminant.fa : chr # 802  "Homo_sapiens_chr6.trna1-GlnCTG" chrStart: 1642496
+./../ref/human_contaminant.fa : chr # 803  "Homo_sapiens_chr6.trna49-GlnCTG" chrStart: 1644544
+./../ref/human_contaminant.fa : chr # 804  "Homo_sapiens_chr6.trna99-GlnCTG" chrStart: 1646592
+./../ref/human_contaminant.fa : chr # 805  "Homo_sapiens_chr9.trna8-GlnTTG" chrStart: 1648640
+./../ref/human_contaminant.fa : chr # 806  "Homo_sapiens_chr6.trna79-GlnTTG" chrStart: 1650688
+./../ref/human_contaminant.fa : chr # 807  "Homo_sapiens_chr16.trna14-GlnTTG" chrStart: 1652736
+./../ref/human_contaminant.fa : chr # 808  "Homo_sapiens_chr4.trna4-GlnTTG" chrStart: 1654784
+./../ref/human_contaminant.fa : chr # 809  "Homo_sapiens_chr2.trna23-GlnTTG" chrStart: 1656832
+./../ref/human_contaminant.fa : chr # 810  "Homo_sapiens_chr6.trna84-GlnTTG" chrStart: 1658880
+./../ref/human_contaminant.fa : chr # 811  "Homo_sapiens_chr6.trna130-GlnTTG" chrStart: 1660928
+./../ref/human_contaminant.fa : chr # 812  "Homo_sapiens_chr6.trna173-GlnTTG" chrStart: 1662976
+./../ref/human_contaminant.fa : chr # 813  "Homo_sapiens_chr6.trna174-GlnTTG" chrStart: 1665024
+./../ref/human_contaminant.fa : chr # 814  "Homo_sapiens_chr6.trna64-GlnTTG" chrStart: 1667072
+./../ref/human_contaminant.fa : chr # 815  "Homo_sapiens_chr17.trna16-GlnTTG" chrStart: 1669120
+./../ref/human_contaminant.fa : chr # 816  "Homo_sapiens_chr1.trna29-GluCTC" chrStart: 1671168
+./../ref/human_contaminant.fa : chr # 817  "Homo_sapiens_chr3.trna8-GluCTC" chrStart: 1673216
+./../ref/human_contaminant.fa : chr # 818  "Homo_sapiens_chr18.trna1-GluCTC" chrStart: 1675264
+./../ref/human_contaminant.fa : chr # 819  "Homo_sapiens_chr8.trna3-GluCTC" chrStart: 1677312
+./../ref/human_contaminant.fa : chr # 820  "Homo_sapiens_chr13.trna4-GluCTC" chrStart: 1679360
+./../ref/human_contaminant.fa : chr # 821  "Homo_sapiens_chr1.trna59-GluCTC" chrStart: 1681408
+./../ref/human_contaminant.fa : chr # 822  "Homo_sapiens_chr1.trna116-GluCTC" chrStart: 1683456
+./../ref/human_contaminant.fa : chr # 823  "Homo_sapiens_chr1.trna71-GluCTC" chrStart: 1685504
+./../ref/human_contaminant.fa : chr # 824  "Homo_sapiens_chr1.trna74-GluCTC" chrStart: 1687552
+./../ref/human_contaminant.fa : chr # 825  "Homo_sapiens_chr1.trna77-GluCTC" chrStart: 1689600
+./../ref/human_contaminant.fa : chr # 826  "Homo_sapiens_chr1.trna80-GluCTC" chrStart: 1691648
+./../ref/human_contaminant.fa : chr # 827  "Homo_sapiens_chr6.trna77-GluCTC" chrStart: 1693696
+./../ref/human_contaminant.fa : chr # 828  "Homo_sapiens_chr6.trna87-GluCTC" chrStart: 1695744
+./../ref/human_contaminant.fa : chr # 829  "Homo_sapiens_chr1.trna31-GluTTC" chrStart: 1697792
+./../ref/human_contaminant.fa : chr # 830  "Homo_sapiens_chr2.trna6-GluTTC" chrStart: 1699840
+./../ref/human_contaminant.fa : chr # 831  "Homo_sapiens_chr1.trna64-GluTTC" chrStart: 1701888
+./../ref/human_contaminant.fa : chr # 832  "Homo_sapiens_chr14.trna14-GluTTC" chrStart: 1703936
+./../ref/human_contaminant.fa : chr # 833  "Homo_sapiens_chr1.trna94-GluTTC" chrStart: 1705984
+./../ref/human_contaminant.fa : chr # 834  "Homo_sapiens_chr1.trna49-GluTTC" chrStart: 1708032
+./../ref/human_contaminant.fa : chr # 835  "Homo_sapiens_chr1.trna134-GluTTC" chrStart: 1710080
+./../ref/human_contaminant.fa : chr # 836  "Homo_sapiens_chr1.trna84-GluTTC" chrStart: 1712128
+./../ref/human_contaminant.fa : chr # 837  "Homo_sapiens_chr1.trna5-GluTTC" chrStart: 1714176
+./../ref/human_contaminant.fa : chr # 838  "Homo_sapiens_chr13.trna3-GluTTC" chrStart: 1716224
+./../ref/human_contaminant.fa : chr # 839  "Homo_sapiens_chr15.trna11-GluTTC" chrStart: 1718272
+./../ref/human_contaminant.fa : chr # 840  "Homo_sapiens_chr13.trna5-GluTTC" chrStart: 1720320
+./../ref/human_contaminant.fa : chr # 841  "Homo_sapiens_chr2.trna20-GluTTC" chrStart: 1722368
+./../ref/human_contaminant.fa : chr # 842  "Homo_sapiens_chr1.trna2-GlyCCC" chrStart: 1724416
+./../ref/human_contaminant.fa : chr # 843  "Homo_sapiens_chr1.trna131-GlyCCC" chrStart: 1726464
+./../ref/human_contaminant.fa : chr # 844  "Homo_sapiens_chr17.trna13-GlyCCC" chrStart: 1728512
+./../ref/human_contaminant.fa : chr # 845  "Homo_sapiens_chr16.trna34-GlyCCC" chrStart: 1730560
+./../ref/human_contaminant.fa : chr # 846  "Homo_sapiens_chr2.trna27-GlyCCC" chrStart: 1732608
+./../ref/human_contaminant.fa : chr # 847  "Homo_sapiens_chr1.trna133-GlyCCC" chrStart: 1734656
+./../ref/human_contaminant.fa : chr # 848  "Homo_sapiens_chr1.trna4-GlyCCC" chrStart: 1736704
+./../ref/human_contaminant.fa : chr # 849  "Homo_sapiens_chr6.trna82-GlyGCC" chrStart: 1738752
+./../ref/human_contaminant.fa : chr # 850  "Homo_sapiens_chr16.trna18-GlyGCC" chrStart: 1740800
+./../ref/human_contaminant.fa : chr # 851  "Homo_sapiens_chr1.trna43-GlyGCC" chrStart: 1742848
+./../ref/human_contaminant.fa : chr # 852  "Homo_sapiens_chr16.trna25-GlyGCC" chrStart: 1744896
+./../ref/human_contaminant.fa : chr # 853  "Homo_sapiens_chr1.trna68-GlyGCC" chrStart: 1746944
+./../ref/human_contaminant.fa : chr # 854  "Homo_sapiens_chr16.trna19-GlyGCC" chrStart: 1748992
+./../ref/human_contaminant.fa : chr # 855  "Homo_sapiens_chr16.trna24-GlyGCC" chrStart: 1751040
+./../ref/human_contaminant.fa : chr # 856  "Homo_sapiens_chr17.trna5-GlyGCC" chrStart: 1753088
+./../ref/human_contaminant.fa : chr # 857  "Homo_sapiens_chr2.trna19-GlyGCC" chrStart: 1755136
+./../ref/human_contaminant.fa : chr # 858  "Homo_sapiens_chr6.trna128-GlyGCC" chrStart: 1757184
+./../ref/human_contaminant.fa : chr # 859  "Homo_sapiens_chr1.trna35-GlyGCC" chrStart: 1759232
+./../ref/human_contaminant.fa : chr # 860  "Homo_sapiens_chr1.trna37-GlyGCC" chrStart: 1761280
+./../ref/human_contaminant.fa : chr # 861  "Homo_sapiens_chr1.trna39-GlyGCC" chrStart: 1763328
+./../ref/human_contaminant.fa : chr # 862  "Homo_sapiens_chr1.trna41-GlyGCC" chrStart: 1765376
+./../ref/human_contaminant.fa : chr # 863  "Homo_sapiens_chr21.trna2-GlyGCC" chrStart: 1767424
+./../ref/human_contaminant.fa : chr # 864  "Homo_sapiens_chr1.trna82-GlyTCC" chrStart: 1769472
+./../ref/human_contaminant.fa : chr # 865  "Homo_sapiens_chr17.trna10-GlyTCC" chrStart: 1771520
+./../ref/human_contaminant.fa : chr # 866  "Homo_sapiens_chr1.trna117-GlyTCC" chrStart: 1773568
+./../ref/human_contaminant.fa : chr # 867  "Homo_sapiens_chr1.trna45-GlyTCC" chrStart: 1775616
+./../ref/human_contaminant.fa : chr # 868  "Homo_sapiens_chr1.trna70-GlyTCC" chrStart: 1777664
+./../ref/human_contaminant.fa : chr # 869  "Homo_sapiens_chr1.trna73-GlyTCC" chrStart: 1779712
+./../ref/human_contaminant.fa : chr # 870  "Homo_sapiens_chr1.trna76-GlyTCC" chrStart: 1781760
+./../ref/human_contaminant.fa : chr # 871  "Homo_sapiens_chr1.trna79-GlyTCC" chrStart: 1783808
+./../ref/human_contaminant.fa : chr # 872  "Homo_sapiens_chr19.trna2-GlyTCC" chrStart: 1785856
+./../ref/human_contaminant.fa : chr # 873  "Homo_sapiens_chr3.trna4-HisGTG" chrStart: 1787904
+./../ref/human_contaminant.fa : chr # 874  "Homo_sapiens_chr1.trna106-HisGTG" chrStart: 1789952
+./../ref/human_contaminant.fa : chr # 875  "Homo_sapiens_chr1.trna111-HisGTG" chrStart: 1792000
+./../ref/human_contaminant.fa : chr # 876  "Homo_sapiens_chr1.trna118-HisGTG" chrStart: 1794048
+./../ref/human_contaminant.fa : chr # 877  "Homo_sapiens_chr1.trna16-HisGTG" chrStart: 1796096
+./../ref/human_contaminant.fa : chr # 878  "Homo_sapiens_chr1.trna21-HisGTG" chrStart: 1798144
+./../ref/human_contaminant.fa : chr # 879  "Homo_sapiens_chr15.trna1-HisGTG" chrStart: 1800192
+./../ref/human_contaminant.fa : chr # 880  "Homo_sapiens_chr15.trna8-HisGTG" chrStart: 1802240
+./../ref/human_contaminant.fa : chr # 881  "Homo_sapiens_chr15.trna9-HisGTG" chrStart: 1804288
+./../ref/human_contaminant.fa : chr # 882  "Homo_sapiens_chr6.trna33-HisGTG" chrStart: 1806336
+./../ref/human_contaminant.fa : chr # 883  "Homo_sapiens_chr9.trna7-HisGTG" chrStart: 1808384
+./../ref/human_contaminant.fa : chr # 884  "Homo_sapiens_chr6.trna38-IleAAT" chrStart: 1810432
+./../ref/human_contaminant.fa : chr # 885  "Homo_sapiens_chr6.trna57-IleAAT" chrStart: 1812480
+./../ref/human_contaminant.fa : chr # 886  "Homo_sapiens_chr6.trna165-IleAAT" chrStart: 1814528
+./../ref/human_contaminant.fa : chr # 887  "Homo_sapiens_chr6.trna28-IleAAT" chrStart: 1816576
+./../ref/human_contaminant.fa : chr # 888  "Homo_sapiens_chr6.trna163-IleAAT" chrStart: 1818624
+./../ref/human_contaminant.fa : chr # 889  "Homo_sapiens_chr14.trna10-IleAAT" chrStart: 1820672
+./../ref/human_contaminant.fa : chr # 890  "Homo_sapiens_chr17.trna9-IleAAT" chrStart: 1822720
+./../ref/human_contaminant.fa : chr # 891  "Homo_sapiens_chr6.trna11-IleAAT" chrStart: 1824768
+./../ref/human_contaminant.fa : chr # 892  "Homo_sapiens_chr6.trna154-IleAAT" chrStart: 1826816
+./../ref/human_contaminant.fa : chr # 893  "Homo_sapiens_chr6.trna158-IleAAT" chrStart: 1828864
+./../ref/human_contaminant.fa : chr # 894  "Homo_sapiens_chr17.trna34-IleAAT" chrStart: 1830912
+./../ref/human_contaminant.fa : chr # 895  "Homo_sapiens_chr6.trna153-IleAAT" chrStart: 1832960
+./../ref/human_contaminant.fa : chr # 896  "Homo_sapiens_chr6.trna59-IleAAT" chrStart: 1835008
+./../ref/human_contaminant.fa : chr # 897  "Homo_sapiens_chr6.trna80-IleAAT" chrStart: 1837056
+./../ref/human_contaminant.fa : chr # 898  "Homo_sapiens_chrX.trna5-IleGAT" chrStart: 1839104
+./../ref/human_contaminant.fa : chr # 899  "Homo_sapiens_chrX.trna6-IleGAT" chrStart: 1841152
+./../ref/human_contaminant.fa : chr # 900  "Homo_sapiens_chrX.trna7-IleGAT" chrStart: 1843200
+./../ref/human_contaminant.fa : chr # 901  "Homo_sapiens_chr6.trna29-IleTAT" chrStart: 1845248
+./../ref/human_contaminant.fa : chr # 902  "Homo_sapiens_chr6.trna55-IleTAT" chrStart: 1847296
+./../ref/human_contaminant.fa : chr # 903  "Homo_sapiens_chr6.trna63-IleTAT" chrStart: 1849344
+./../ref/human_contaminant.fa : chr # 904  "Homo_sapiens_chr19.trna10-IleTAT" chrStart: 1851392
+./../ref/human_contaminant.fa : chr # 905  "Homo_sapiens_chr2.trna5-IleTAT" chrStart: 1853440
+./../ref/human_contaminant.fa : chr # 906  "Homo_sapiens_chr3.trna5-LeuAAG" chrStart: 1855488
+./../ref/human_contaminant.fa : chr # 907  "Homo_sapiens_chr20.trna6-LeuAAG" chrStart: 1857536
+./../ref/human_contaminant.fa : chr # 908  "Homo_sapiens_chr2.trna4-LeuAAG" chrStart: 1859584
+./../ref/human_contaminant.fa : chr # 909  "Homo_sapiens_chr6.trna126-LeuAAG" chrStart: 1861632
+./../ref/human_contaminant.fa : chr # 910  "Homo_sapiens_chr6.trna78-LeuAAG" chrStart: 1863680
+./../ref/human_contaminant.fa : chr # 911  "Homo_sapiens_chr14.trna1-LeuAAG" chrStart: 1865728
+./../ref/human_contaminant.fa : chr # 912  "Homo_sapiens_chr16.trna16-LeuAAG" chrStart: 1867776
+./../ref/human_contaminant.fa : chr # 913  "Homo_sapiens_chr5.trna7-LeuAAG" chrStart: 1869824
+./../ref/human_contaminant.fa : chr # 914  "Homo_sapiens_chr6.trna98-LeuAAG" chrStart: 1871872
+./../ref/human_contaminant.fa : chr # 915  "Homo_sapiens_chr5.trna16-LeuAAG" chrStart: 1873920
+./../ref/human_contaminant.fa : chr # 916  "Homo_sapiens_chr5.trna19-LeuAAG" chrStart: 1875968
+./../ref/human_contaminant.fa : chr # 917  "Homo_sapiens_chr5.trna3-LeuAAG" chrStart: 1878016
+./../ref/human_contaminant.fa : chr # 918  "Homo_sapiens_chr1.trna66-LeuCAA" chrStart: 1880064
+./../ref/human_contaminant.fa : chr # 919  "Homo_sapiens_chr11.trna1-LeuCAA" chrStart: 1882112
+./../ref/human_contaminant.fa : chr # 920  "Homo_sapiens_chr1.trna58-LeuCAA" chrStart: 1884160
+./../ref/human_contaminant.fa : chr # 921  "Homo_sapiens_chr6.trna141-LeuCAA" chrStart: 1886208
+./../ref/human_contaminant.fa : chr # 922  "Homo_sapiens_chr6.trna140-LeuCAA" chrStart: 1888256
+./../ref/human_contaminant.fa : chr # 923  "Homo_sapiens_chr6.trna100-LeuCAA" chrStart: 1890304
+./../ref/human_contaminant.fa : chr # 924  "Homo_sapiens_chr6.trna74-LeuCAA" chrStart: 1892352
+./../ref/human_contaminant.fa : chr # 925  "Homo_sapiens_chr5.trna20-LeuCAG" chrStart: 1894400
+./../ref/human_contaminant.fa : chr # 926  "Homo_sapiens_chr16.trna17-LeuCAG" chrStart: 1896448
+./../ref/human_contaminant.fa : chr # 927  "Homo_sapiens_chr16.trna26-LeuCAG" chrStart: 1898496
+./../ref/human_contaminant.fa : chr # 928  "Homo_sapiens_chr1.trna34-LeuCAG" chrStart: 1900544
+./../ref/human_contaminant.fa : chr # 929  "Homo_sapiens_chr1.trna36-LeuCAG" chrStart: 1902592
+./../ref/human_contaminant.fa : chr # 930  "Homo_sapiens_chr1.trna38-LeuCAG" chrStart: 1904640
+./../ref/human_contaminant.fa : chr # 931  "Homo_sapiens_chr1.trna40-LeuCAG" chrStart: 1906688
+./../ref/human_contaminant.fa : chr # 932  "Homo_sapiens_chr1.trna42-LeuCAG" chrStart: 1908736
+./../ref/human_contaminant.fa : chr # 933  "Homo_sapiens_chr1.trna67-LeuCAG" chrStart: 1910784
+./../ref/human_contaminant.fa : chr # 934  "Homo_sapiens_chr6.trna7-LeuCAG" chrStart: 1912832
+./../ref/human_contaminant.fa : chr # 935  "Homo_sapiens_chrX.trna2-LeuTAA" chrStart: 1914880
+./../ref/human_contaminant.fa : chr # 936  "Homo_sapiens_chr6.trna81-LeuTAA" chrStart: 1916928
+./../ref/human_contaminant.fa : chr # 937  "Homo_sapiens_chr4.trna2-LeuTAA" chrStart: 1918976
+./../ref/human_contaminant.fa : chr # 938  "Homo_sapiens_chr6.trna155-LeuTAA" chrStart: 1921024
+./../ref/human_contaminant.fa : chr # 939  "Homo_sapiens_chr11.trna4-LeuTAA" chrStart: 1923072
+./../ref/human_contaminant.fa : chr # 940  "Homo_sapiens_chr6.trna134-LeuTAA" chrStart: 1925120
+./../ref/human_contaminant.fa : chr # 941  "Homo_sapiens_chr6.trna83-LeuTAA" chrStart: 1927168
+./../ref/human_contaminant.fa : chr # 942  "Homo_sapiens_chr16.trna27-LeuTAG" chrStart: 1929216
+./../ref/human_contaminant.fa : chr # 943  "Homo_sapiens_chr14.trna2-LeuTAG" chrStart: 1931264
+./../ref/human_contaminant.fa : chr # 944  "Homo_sapiens_chr17.trna42-LeuTAG" chrStart: 1933312
+./../ref/human_contaminant.fa : chr # 945  "Homo_sapiens_chr11.trna2-LysCTT" chrStart: 1935360
+./../ref/human_contaminant.fa : chr # 946  "Homo_sapiens_chr19.trna6-LysCTT" chrStart: 1937408
+./../ref/human_contaminant.fa : chr # 947  "Homo_sapiens_chr19.trna5-LysCTT" chrStart: 1939456
+./../ref/human_contaminant.fa : chr # 948  "Homo_sapiens_chr5.trna24-LysCTT" chrStart: 1941504
+./../ref/human_contaminant.fa : chr # 949  "Homo_sapiens_chr16.trna5-LysCTT" chrStart: 1943552
+./../ref/human_contaminant.fa : chr # 950  "Homo_sapiens_chr1.trna128-LysCTT" chrStart: 1945600
+./../ref/human_contaminant.fa : chr # 951  "Homo_sapiens_chr18.trna4-LysCTT" chrStart: 1947648
+./../ref/human_contaminant.fa : chr # 952  "Homo_sapiens_chr16.trna30-LysCTT" chrStart: 1949696
+./../ref/human_contaminant.fa : chr # 953  "Homo_sapiens_chr16.trna10-LysCTT" chrStart: 1951744
+./../ref/human_contaminant.fa : chr # 954  "Homo_sapiens_chr16.trna32-LysCTT" chrStart: 1953792
+./../ref/human_contaminant.fa : chr # 955  "Homo_sapiens_chr1.trna119-LysCTT" chrStart: 1955840
+./../ref/human_contaminant.fa : chr # 956  "Homo_sapiens_chr16.trna7-LysCTT" chrStart: 1957888
+./../ref/human_contaminant.fa : chr # 957  "Homo_sapiens_chr5.trna11-LysCTT" chrStart: 1959936
+./../ref/human_contaminant.fa : chr # 958  "Homo_sapiens_chr5.trna9-LysCTT" chrStart: 1961984
+./../ref/human_contaminant.fa : chr # 959  "Homo_sapiens_chr6.trna13-LysCTT" chrStart: 1964032
+./../ref/human_contaminant.fa : chr # 960  "Homo_sapiens_chr14.trna13-LysCTT" chrStart: 1966080
+./../ref/human_contaminant.fa : chr # 961  "Homo_sapiens_chr15.trna2-LysCTT" chrStart: 1968128
+./../ref/human_contaminant.fa : chr # 962  "Homo_sapiens_chr19.trna3-LysTTT" chrStart: 1970176
+./../ref/human_contaminant.fa : chr # 963  "Homo_sapiens_chr19.trna7-LysTTT" chrStart: 1972224
+./../ref/human_contaminant.fa : chr # 964  "Homo_sapiens_chr12.trna1-LysTTT" chrStart: 1974272
+./../ref/human_contaminant.fa : chr # 965  "Homo_sapiens_chr6.trna53-LysTTT" chrStart: 1976320
+./../ref/human_contaminant.fa : chr # 966  "Homo_sapiens_chr1.trna55-LysTTT" chrStart: 1978368
+./../ref/human_contaminant.fa : chr # 967  "Homo_sapiens_chr6.trna71-LysTTT" chrStart: 1980416
+./../ref/human_contaminant.fa : chr # 968  "Homo_sapiens_chr6.trna149-LysTTT" chrStart: 1982464
+./../ref/human_contaminant.fa : chr # 969  "Homo_sapiens_chr11.trna5-LysTTT" chrStart: 1984512
+./../ref/human_contaminant.fa : chr # 970  "Homo_sapiens_chr6.trna143-LysTTT" chrStart: 1986560
+./../ref/human_contaminant.fa : chr # 971  "Homo_sapiens_chr1.trna54-LysTTT" chrStart: 1988608
+./../ref/human_contaminant.fa : chr # 972  "Homo_sapiens_chr1.trna62-LysTTT" chrStart: 1990656
+./../ref/human_contaminant.fa : chr # 973  "Homo_sapiens_chr11.trna14-LysTTT" chrStart: 1992704
+./../ref/human_contaminant.fa : chr # 974  "Homo_sapiens_chr17.trna2-LysTTT" chrStart: 1994752
+./../ref/human_contaminant.fa : chr # 975  "Homo_sapiens_chr6.trna76-LysTTT" chrStart: 1996800
+./../ref/human_contaminant.fa : chr # 976  "Homo_sapiens_chr11.trna11-LysTTT" chrStart: 1998848
+./../ref/human_contaminant.fa : chr # 977  "Homo_sapiens_chr16.trna23-LysTTT" chrStart: 2000896
+./../ref/human_contaminant.fa : chr # 978  "Homo_sapiens_chr9.trna1-MetCAT" chrStart: 2002944
+./../ref/human_contaminant.fa : chr # 979  "Homo_sapiens_chr6.trna61-MetCAT" chrStart: 2004992
+./../ref/human_contaminant.fa : chr # 980  "Homo_sapiens_chr6.trna92-MetCAT" chrStart: 2007040
+./../ref/human_contaminant.fa : chr # 981  "Homo_sapiens_chr1.trna32-MetCAT" chrStart: 2009088
+./../ref/human_contaminant.fa : chr # 982  "Homo_sapiens_chr17.trna20-MetCAT" chrStart: 2011136
+./../ref/human_contaminant.fa : chr # 983  "Homo_sapiens_chr6.trna129-MetCAT" chrStart: 2013184
+./../ref/human_contaminant.fa : chr # 984  "Homo_sapiens_chr6.trna142-MetCAT" chrStart: 2015232
+./../ref/human_contaminant.fa : chr # 985  "Homo_sapiens_chr6.trna150-MetCAT" chrStart: 2017280
+./../ref/human_contaminant.fa : chr # 986  "Homo_sapiens_chr6.trna169-MetCAT" chrStart: 2019328
+./../ref/human_contaminant.fa : chr # 987  "Homo_sapiens_chr6.trna171-MetCAT" chrStart: 2021376
+./../ref/human_contaminant.fa : chr # 988  "Homo_sapiens_chr6.trna2-MetCAT" chrStart: 2023424
+./../ref/human_contaminant.fa : chr # 989  "Homo_sapiens_chr16.trna22-MetCAT" chrStart: 2025472
+./../ref/human_contaminant.fa : chr # 990  "Homo_sapiens_chr6.trna21-MetCAT" chrStart: 2027520
+./../ref/human_contaminant.fa : chr # 991  "Homo_sapiens_chr6.trna162-MetCAT" chrStart: 2029568
+./../ref/human_contaminant.fa : chr # 992  "Homo_sapiens_chr6.trna164-MetCAT" chrStart: 2031616
+./../ref/human_contaminant.fa : chr # 993  "Homo_sapiens_chr6.trna27-MetCAT" chrStart: 2033664
+./../ref/human_contaminant.fa : chr # 994  "Homo_sapiens_chr6.trna75-MetCAT" chrStart: 2035712
+./../ref/human_contaminant.fa : chr # 995  "Homo_sapiens_chr6.trna97-MetCAT" chrStart: 2037760
+./../ref/human_contaminant.fa : chr # 996  "Homo_sapiens_chr16.trna20-MetCAT" chrStart: 2039808
+./../ref/human_contaminant.fa : chr # 997  "Homo_sapiens_chr8.trna10-MetCAT" chrStart: 2041856
+./../ref/human_contaminant.fa : chr # 998  "Homo_sapiens_chr6.trna56-PheGAA" chrStart: 2043904
+./../ref/human_contaminant.fa : chr # 999  "Homo_sapiens_chr6.trna112-PheGAA" chrStart: 2045952
+./../ref/human_contaminant.fa : chr # 1000  "Homo_sapiens_chr6.trna72-PheGAA" chrStart: 2048000
+./../ref/human_contaminant.fa : chr # 1001  "Homo_sapiens_chr6.trna103-PheGAA" chrStart: 2050048
+./../ref/human_contaminant.fa : chr # 1002  "Homo_sapiens_chr6.trna106-PheGAA" chrStart: 2052096
+./../ref/human_contaminant.fa : chr # 1003  "Homo_sapiens_chr11.trna13-PheGAA" chrStart: 2054144
+./../ref/human_contaminant.fa : chr # 1004  "Homo_sapiens_chr11.trna15-PheGAA" chrStart: 2056192
+./../ref/human_contaminant.fa : chr # 1005  "Homo_sapiens_chr12.trna11-PheGAA" chrStart: 2058240
+./../ref/human_contaminant.fa : chr # 1006  "Homo_sapiens_chr13.trna1-PheGAA" chrStart: 2060288
+./../ref/human_contaminant.fa : chr # 1007  "Homo_sapiens_chr19.trna14-PheGAA" chrStart: 2062336
+./../ref/human_contaminant.fa : chr # 1008  "Homo_sapiens_chr6.trna109-PheGAA" chrStart: 2064384
+./../ref/human_contaminant.fa : chr # 1009  "Homo_sapiens_chr6.trna96-PheGAA" chrStart: 2066432
+./../ref/human_contaminant.fa : chr # 1010  "Homo_sapiens_chr1.trna65-ProAGG" chrStart: 2068480
+./../ref/human_contaminant.fa : chr # 1011  "Homo_sapiens_chr11.trna9-ProAGG" chrStart: 2070528
+./../ref/human_contaminant.fa : chr # 1012  "Homo_sapiens_chr14.trna22-ProAGG" chrStart: 2072576
+./../ref/human_contaminant.fa : chr # 1013  "Homo_sapiens_chr14.trna23-ProAGG" chrStart: 2074624
+./../ref/human_contaminant.fa : chr # 1014  "Homo_sapiens_chr16.trna29-ProAGG" chrStart: 2076672
+./../ref/human_contaminant.fa : chr # 1015  "Homo_sapiens_chr16.trna9-ProAGG" chrStart: 2078720
+./../ref/human_contaminant.fa : chr # 1016  "Homo_sapiens_chr6.trna12-ProAGG" chrStart: 2080768
+./../ref/human_contaminant.fa : chr # 1017  "Homo_sapiens_chr7.trna2-ProAGG" chrStart: 2082816
+./../ref/human_contaminant.fa : chr # 1018  "Homo_sapiens_chr16.trna11-ProAGG" chrStart: 2084864
+./../ref/human_contaminant.fa : chr # 1019  "Homo_sapiens_chr16.trna4-ProAGG" chrStart: 2086912
+./../ref/human_contaminant.fa : chr # 1020  "Homo_sapiens_chr6.trna30-ProCGG" chrStart: 2088960
+./../ref/human_contaminant.fa : chr # 1021  "Homo_sapiens_chr1.trna52-ProCGG" chrStart: 2091008
+./../ref/human_contaminant.fa : chr # 1022  "Homo_sapiens_chr16.trna6-ProCGG" chrStart: 2093056
+./../ref/human_contaminant.fa : chr # 1023  "Homo_sapiens_chr17.trna37-ProCGG" chrStart: 2095104
+./../ref/human_contaminant.fa : chr # 1024  "Homo_sapiens_chr14.trna6-ProTGG" chrStart: 2097152
+./../ref/human_contaminant.fa : chr # 1025  "Homo_sapiens_chr16.trna28-ProTGG" chrStart: 2099200
+./../ref/human_contaminant.fa : chr # 1026  "Homo_sapiens_chr16.trna3-ProTGG" chrStart: 2101248
+./../ref/human_contaminant.fa : chr # 1027  "Homo_sapiens_chr16.trna8-ProTGG" chrStart: 2103296
+./../ref/human_contaminant.fa : chr # 1028  "Homo_sapiens_chr5.trna14-ProTGG" chrStart: 2105344
+./../ref/human_contaminant.fa : chr # 1029  "Homo_sapiens_chr11.trna12-ProTGG" chrStart: 2107392
+./../ref/human_contaminant.fa : chr # 1030  "Homo_sapiens_chr14.trna3-ProTGG" chrStart: 2109440
+./../ref/human_contaminant.fa : chr # 1031  "Homo_sapiens_chr19.trna11-Undet???" chrStart: 2111488
+./../ref/human_contaminant.fa : chr # 1032  "Homo_sapiens_chr2.trna26-Undet???" chrStart: 2113536
+./../ref/human_contaminant.fa : chr # 1033  "Homo_sapiens_chr1.trna126-Undet???" chrStart: 2115584
+./../ref/human_contaminant.fa : chr # 1034  "Homo_sapiens_chr1.trna53-Undet???" chrStart: 2117632
+./../ref/human_contaminant.fa : chr # 1035  "Homo_sapiens_chr17.trna1-Undet???" chrStart: 2119680
+./../ref/human_contaminant.fa : chr # 1036  "Homo_sapiens_chr1.trna137-Undet???" chrStart: 2121728
+./../ref/human_contaminant.fa : chr # 1037  "Homo_sapiens_chr1.trna33-Undet???" chrStart: 2123776
+./../ref/human_contaminant.fa : chr # 1038  "Homo_sapiens_chr5.trna17-LeuAAG" chrStart: 2125824
+./../ref/human_contaminant.fa : chr # 1039  "Homo_sapiens_chr20.trna5-IleAAT" chrStart: 2127872
+./../ref/human_contaminant.fa : chr # 1040  "Homo_sapiens_chr12.trna9-IleAAT" chrStart: 2129920
+./../ref/human_contaminant.fa : chr # 1041  "Homo_sapiens_chr6.trna39-IleAAT" chrStart: 2131968
+./../ref/human_contaminant.fa : chr # 1042  "Homo_sapiens_chr5.trna1-CysACA" chrStart: 2134016
+./../ref/human_contaminant.fa : chr # 1043  "Homo_sapiens_chr6.trna41-SerACT" chrStart: 2136064
+./../ref/human_contaminant.fa : chr # 1044  "Homo_sapiens_chr20.trna2-SerAGA" chrStart: 2138112
+./../ref/human_contaminant.fa : chr # 1045  "Homo_sapiens_chr6.trna111-AlaAGC" chrStart: 2140160
+./../ref/human_contaminant.fa : chr # 1046  "Homo_sapiens_chr16.trna33-ProAGG" chrStart: 2142208
+./../ref/human_contaminant.fa : chr # 1047  "Homo_sapiens_chr2.trna7-ProAGG" chrStart: 2144256
+./../ref/human_contaminant.fa : chr # 1048  "Homo_sapiens_chr2.trna8-ProAGG" chrStart: 2146304
+./../ref/human_contaminant.fa : chr # 1049  "Homo_sapiens_chr10.trna3-LeuCAA" chrStart: 2148352
+./../ref/human_contaminant.fa : chr # 1050  "Homo_sapiens_chr20.trna3-ValCAC" chrStart: 2150400
+./../ref/human_contaminant.fa : chr # 1051  "Homo_sapiens_chr1.trna1-ValCAC" chrStart: 2152448
+./../ref/human_contaminant.fa : chr # 1052  "Homo_sapiens_chr1.trna132-ValCAC" chrStart: 2154496
+./../ref/human_contaminant.fa : chr # 1053  "Homo_sapiens_chr1.trna3-ValCAC" chrStart: 2156544
+./../ref/human_contaminant.fa : chr # 1054  "Homo_sapiens_chr1_gl000192_random.trna2-GlyCCC" chrStart: 2158592
+./../ref/human_contaminant.fa : chr # 1055  "Homo_sapiens_chr2.trna1-GlyCCC" chrStart: 2160640
+./../ref/human_contaminant.fa : chr # 1056  "Homo_sapiens_chr1.trna91-GlyCCC" chrStart: 2162688
+./../ref/human_contaminant.fa : chr # 1057  "Homo_sapiens_chr11.trna7-ArgCCT" chrStart: 2164736
+./../ref/human_contaminant.fa : chr # 1058  "Homo_sapiens_chr1.trna88-ArgCCT" chrStart: 2166784
+./../ref/human_contaminant.fa : chr # 1059  "Homo_sapiens_chr1.trna96-ArgCCT" chrStart: 2168832
+./../ref/human_contaminant.fa : chr # 1060  "Homo_sapiens_chr1.trna14-ArgCCT" chrStart: 2170880
+./../ref/human_contaminant.fa : chr # 1061  "Homo_sapiens_chr1.trna18-ArgCCT" chrStart: 2172928
+./../ref/human_contaminant.fa : chr # 1062  "Homo_sapiens_chr14.trna11-SupCTA" chrStart: 2174976
+./../ref/human_contaminant.fa : chr # 1063  "Homo_sapiens_chr3.trna1-SupCTA" chrStart: 2177024
+./../ref/human_contaminant.fa : chr # 1064  "Homo_sapiens_chrX.trna3-GluCTC" chrStart: 2179072
+./../ref/human_contaminant.fa : chr # 1065  "Homo_sapiens_chr12.trna14-GluCTC" chrStart: 2181120
+./../ref/human_contaminant.fa : chr # 1066  "Homo_sapiens_chr2.trna25-GluCTC" chrStart: 2183168
+./../ref/human_contaminant.fa : chr # 1067  "Homo_sapiens_chr8.trna7-GluCTC" chrStart: 2185216
+./../ref/human_contaminant.fa : chr # 1068  "Homo_sapiens_chr2.trna24-GluCTC" chrStart: 2187264
+./../ref/human_contaminant.fa : chr # 1069  "Homo_sapiens_chr3.trna10-GluCTC" chrStart: 2189312
+./../ref/human_contaminant.fa : chr # 1070  "Homo_sapiens_chr8.trna1-GluCTC" chrStart: 2191360
+./../ref/human_contaminant.fa : chr # 1071  "Homo_sapiens_chr20.trna7-GluCTC" chrStart: 2193408
+./../ref/human_contaminant.fa : chr # 1072  "Homo_sapiens_chr2.trna12-GluCTC" chrStart: 2195456
+./../ref/human_contaminant.fa : chr # 1073  "Homo_sapiens_chr2.trna18-GluCTC" chrStart: 2197504
+./../ref/human_contaminant.fa : chr # 1074  "Homo_sapiens_chr13.trna2-GluCTC" chrStart: 2199552
+./../ref/human_contaminant.fa : chr # 1075  "Homo_sapiens_chr2.trna15-GlnCTG" chrStart: 2201600
+./../ref/human_contaminant.fa : chr # 1076  "Homo_sapiens_chr1.trna129-GlnCTG" chrStart: 2203648
+./../ref/human_contaminant.fa : chr # 1077  "Homo_sapiens_chr5.trna21-GlnCTG" chrStart: 2205696
+./../ref/human_contaminant.fa : chr # 1078  "Homo_sapiens_chr10.trna5-GlnCTG" chrStart: 2207744
+./../ref/human_contaminant.fa : chr # 1079  "Homo_sapiens_chr1.trna27-GlnCTG" chrStart: 2209792
+./../ref/human_contaminant.fa : chr # 1080  "Homo_sapiens_chr1.trna23-GlnCTG" chrStart: 2211840
+./../ref/human_contaminant.fa : chr # 1081  "Homo_sapiens_chr15.trna6-LysCTT" chrStart: 2213888
+./../ref/human_contaminant.fa : chr # 1082  "Homo_sapiens_chr16.trna13-LysCTT" chrStart: 2215936
+./../ref/human_contaminant.fa : chr # 1083  "Homo_sapiens_chr1.trna51-LysCTT" chrStart: 2217984
+./../ref/human_contaminant.fa : chr # 1084  "Homo_sapiens_chr1.trna8-LysCTT" chrStart: 2220032
+./../ref/human_contaminant.fa : chr # 1085  "Homo_sapiens_chr8.trna9-PheGAA" chrStart: 2222080
+./../ref/human_contaminant.fa : chr # 1086  "Homo_sapiens_chr6.trna116-PheGAA" chrStart: 2224128
+./../ref/human_contaminant.fa : chr # 1087  "Homo_sapiens_chr1.trna92-PheGAA" chrStart: 2226176
+./../ref/human_contaminant.fa : chr # 1088  "Homo_sapiens_chr1.trna100-PheGAA" chrStart: 2228224
+./../ref/human_contaminant.fa : chr # 1089  "Homo_sapiens_chr6.trna88-PheGAA" chrStart: 2230272
+./../ref/human_contaminant.fa : chr # 1090  "Homo_sapiens_chr3.trna12-CysGCA" chrStart: 2232320
+./../ref/human_contaminant.fa : chr # 1091  "Homo_sapiens_chr10.trna1-ProGGG" chrStart: 2234368
+./../ref/human_contaminant.fa : chr # 1092  "Homo_sapiens_chr15.trna5-TyrGTA" chrStart: 2236416
+./../ref/human_contaminant.fa : chr # 1093  "Homo_sapiens_chr7.trna24-TyrGTA" chrStart: 2238464
+./../ref/human_contaminant.fa : chr # 1094  "Homo_sapiens_chr1.trna44-AspGTC" chrStart: 2240512
+./../ref/human_contaminant.fa : chr # 1095  "Homo_sapiens_chr1.trna109-AsnGTT" chrStart: 2242560
+./../ref/human_contaminant.fa : chr # 1096  "Homo_sapiens_chr1.trna104-AsnGTT" chrStart: 2244608
+./../ref/human_contaminant.fa : chr # 1097  "Homo_sapiens_chr1.trna125-AsnGTT" chrStart: 2246656
+./../ref/human_contaminant.fa : chr # 1098  "Homo_sapiens_chr8.trna13-LeuTAA" chrStart: 2248704
+./../ref/human_contaminant.fa : chr # 1099  "Homo_sapiens_chr20.trna4-LeuTAA" chrStart: 2250752
+./../ref/human_contaminant.fa : chr # 1100  "Homo_sapiens_chr1.trna60-LeuTAA" chrStart: 2252800
+./../ref/human_contaminant.fa : chr # 1101  "Homo_sapiens_chr2.trna9-LeuTAA" chrStart: 2254848
+./../ref/human_contaminant.fa : chr # 1102  "Homo_sapiens_chr6.trna86-ValTAC" chrStart: 2256896
+./../ref/human_contaminant.fa : chr # 1103  "Homo_sapiens_chr14.trna15-LeuTAG" chrStart: 2258944
+./../ref/human_contaminant.fa : chr # 1104  "Homo_sapiens_chr18.trna3-GlyTCC" chrStart: 2260992
+./../ref/human_contaminant.fa : chr # 1105  "Homo_sapiens_chr18.trna2-GlyTCC" chrStart: 2263040
+./../ref/human_contaminant.fa : chr # 1106  "Homo_sapiens_chr17.trna32-SerTGA" chrStart: 2265088
+./../ref/human_contaminant.fa : chr # 1107  "Homo_sapiens_chr2.trna10-SerTGA" chrStart: 2267136
+./../ref/human_contaminant.fa : chr # 1108  "Homo_sapiens_chr11.trna6-AlaTGC" chrStart: 2269184
+./../ref/human_contaminant.fa : chr # 1109  "Homo_sapiens_chr6.trna122-AlaTGC" chrStart: 2271232
+./../ref/human_contaminant.fa : chr # 1110  "Homo_sapiens_chr1.trna61-ProTGG" chrStart: 2273280
+./../ref/human_contaminant.fa : chr # 1111  "Homo_sapiens_chr1.trna57-ProTGG" chrStart: 2275328
+./../ref/human_contaminant.fa : chr # 1112  "Homo_sapiens_chr16.trna31-ProTGG" chrStart: 2277376
+./../ref/human_contaminant.fa : chr # 1113  "Homo_sapiens_chr4.trna5-SupTTA" chrStart: 2279424
+./../ref/human_contaminant.fa : chr # 1114  "Homo_sapiens_chr6.trna85-GluTTC" chrStart: 2281472
+./../ref/human_contaminant.fa : chr # 1115  "Homo_sapiens_chr1.trna17-GluTTC" chrStart: 2283520
+./../ref/human_contaminant.fa : chr # 1116  "Homo_sapiens_chr1.trna102-GluTTC" chrStart: 2285568
+./../ref/human_contaminant.fa : chr # 1117  "Homo_sapiens_chr2.trna17-GluTTC" chrStart: 2287616
+./../ref/human_contaminant.fa : chr # 1118  "Homo_sapiens_chr1.trna105-GluTTC" chrStart: 2289664
+./../ref/human_contaminant.fa : chr # 1119  "Homo_sapiens_chr1.trna110-GluTTC" chrStart: 2291712
+./../ref/human_contaminant.fa : chr # 1120  "Homo_sapiens_chr4.trna1-GlnTTG" chrStart: 2293760
+./../ref/human_contaminant.fa : chr # 1121  "Homo_sapiens_chr7.trna26-GlnTTG" chrStart: 2295808
+./../ref/human_contaminant.fa : chr # 1122  "Homo_sapiens_chr12.trna15-GlnTTG" chrStart: 2297856
+./../ref/human_contaminant.fa : chr # 1123  "Homo_sapiens_chr17.trna33-GlnTTG" chrStart: 2299904
+./../ref/human_contaminant.fa : chr # 1124  "Homo_sapiens_chr8.trna14-GlnTTG" chrStart: 2301952
+./../ref/human_contaminant.fa : chr # 1125  "Homo_sapiens_chr19.trna12-GlnTTG" chrStart: 2304000
+./../ref/human_contaminant.fa : chr # 1126  "Homo_sapiens_chr13.trna6-GlnTTG" chrStart: 2306048
+./../ref/human_contaminant.fa : chr # 1127  "Homo_sapiens_chr5.trna23-GlnTTG" chrStart: 2308096
+./../ref/human_contaminant.fa : chr # 1128  "Homo_sapiens_chr2.trna11-GlnTTG" chrStart: 2310144
+./../ref/human_contaminant.fa : chr # 1129  "Homo_sapiens_chrY.trna1-GlnTTG" chrStart: 2312192
+./../ref/human_contaminant.fa : chr # 1130  "Homo_sapiens_chr2.trna22-GlnTTG" chrStart: 2314240
+./../ref/human_contaminant.fa : chr # 1131  "Homo_sapiens_chr12.trna16-GlnTTG" chrStart: 2316288
+./../ref/human_contaminant.fa : chr # 1132  "Homo_sapiens_chr3.trna9-GlnTTG" chrStart: 2318336
+./../ref/human_contaminant.fa : chr # 1133  "Homo_sapiens_chr7.trna4-GlnTTG" chrStart: 2320384
+./../ref/human_contaminant.fa : chr # 1134  "Homo_sapiens_chrX.trna1-GlnTTG" chrStart: 2322432
+./../ref/human_contaminant.fa : chr # 1135  "Homo_sapiens_chr2.trna28-GlnTTG" chrStart: 2324480
+./../ref/human_contaminant.fa : chr # 1136  "Homo_sapiens_chr8.trna2-LysTTT" chrStart: 2326528
+./../ref/human_contaminant.fa : chr # 1137  "Homo_sapiens_chr2.trna16-LysTTT" chrStart: 2328576
+./../ref/human_contaminant.fa : chr # 1138  "Homo_sapiens_chr14.trna12-LysTTT" chrStart: 2330624
+./../ref/human_contaminant.fa : chr # 1139  "Homo_sapiens_chr6.trna118-LysTTT" chrStart: 2332672
+./../ref/human_contaminant.fa : chr # 1140  "Homo_sapiens_chr19.trna9-LysTTT" chrStart: 2334720
+./../ref/human_contaminant.fa : chr # 1141  "Homo_sapiens_chr17.trna25-SeCTCA" chrStart: 2336768
+./../ref/human_contaminant.fa : chr # 1142  "Homo_sapiens_chr22.trna1-SeC(e)TCA" chrStart: 2338816
+./../ref/human_contaminant.fa : chr # 1143  "Homo_sapiens_chr19.trna8-SeC(e)TCA" chrStart: 2340864
+./../ref/human_contaminant.fa : chr # 1144  "Homo_sapiens_chr11.trna10-SerAGA" chrStart: 2342912
+./../ref/human_contaminant.fa : chr # 1145  "Homo_sapiens_chr7.trna12-SerAGA" chrStart: 2344960
+./../ref/human_contaminant.fa : chr # 1146  "Homo_sapiens_chr6.trna145-SerAGA" chrStart: 2347008
+./../ref/human_contaminant.fa : chr # 1147  "Homo_sapiens_chr6.trna50-SerAGA" chrStart: 2349056
+./../ref/human_contaminant.fa : chr # 1148  "Homo_sapiens_chr17.trna35-SerAGA" chrStart: 2351104
+./../ref/human_contaminant.fa : chr # 1149  "Homo_sapiens_chr6.trna44-SerAGA" chrStart: 2353152
+./../ref/human_contaminant.fa : chr # 1150  "Homo_sapiens_chr6.trna46-SerAGA" chrStart: 2355200
+./../ref/human_contaminant.fa : chr # 1151  "Homo_sapiens_chr6.trna47-SerAGA" chrStart: 2357248
+./../ref/human_contaminant.fa : chr # 1152  "Homo_sapiens_chr6.trna5-SerAGA" chrStart: 2359296
+./../ref/human_contaminant.fa : chr # 1153  "Homo_sapiens_chr8.trna11-SerAGA" chrStart: 2361344
+./../ref/human_contaminant.fa : chr # 1154  "Homo_sapiens_chr6.trna147-SerAGA" chrStart: 2363392
+./../ref/human_contaminant.fa : chr # 1155  "Homo_sapiens_chr12.trna2-SerCGA" chrStart: 2365440
+./../ref/human_contaminant.fa : chr # 1156  "Homo_sapiens_chr6.trna137-SerCGA" chrStart: 2367488
+./../ref/human_contaminant.fa : chr # 1157  "Homo_sapiens_chr6.trna35-SerCGA" chrStart: 2369536
+./../ref/human_contaminant.fa : chr # 1158  "Homo_sapiens_chr17.trna41-SerCGA" chrStart: 2371584
+./../ref/human_contaminant.fa : chr # 1159  "Homo_sapiens_chr6.trna175-SerGCT" chrStart: 2373632
+./../ref/human_contaminant.fa : chr # 1160  "Homo_sapiens_chr6.trna62-SerGCT" chrStart: 2375680
+./../ref/human_contaminant.fa : chr # 1161  "Homo_sapiens_chr15.trna10-SerGCT" chrStart: 2377728
+./../ref/human_contaminant.fa : chr # 1162  "Homo_sapiens_chr17.trna7-SerGCT" chrStart: 2379776
+./../ref/human_contaminant.fa : chr # 1163  "Homo_sapiens_chr6.trna123-SerGCT" chrStart: 2381824
+./../ref/human_contaminant.fa : chr # 1164  "Homo_sapiens_chr11.trna8-SerGCT" chrStart: 2383872
+./../ref/human_contaminant.fa : chr # 1165  "Homo_sapiens_chr6.trna43-SerGCT" chrStart: 2385920
+./../ref/human_contaminant.fa : chr # 1166  "Homo_sapiens_chr6.trna31-SerGCT" chrStart: 2387968
+./../ref/human_contaminant.fa : chr # 1167  "Homo_sapiens_chr2.trna21-SerTGA" chrStart: 2390016
+./../ref/human_contaminant.fa : chr # 1168  "Homo_sapiens_chr6.trna148-SerTGA" chrStart: 2392064
+./../ref/human_contaminant.fa : chr # 1169  "Homo_sapiens_chr6.trna172-SerTGA" chrStart: 2394112
+./../ref/human_contaminant.fa : chr # 1170  "Homo_sapiens_chr6.trna51-SerTGA" chrStart: 2396160
+./../ref/human_contaminant.fa : chr # 1171  "Homo_sapiens_chr10.trna2-SerTGA" chrStart: 2398208
+./../ref/human_contaminant.fa : chr # 1172  "Homo_sapiens_chr17.trna11-SupCTA" chrStart: 2400256
+./../ref/human_contaminant.fa : chr # 1173  "Homo_sapiens_chr21.trna1-SupTTA" chrStart: 2402304
+./../ref/human_contaminant.fa : chr # 1174  "Homo_sapiens_chr17.trna17-SupTTA" chrStart: 2404352
+./../ref/human_contaminant.fa : chr # 1175  "Homo_sapiens_chr17.trna24-ThrAGT" chrStart: 2406400
+./../ref/human_contaminant.fa : chr # 1176  "Homo_sapiens_chr6.trna34-ThrAGT" chrStart: 2408448
+./../ref/human_contaminant.fa : chr # 1177  "Homo_sapiens_chr6.trna60-ThrAGT" chrStart: 2410496
+./../ref/human_contaminant.fa : chr # 1178  "Homo_sapiens_chr17.trna40-ThrAGT" chrStart: 2412544
+./../ref/human_contaminant.fa : chr # 1179  "Homo_sapiens_chr6.trna69-ThrAGT" chrStart: 2414592
+./../ref/human_contaminant.fa : chr # 1180  "Homo_sapiens_chr6.trna135-ThrAGT" chrStart: 2416640
+./../ref/human_contaminant.fa : chr # 1181  "Homo_sapiens_chr6.trna167-ThrAGT" chrStart: 2418688
+./../ref/human_contaminant.fa : chr # 1182  "Homo_sapiens_chr17.trna36-ThrAGT" chrStart: 2420736
+./../ref/human_contaminant.fa : chr # 1183  "Homo_sapiens_chr17.trna8-ThrAGT" chrStart: 2422784
+./../ref/human_contaminant.fa : chr # 1184  "Homo_sapiens_chr19.trna4-ThrAGT" chrStart: 2424832
+./../ref/human_contaminant.fa : chr # 1185  "Homo_sapiens_chr6.trna151-ThrCGT" chrStart: 2426880
+./../ref/human_contaminant.fa : chr # 1186  "Homo_sapiens_chr6.trna54-ThrCGT" chrStart: 2428928
+./../ref/human_contaminant.fa : chr # 1187  "Homo_sapiens_chr17.trna14-ThrCGT" chrStart: 2430976
+./../ref/human_contaminant.fa : chr # 1188  "Homo_sapiens_chr6.trna121-ThrCGT" chrStart: 2433024
+./../ref/human_contaminant.fa : chr # 1189  "Homo_sapiens_chr16.trna15-ThrCGT" chrStart: 2435072
+./../ref/human_contaminant.fa : chr # 1190  "Homo_sapiens_chr6.trna125-ThrCGT" chrStart: 2437120
+./../ref/human_contaminant.fa : chr # 1191  "Homo_sapiens_chr5.trna13-ThrTGT" chrStart: 2439168
+./../ref/human_contaminant.fa : chr # 1192  "Homo_sapiens_chr14.trna4-ThrTGT" chrStart: 2441216
+./../ref/human_contaminant.fa : chr # 1193  "Homo_sapiens_chr14.trna20-ThrTGT" chrStart: 2443264
+./../ref/human_contaminant.fa : chr # 1194  "Homo_sapiens_chr14.trna21-ThrTGT" chrStart: 2445312
+./../ref/human_contaminant.fa : chr # 1195  "Homo_sapiens_chr1.trna56-ThrTGT" chrStart: 2447360
+./../ref/human_contaminant.fa : chr # 1196  "Homo_sapiens_chr6.trna127-ThrTGT" chrStart: 2449408
+./../ref/human_contaminant.fa : chr # 1197  "Homo_sapiens_chr11.trna19-TrpCCA" chrStart: 2451456
+./../ref/human_contaminant.fa : chr # 1198  "Homo_sapiens_chr7.trna1-TrpCCA" chrStart: 2453504
+./../ref/human_contaminant.fa : chr # 1199  "Homo_sapiens_chr12.trna6-TrpCCA" chrStart: 2455552
+./../ref/human_contaminant.fa : chr # 1200  "Homo_sapiens_chr17.trna6-TrpCCA" chrStart: 2457600
+./../ref/human_contaminant.fa : chr # 1201  "Homo_sapiens_chr6.trna168-TrpCCA" chrStart: 2459648
+./../ref/human_contaminant.fa : chr # 1202  "Homo_sapiens_chr6.trna170-TrpCCA" chrStart: 2461696
+./../ref/human_contaminant.fa : chr # 1203  "Homo_sapiens_chr17.trna12-TrpCCA" chrStart: 2463744
+./../ref/human_contaminant.fa : chr # 1204  "Homo_sapiens_chr17.trna39-TrpCCA" chrStart: 2465792
+./../ref/human_contaminant.fa : chr # 1205  "Homo_sapiens_chr9.trna3-TrpCCA" chrStart: 2467840
+./../ref/human_contaminant.fa : chr # 1206  "Homo_sapiens_chr2.trna14-TyrATA" chrStart: 2469888
+./../ref/human_contaminant.fa : chr # 1207  "Homo_sapiens_chr7.trna9-TyrGTA" chrStart: 2471936
+./../ref/human_contaminant.fa : chr # 1208  "Homo_sapiens_chr14.trna19-TyrGTA" chrStart: 2473984
+./../ref/human_contaminant.fa : chr # 1209  "Homo_sapiens_chr14.trna18-TyrGTA" chrStart: 2476032
+./../ref/human_contaminant.fa : chr # 1210  "Homo_sapiens_chr14.trna17-TyrGTA" chrStart: 2478080
+./../ref/human_contaminant.fa : chr # 1211  "Homo_sapiens_chr14.trna16-TyrGTA" chrStart: 2480128
+./../ref/human_contaminant.fa : chr # 1212  "Homo_sapiens_chr14.trna5-TyrGTA" chrStart: 2482176
+./../ref/human_contaminant.fa : chr # 1213  "Homo_sapiens_chr6.trna14-TyrGTA" chrStart: 2484224
+./../ref/human_contaminant.fa : chr # 1214  "Homo_sapiens_chr6.trna15-TyrGTA" chrStart: 2486272
+./../ref/human_contaminant.fa : chr # 1215  "Homo_sapiens_chr6.trna16-TyrGTA" chrStart: 2488320
+./../ref/human_contaminant.fa : chr # 1216  "Homo_sapiens_chr6.trna17-TyrGTA" chrStart: 2490368
+./../ref/human_contaminant.fa : chr # 1217  "Homo_sapiens_chr2.trna2-TyrGTA" chrStart: 2492416
+./../ref/human_contaminant.fa : chr # 1218  "Homo_sapiens_chr8.trna12-TyrGTA" chrStart: 2494464
+./../ref/human_contaminant.fa : chr # 1219  "Homo_sapiens_chr8.trna4-TyrGTA" chrStart: 2496512
+./../ref/human_contaminant.fa : chr # 1220  "Homo_sapiens_chr8.trna5-TyrGTA" chrStart: 2498560
+./../ref/human_contaminant.fa : chr # 1221  "Homo_sapiens_chr17.trna22-Undet???" chrStart: 2500608
+./../ref/human_contaminant.fa : chr # 1222  "Homo_sapiens_chr8.trna8-Undet???" chrStart: 2502656
+./../ref/human_contaminant.fa : chr # 1223  "Homo_sapiens_chr6.trna26-Undet???" chrStart: 2504704
+./../ref/human_contaminant.fa : chr # 1224  "Homo_sapiens_chr1.trna63-ValAAC" chrStart: 2506752
+./../ref/human_contaminant.fa : chr # 1225  "Homo_sapiens_chr6.trna115-ValAAC" chrStart: 2508800
+./../ref/human_contaminant.fa : chr # 1226  "Homo_sapiens_chr6.trna37-ValAAC" chrStart: 2510848
+./../ref/human_contaminant.fa : chr # 1227  "Homo_sapiens_chr6.trna136-ValAAC" chrStart: 2512896
+./../ref/human_contaminant.fa : chr # 1228  "Homo_sapiens_chr6.trna139-ValAAC" chrStart: 2514944
+./../ref/human_contaminant.fa : chr # 1229  "Homo_sapiens_chr5.trna15-ValAAC" chrStart: 2516992
+./../ref/human_contaminant.fa : chr # 1230  "Homo_sapiens_chr3.trna2-ValAAC" chrStart: 2519040
+./../ref/human_contaminant.fa : chr # 1231  "Homo_sapiens_chr5.trna12-ValAAC" chrStart: 2521088
+./../ref/human_contaminant.fa : chr # 1232  "Homo_sapiens_chr5.trna4-ValAAC" chrStart: 2523136
+./../ref/human_contaminant.fa : chr # 1233  "Homo_sapiens_chr5.trna5-ValAAC" chrStart: 2525184
+./../ref/human_contaminant.fa : chr # 1234  "Homo_sapiens_chr6.trna132-ValAAC" chrStart: 2527232
+./../ref/human_contaminant.fa : chr # 1235  "Homo_sapiens_chr6.trna58-ValCAC" chrStart: 2529280
+./../ref/human_contaminant.fa : chr # 1236  "Homo_sapiens_chr1.trna130-ValCAC" chrStart: 2531328
+./../ref/human_contaminant.fa : chr # 1237  "Homo_sapiens_chr6.trna32-ValCAC" chrStart: 2533376
+./../ref/human_contaminant.fa : chr # 1238  "Homo_sapiens_chr1.trna99-ValCAC" chrStart: 2535424
+./../ref/human_contaminant.fa : chr # 1239  "Homo_sapiens_chr6.trna133-ValCAC" chrStart: 2537472
+./../ref/human_contaminant.fa : chr # 1240  "Homo_sapiens_chr6.trna157-ValCAC" chrStart: 2539520
+./../ref/human_contaminant.fa : chr # 1241  "Homo_sapiens_chr1.trna90-ValCAC" chrStart: 2541568
+./../ref/human_contaminant.fa : chr # 1242  "Homo_sapiens_chr1.trna98-ValCAC" chrStart: 2543616
+./../ref/human_contaminant.fa : chr # 1243  "Homo_sapiens_chr19.trna13-ValCAC" chrStart: 2545664
+./../ref/human_contaminant.fa : chr # 1244  "Homo_sapiens_chr6.trna152-ValCAC" chrStart: 2547712
+./../ref/human_contaminant.fa : chr # 1245  "Homo_sapiens_chr1.trna85-ValCAC" chrStart: 2549760
+./../ref/human_contaminant.fa : chr # 1246  "Homo_sapiens_chr5.trna10-ValCAC" chrStart: 2551808
+./../ref/human_contaminant.fa : chr # 1247  "Homo_sapiens_chr5.trna18-ValCAC" chrStart: 2553856
+./../ref/human_contaminant.fa : chr # 1248  "Homo_sapiens_chr5.trna2-ValCAC" chrStart: 2555904
+./../ref/human_contaminant.fa : chr # 1249  "Homo_sapiens_chr5.trna6-ValCAC" chrStart: 2557952
+./../ref/human_contaminant.fa : chr # 1250  "Homo_sapiens_chr6.trna9-ValCAC" chrStart: 2560000
+./../ref/human_contaminant.fa : chr # 1251  "Homo_sapiens_chr6.trna40-ValTAC" chrStart: 2562048
+./../ref/human_contaminant.fa : chr # 1252  "Homo_sapiens_chr10.trna6-ValTAC" chrStart: 2564096
+./../ref/human_contaminant.fa : chr # 1253  "Homo_sapiens_chr11.trna16-ValTAC" chrStart: 2566144
+./../ref/human_contaminant.fa : chr # 1254  "Homo_sapiens_chr11.trna17-ValTAC" chrStart: 2568192
+./../ref/human_contaminant.fa : chr # 1255  "Homo_sapiens_chrX.trna4-ValTAC" chrStart: 2570240
+./../ref/human_contaminant.fa : chr # 1256  "ENST00000623906" chrStart: 2572288
+./../ref/human_contaminant.fa : chr # 1257  "ENST00000516533" chrStart: 2574336
+./../ref/human_contaminant.fa : chr # 1258  "ENST00000364662" chrStart: 2576384
+./../ref/human_contaminant.fa : chr # 1259  "ENST00000617595" chrStart: 2578432
+./../ref/human_contaminant.fa : chr # 1260  "ENST00000363603" chrStart: 2580480
+./../ref/human_contaminant.fa : chr # 1261  "ENST00000410536" chrStart: 2582528
+./../ref/human_contaminant.fa : chr # 1262  "ENST00000362406" chrStart: 2584576
+./../ref/human_contaminant.fa : chr # 1263  "ENST00000364226" chrStart: 2586624
+./../ref/human_contaminant.fa : chr # 1264  "ENST00000411237" chrStart: 2588672
+./../ref/human_contaminant.fa : chr # 1265  "ENST00000364825" chrStart: 2590720
+./../ref/human_contaminant.fa : chr # 1266  "ENST00000410588" chrStart: 2592768
+./../ref/human_contaminant.fa : chr # 1267  "ENST00000516700" chrStart: 2594816
+./../ref/human_contaminant.fa : chr # 1268  "ENST00000364843" chrStart: 2596864
+./../ref/human_contaminant.fa : chr # 1269  "ENST00000362585" chrStart: 2598912
+./../ref/human_contaminant.fa : chr # 1270  "ENST00000384611" chrStart: 2600960
+./../ref/human_contaminant.fa : chr # 1271  "ENST00000410380" chrStart: 2603008
+./../ref/human_contaminant.fa : chr # 1272  "ENST00000616292" chrStart: 2605056
+./../ref/human_contaminant.fa : chr # 1273  "ENST00000411144" chrStart: 2607104
+./../ref/human_contaminant.fa : chr # 1274  "ENST00000365184" chrStart: 2609152
+./../ref/human_contaminant.fa : chr # 1275  "ENST00000516707" chrStart: 2611200
+./../ref/human_contaminant.fa : chr # 1276  "ENST00000365317" chrStart: 2613248
+./../ref/human_contaminant.fa : chr # 1277  "ENST00000365632" chrStart: 2615296
+./../ref/human_contaminant.fa : chr # 1278  "ENST00000364801" chrStart: 2617344
+./../ref/human_contaminant.fa : chr # 1279  "ENST00000516730" chrStart: 2619392
+./../ref/human_contaminant.fa : chr # 1280  "ENST00000410808" chrStart: 2621440
+./../ref/human_contaminant.fa : chr # 1281  "ENST00000363040" chrStart: 2623488
+./../ref/human_contaminant.fa : chr # 1282  "ENST00000517249" chrStart: 2625536
+./../ref/human_contaminant.fa : chr # 1283  "ENST00000363841" chrStart: 2627584
+./../ref/human_contaminant.fa : chr # 1284  "ENST00000459503" chrStart: 2629632
+./../ref/human_contaminant.fa : chr # 1285  "ENST00000364357" chrStart: 2631680
+./../ref/human_contaminant.fa : chr # 1286  "ENST00000411199" chrStart: 2633728
+./../ref/human_contaminant.fa : chr # 1287  "ENST00000363916" chrStart: 2635776
+./../ref/human_contaminant.fa : chr # 1288  "ENST00000365387" chrStart: 2637824
+./../ref/human_contaminant.fa : chr # 1289  "ENST00000362580" chrStart: 2639872
+./../ref/human_contaminant.fa : chr # 1290  "ENST00000516782" chrStart: 2641920
+./../ref/human_contaminant.fa : chr # 1291  "ENST00000363298" chrStart: 2643968
+./../ref/human_contaminant.fa : chr # 1292  "ENST00000611690" chrStart: 2646016
+./../ref/human_contaminant.fa : chr # 1293  "ENST00000516619" chrStart: 2648064
+./../ref/human_contaminant.fa : chr # 1294  "ENST00000391299" chrStart: 2650112
+./../ref/human_contaminant.fa : chr # 1295  "ENST00000516737" chrStart: 2652160
+./../ref/human_contaminant.fa : chr # 1296  "ENST00000364697" chrStart: 2654208
+./../ref/human_contaminant.fa : chr # 1297  "ENST00000363743" chrStart: 2656256
+./../ref/human_contaminant.fa : chr # 1298  "ENST00000410815" chrStart: 2658304
+./../ref/human_contaminant.fa : chr # 1299  "ENST00000515937" chrStart: 2660352
+./../ref/human_contaminant.fa : chr # 1300  "ENST00000411114" chrStart: 2662400
+./../ref/human_contaminant.fa : chr # 1301  "ENST00000391094" chrStart: 2664448
+./../ref/human_contaminant.fa : chr # 1302  "ENST00000364550" chrStart: 2666496
+./../ref/human_contaminant.fa : chr # 1303  "ENST00000384547" chrStart: 2668544
+./../ref/human_contaminant.fa : chr # 1304  "ENST00000517271" chrStart: 2670592
+./../ref/human_contaminant.fa : chr # 1305  "ENST00000580910" chrStart: 2672640
+./../ref/human_contaminant.fa : chr # 1306  "ENST00000411358" chrStart: 2674688
+./../ref/human_contaminant.fa : chr # 1307  "ENST00000391326" chrStart: 2676736
+./../ref/human_contaminant.fa : chr # 1308  "ENST00000362702" chrStart: 2678784
+./../ref/human_contaminant.fa : chr # 1309  "ENST00000516841" chrStart: 2680832
+./../ref/human_contaminant.fa : chr # 1310  "ENST00000362939" chrStart: 2682880
+./../ref/human_contaminant.fa : chr # 1311  "ENST00000516459" chrStart: 2684928
+./../ref/human_contaminant.fa : chr # 1312  "ENST00000410451" chrStart: 2686976
+./../ref/human_contaminant.fa : chr # 1313  "ENST00000362429" chrStart: 2689024
+./../ref/human_contaminant.fa : chr # 1314  "ENST00000516754" chrStart: 2691072
+./../ref/human_contaminant.fa : chr # 1315  "ENST00000614365" chrStart: 2693120
+./../ref/human_contaminant.fa : chr # 1316  "ENST00000516203" chrStart: 2695168
+./../ref/human_contaminant.fa : chr # 1317  "ENST00000612665" chrStart: 2697216
+./../ref/human_contaminant.fa : chr # 1318  "ENST00000363598" chrStart: 2699264
+./../ref/human_contaminant.fa : chr # 1319  "ENST00000516778" chrStart: 2701312
+./../ref/human_contaminant.fa : chr # 1320  "ENST00000612131" chrStart: 2703360
+./../ref/human_contaminant.fa : chr # 1321  "ENST00000410414" chrStart: 2705408
+./../ref/human_contaminant.fa : chr # 1322  "ENST00000362715" chrStart: 2707456
+./../ref/human_contaminant.fa : chr # 1323  "ENST00000517163" chrStart: 2709504
+./../ref/human_contaminant.fa : chr # 1324  "ENST00000411039" chrStart: 2711552
+./../ref/human_contaminant.fa : chr # 1325  "ENST00000362545" chrStart: 2713600
+./../ref/human_contaminant.fa : chr # 1326  "ENST00000516567" chrStart: 2715648
+./../ref/human_contaminant.fa : chr # 1327  "ENST00000516936" chrStart: 2717696
+./../ref/human_contaminant.fa : chr # 1328  "ENST00000516504" chrStart: 2719744
+./../ref/human_contaminant.fa : chr # 1329  "ENST00000363885" chrStart: 2721792
+./../ref/human_contaminant.fa : chr # 1330  "ENST00000516917" chrStart: 2723840
+./../ref/human_contaminant.fa : chr # 1331  "ENST00000362739" chrStart: 2725888
+./../ref/human_contaminant.fa : chr # 1332  "ENST00000516984" chrStart: 2727936
+./../ref/human_contaminant.fa : chr # 1333  "ENST00000365305" chrStart: 2729984
+./../ref/human_contaminant.fa : chr # 1334  "ENST00000517118" chrStart: 2732032
+./../ref/human_contaminant.fa : chr # 1335  "ENST00000618998" chrStart: 2734080
+./../ref/human_contaminant.fa : chr # 1336  "ENST00000612732" chrStart: 2736128
+./../ref/human_contaminant.fa : chr # 1337  "ENST00000411330" chrStart: 2738176
+./../ref/human_contaminant.fa : chr # 1338  "ENST00000619241" chrStart: 2740224
+./../ref/human_contaminant.fa : chr # 1339  "ENST00000410275" chrStart: 2742272
+./../ref/human_contaminant.fa : chr # 1340  "ENST00000410986" chrStart: 2744320
+./../ref/human_contaminant.fa : chr # 1341  "ENST00000363030" chrStart: 2746368
+./../ref/human_contaminant.fa : chr # 1342  "ENST00000515957" chrStart: 2748416
+./../ref/human_contaminant.fa : chr # 1343  "ENST00000364622" chrStart: 2750464
+./../ref/human_contaminant.fa : chr # 1344  "ENST00000363817" chrStart: 2752512
+./../ref/human_contaminant.fa : chr # 1345  "ENST00000411290" chrStart: 2754560
+./../ref/human_contaminant.fa : chr # 1346  "ENST00000391274" chrStart: 2756608
+./../ref/human_contaminant.fa : chr # 1347  "ENST00000410186" chrStart: 2758656
+./../ref/human_contaminant.fa : chr # 1348  "ENST00000576449" chrStart: 2760704
+./../ref/human_contaminant.fa : chr # 1349  "ENST00000515920" chrStart: 2762752
+./../ref/human_contaminant.fa : chr # 1350  "ENST00000516864" chrStart: 2764800
+./../ref/human_contaminant.fa : chr # 1351  "ENST00000363167" chrStart: 2766848
+./../ref/human_contaminant.fa : chr # 1352  "ENST00000365651" chrStart: 2768896
+./../ref/human_contaminant.fa : chr # 1353  "ENST00000616426" chrStart: 2770944
+./../ref/human_contaminant.fa : chr # 1354  "ENST00000365355" chrStart: 2772992
+./../ref/human_contaminant.fa : chr # 1355  "ENST00000517127" chrStart: 2775040
+./../ref/human_contaminant.fa : chr # 1356  "ENST00000363780" chrStart: 2777088
+./../ref/human_contaminant.fa : chr # 1357  "ENST00000410298" chrStart: 2779136
+./../ref/human_contaminant.fa : chr # 1358  "ENST00000365656" chrStart: 2781184
+./../ref/human_contaminant.fa : chr # 1359  "ENST00000516437" chrStart: 2783232
+./../ref/human_contaminant.fa : chr # 1360  "ENST00000517021" chrStart: 2785280
+./../ref/human_contaminant.fa : chr # 1361  "ENST00000607639" chrStart: 2787328
+./../ref/human_contaminant.fa : chr # 1362  "ENST00000410676" chrStart: 2789376
+./../ref/human_contaminant.fa : chr # 1363  "ENST00000410917" chrStart: 2791424
+./../ref/human_contaminant.fa : chr # 1364  "ENST00000410906" chrStart: 2793472
+./../ref/human_contaminant.fa : chr # 1365  "ENST00000459032" chrStart: 2795520
+./../ref/human_contaminant.fa : chr # 1366  "ENST00000362610" chrStart: 2797568
+./../ref/human_contaminant.fa : chr # 1367  "ENST00000410750" chrStart: 2799616
+./../ref/human_contaminant.fa : chr # 1368  "ENST00000411023" chrStart: 2801664
+./../ref/human_contaminant.fa : chr # 1369  "ENST00000364896" chrStart: 2803712
+./../ref/human_contaminant.fa : chr # 1370  "ENST00000517147" chrStart: 2805760
+./../ref/human_contaminant.fa : chr # 1371  "ENST00000516451" chrStart: 2807808
+./../ref/human_contaminant.fa : chr # 1372  "ENST00000362464" chrStart: 2809856
+./../ref/human_contaminant.fa : chr # 1373  "ENST00000410188" chrStart: 2811904
+./../ref/human_contaminant.fa : chr # 1374  "ENST00000410376" chrStart: 2813952
+./../ref/human_contaminant.fa : chr # 1375  "ENST00000411181" chrStart: 2816000
+./../ref/human_contaminant.fa : chr # 1376  "ENST00000411051" chrStart: 2818048
+./../ref/human_contaminant.fa : chr # 1377  "ENST00000391240" chrStart: 2820096
+./../ref/human_contaminant.fa : chr # 1378  "ENST00000391029" chrStart: 2822144
+./../ref/human_contaminant.fa : chr # 1379  "ENST00000516007" chrStart: 2824192
+./../ref/human_contaminant.fa : chr # 1380  "ENST00000411230" chrStart: 2826240
+./../ref/human_contaminant.fa : chr # 1381  "ENST00000516814" chrStart: 2828288
+./../ref/human_contaminant.fa : chr # 1382  "ENST00000410988" chrStart: 2830336
+./../ref/human_contaminant.fa : chr # 1383  "ENST00000364216" chrStart: 2832384
+./../ref/human_contaminant.fa : chr # 1384  "ENST00000517141" chrStart: 2834432
+./../ref/human_contaminant.fa : chr # 1385  "ENST00000517036" chrStart: 2836480
+./../ref/human_contaminant.fa : chr # 1386  "ENST00000516340" chrStart: 2838528
+./../ref/human_contaminant.fa : chr # 1387  "ENST00000364648" chrStart: 2840576
+./../ref/human_contaminant.fa : chr # 1388  "ENST00000410743" chrStart: 2842624
+./../ref/human_contaminant.fa : chr # 1389  "ENST00000364315" chrStart: 2844672
+./../ref/human_contaminant.fa : chr # 1390  "ENST00000365304" chrStart: 2846720
+./../ref/human_contaminant.fa : chr # 1391  "ENST00000516398" chrStart: 2848768
+./../ref/human_contaminant.fa : chr # 1392  "ENST00000365177" chrStart: 2850816
+./../ref/human_contaminant.fa : chr # 1393  "ENST00000516075" chrStart: 2852864
+./../ref/human_contaminant.fa : chr # 1394  "ENST00000516492" chrStart: 2854912
+./../ref/human_contaminant.fa : chr # 1395  "ENST00000363688" chrStart: 2856960
+./../ref/human_contaminant.fa : chr # 1396  "ENST00000364858" chrStart: 2859008
+./../ref/human_contaminant.fa : chr # 1397  "ENST00000364838" chrStart: 2861056
+./../ref/human_contaminant.fa : chr # 1398  "ENST00000362482" chrStart: 2863104
+./../ref/human_contaminant.fa : chr # 1399  "ENST00000364044" chrStart: 2865152
+./../ref/human_contaminant.fa : chr # 1400  "ENST00000605921" chrStart: 2867200
+./../ref/human_contaminant.fa : chr # 1401  "ENST00000516285" chrStart: 2869248
+./../ref/human_contaminant.fa : chr # 1402  "ENST00000411386" chrStart: 2871296
+./../ref/human_contaminant.fa : chr # 1403  "ENST00000363158" chrStart: 2873344
+./../ref/human_contaminant.fa : chr # 1404  "ENST00000365174" chrStart: 2875392
+./../ref/human_contaminant.fa : chr # 1405  "ENST00000411327" chrStart: 2877440
+./../ref/human_contaminant.fa : chr # 1406  "ENST00000517284" chrStart: 2879488
+./../ref/human_contaminant.fa : chr # 1407  "ENST00000363646" chrStart: 2881536
+./../ref/human_contaminant.fa : chr # 1408  "ENST00000516703" chrStart: 2883584
+./../ref/human_contaminant.fa : chr # 1409  "ENST00000516373" chrStart: 2885632
+./../ref/human_contaminant.fa : chr # 1410  "ENST00000517047" chrStart: 2887680
+./../ref/human_contaminant.fa : chr # 1411  "ENST00000515961" chrStart: 2889728
+./../ref/human_contaminant.fa : chr # 1412  "ENST00000517161" chrStart: 2891776
+./../ref/human_contaminant.fa : chr # 1413  "ENST00000517024" chrStart: 2893824
+./../ref/human_contaminant.fa : chr # 1414  "ENST00000410370" chrStart: 2895872
+./../ref/human_contaminant.fa : chr # 1415  "ENST00000363982" chrStart: 2897920
+./../ref/human_contaminant.fa : chr # 1416  "ENST00000362936" chrStart: 2899968
+./../ref/human_contaminant.fa : chr # 1417  "ENST00000515959" chrStart: 2902016
+./../ref/human_contaminant.fa : chr # 1418  "ENST00000390869" chrStart: 2904064
+./../ref/human_contaminant.fa : chr # 1419  "ENST00000364298" chrStart: 2906112
+./../ref/human_contaminant.fa : chr # 1420  "ENST00000517168" chrStart: 2908160
+./../ref/human_contaminant.fa : chr # 1421  "ENST00000611128" chrStart: 2910208
+./../ref/human_contaminant.fa : chr # 1422  "ENST00000364986" chrStart: 2912256
+./../ref/human_contaminant.fa : chr # 1423  "ENST00000410495" chrStart: 2914304
+./../ref/human_contaminant.fa : chr # 1424  "ENST00000517133" chrStart: 2916352
+./../ref/human_contaminant.fa : chr # 1425  "ENST00000364189" chrStart: 2918400
+./../ref/human_contaminant.fa : chr # 1426  "ENST00000363754" chrStart: 2920448
+./../ref/human_contaminant.fa : chr # 1427  "ENST00000362484" chrStart: 2922496
+./../ref/human_contaminant.fa : chr # 1428  "ENST00000363617" chrStart: 2924544
+./../ref/human_contaminant.fa : chr # 1429  "ENST00000614507" chrStart: 2926592
+./../ref/human_contaminant.fa : chr # 1430  "ENST00000579922" chrStart: 2928640
+./../ref/human_contaminant.fa : chr # 1431  "ENST00000363244" chrStart: 2930688
+./../ref/human_contaminant.fa : chr # 1432  "ENST00000391223" chrStart: 2932736
+./../ref/human_contaminant.fa : chr # 1433  "ENST00000364942" chrStart: 2934784
+./../ref/human_contaminant.fa : chr # 1434  "ENST00000365277" chrStart: 2936832
+./../ref/human_contaminant.fa : chr # 1435  "ENST00000363368" chrStart: 2938880
+./../ref/human_contaminant.fa : chr # 1436  "ENST00000390936" chrStart: 2940928
+./../ref/human_contaminant.fa : chr # 1437  "ENST00000390949" chrStart: 2942976
+./../ref/human_contaminant.fa : chr # 1438  "ENST00000410484" chrStart: 2945024
+./../ref/human_contaminant.fa : chr # 1439  "ENST00000365092" chrStart: 2947072
+./../ref/human_contaminant.fa : chr # 1440  "ENST00000607318" chrStart: 2949120
+./../ref/human_contaminant.fa : chr # 1441  "ENST00000517274" chrStart: 2951168
+./../ref/human_contaminant.fa : chr # 1442  "ENST00000364451" chrStart: 2953216
+./../ref/human_contaminant.fa : chr # 1443  "ENST00000410990" chrStart: 2955264
+./../ref/human_contaminant.fa : chr # 1444  "ENST00000515896" chrStart: 2957312
+./../ref/human_contaminant.fa : chr # 1445  "ENST00000363188" chrStart: 2959360
+./../ref/human_contaminant.fa : chr # 1446  "ENST00000364477" chrStart: 2961408
+./../ref/human_contaminant.fa : chr # 1447  "ENST00000363657" chrStart: 2963456
+./../ref/human_contaminant.fa : chr # 1448  "ENST00000363378" chrStart: 2965504
+./../ref/human_contaminant.fa : chr # 1449  "ENST00000516938" chrStart: 2967552
+./../ref/human_contaminant.fa : chr # 1450  "ENST00000517142" chrStart: 2969600
+./../ref/human_contaminant.fa : chr # 1451  "ENST00000363456" chrStart: 2971648
+./../ref/human_contaminant.fa : chr # 1452  "ENST00000410653" chrStart: 2973696
+./../ref/human_contaminant.fa : chr # 1453  "ENST00000384400" chrStart: 2975744
+./../ref/human_contaminant.fa : chr # 1454  "ENST00000516014" chrStart: 2977792
+./../ref/human_contaminant.fa : chr # 1455  "ENST00000516809" chrStart: 2979840
+./../ref/human_contaminant.fa : chr # 1456  "ENST00000577378" chrStart: 2981888
+./../ref/human_contaminant.fa : chr # 1457  "ENST00000365129" chrStart: 2983936
+./../ref/human_contaminant.fa : chr # 1458  "ENST00000459480" chrStart: 2985984
+./../ref/human_contaminant.fa : chr # 1459  "ENST00000410300" chrStart: 2988032
+./../ref/human_contaminant.fa : chr # 1460  "ENST00000515951" chrStart: 2990080
+./../ref/human_contaminant.fa : chr # 1461  "ENST00000606950" chrStart: 2992128
+./../ref/human_contaminant.fa : chr # 1462  "ENST00000362750" chrStart: 2994176
+./../ref/human_contaminant.fa : chr # 1463  "ENST00000516642" chrStart: 2996224
+./../ref/human_contaminant.fa : chr # 1464  "ENST00000516020" chrStart: 2998272
+./../ref/human_contaminant.fa : chr # 1465  "ENST00000516580" chrStart: 3000320
+./../ref/human_contaminant.fa : chr # 1466  "ENST00000391131" chrStart: 3002368
+./../ref/human_contaminant.fa : chr # 1467  "ENST00000364442" chrStart: 3004416
+./../ref/human_contaminant.fa : chr # 1468  "ENST00000411081" chrStart: 3006464
+./../ref/human_contaminant.fa : chr # 1469  "ENST00000364657" chrStart: 3008512
+./../ref/human_contaminant.fa : chr # 1470  "ENST00000610460" chrStart: 3010560
+./../ref/human_contaminant.fa : chr # 1471  "ENST00000365222" chrStart: 3012608
+./../ref/human_contaminant.fa : chr # 1472  "ENST00000390963" chrStart: 3014656
+./../ref/human_contaminant.fa : chr # 1473  "ENST00000363779" chrStart: 3016704
+./../ref/human_contaminant.fa : chr # 1474  "ENST00000410496" chrStart: 3018752
+./../ref/human_contaminant.fa : chr # 1475  "ENST00000516106" chrStart: 3020800
+./../ref/human_contaminant.fa : chr # 1476  "ENST00000363440" chrStart: 3022848
+./../ref/human_contaminant.fa : chr # 1477  "ENST00000411361" chrStart: 3024896
+./../ref/human_contaminant.fa : chr # 1478  "ENST00000410903" chrStart: 3026944
+./../ref/human_contaminant.fa : chr # 1479  "ENST00000365516" chrStart: 3028992
+./../ref/human_contaminant.fa : chr # 1480  "ENST00000517068" chrStart: 3031040
+./../ref/human_contaminant.fa : chr # 1481  "ENST00000363457" chrStart: 3033088
+./../ref/human_contaminant.fa : chr # 1482  "ENST00000410523" chrStart: 3035136
+./../ref/human_contaminant.fa : chr # 1483  "ENST00000611169" chrStart: 3037184
+./../ref/human_contaminant.fa : chr # 1484  "ENST00000516127" chrStart: 3039232
+./../ref/human_contaminant.fa : chr # 1485  "ENST00000516480" chrStart: 3041280
+./../ref/human_contaminant.fa : chr # 1486  "ENST00000364577" chrStart: 3043328
+./../ref/human_contaminant.fa : chr # 1487  "ENST00000614916" chrStart: 3045376
+./../ref/human_contaminant.fa : chr # 1488  "ENST00000391034" chrStart: 3047424
+./../ref/human_contaminant.fa : chr # 1489  "ENST00000516277" chrStart: 3049472
+./../ref/human_contaminant.fa : chr # 1490  "ENST00000516971" chrStart: 3051520
+./../ref/human_contaminant.fa : chr # 1491  "ENST00000364491" chrStart: 3053568
+./../ref/human_contaminant.fa : chr # 1492  "ENST00000516041" chrStart: 3055616
+./../ref/human_contaminant.fa : chr # 1493  "ENST00000365323" chrStart: 3057664
+./../ref/human_contaminant.fa : chr # 1494  "ENST00000516858" chrStart: 3059712
+./../ref/human_contaminant.fa : chr # 1495  "ENST00000516687" chrStart: 3061760
+./../ref/human_contaminant.fa : chr # 1496  "ENST00000364455" chrStart: 3063808
+./../ref/human_contaminant.fa : chr # 1497  "ENST00000362973" chrStart: 3065856
+./../ref/human_contaminant.fa : chr # 1498  "ENST00000364115" chrStart: 3067904
+./../ref/human_contaminant.fa : chr # 1499  "ENST00000363405" chrStart: 3069952
+./../ref/human_contaminant.fa : chr # 1500  "ENST00000577302" chrStart: 3072000
+./../ref/human_contaminant.fa : chr # 1501  "ENST00000410319" chrStart: 3074048
+./../ref/human_contaminant.fa : chr # 1502  "ENST00000517155" chrStart: 3076096
+./../ref/human_contaminant.fa : chr # 1503  "ENST00000516234" chrStart: 3078144
+./../ref/human_contaminant.fa : chr # 1504  "ENST00000410900" chrStart: 3080192
+./../ref/human_contaminant.fa : chr # 1505  "ENST00000364144" chrStart: 3082240
+./../ref/human_contaminant.fa : chr # 1506  "ENST00000410620" chrStart: 3084288
+./../ref/human_contaminant.fa : chr # 1507  "ENST00000410809" chrStart: 3086336
+./../ref/human_contaminant.fa : chr # 1508  "ENST00000363749" chrStart: 3088384
+./../ref/human_contaminant.fa : chr # 1509  "ENST00000516871" chrStart: 3090432
+./../ref/human_contaminant.fa : chr # 1510  "ENST00000363473" chrStart: 3092480
+./../ref/human_contaminant.fa : chr # 1511  "ENST00000364724" chrStart: 3094528
+./../ref/human_contaminant.fa : chr # 1512  "ENST00000364003" chrStart: 3096576
+./../ref/human_contaminant.fa : chr # 1513  "ENST00000363357" chrStart: 3098624
+./../ref/human_contaminant.fa : chr # 1514  "ENST00000516789" chrStart: 3100672
+./../ref/human_contaminant.fa : chr # 1515  "ENST00000364748" chrStart: 3102720
+./../ref/human_contaminant.fa : chr # 1516  "ENST00000621661" chrStart: 3104768
+./../ref/human_contaminant.fa : chr # 1517  "ENST00000362653" chrStart: 3106816
+./../ref/human_contaminant.fa : chr # 1518  "ENST00000391323" chrStart: 3108864
+./../ref/human_contaminant.fa : chr # 1519  "ENST00000618635" chrStart: 3110912
+./../ref/human_contaminant.fa : chr # 1520  "ENST00000365461" chrStart: 3112960
+./../ref/human_contaminant.fa : chr # 1521  "ENST00000410475" chrStart: 3115008
+./../ref/human_contaminant.fa : chr # 1522  "ENST00000411020" chrStart: 3117056
+./../ref/human_contaminant.fa : chr # 1523  "ENST00000363059" chrStart: 3119104
+./../ref/human_contaminant.fa : chr # 1524  "ENST00000390978" chrStart: 3121152
+./../ref/human_contaminant.fa : chr # 1525  "ENST00000410304" chrStart: 3123200
+./../ref/human_contaminant.fa : chr # 1526  "ENST00000459463" chrStart: 3125248
+./../ref/human_contaminant.fa : chr # 1527  "ENST00000365072" chrStart: 3127296
+./../ref/human_contaminant.fa : chr # 1528  "ENST00000625068" chrStart: 3129344
+./../ref/human_contaminant.fa : chr # 1529  "ENST00000362370" chrStart: 3131392
+./../ref/human_contaminant.fa : chr # 1530  "ENST00000411306" chrStart: 3133440
+./../ref/human_contaminant.fa : chr # 1531  "ENST00000516647" chrStart: 3135488
+./../ref/human_contaminant.fa : chr # 1532  "ENST00000363969" chrStart: 3137536
+./../ref/human_contaminant.fa : chr # 1533  "ENST00000390874" chrStart: 3139584
+./../ref/human_contaminant.fa : chr # 1534  "ENST00000516833" chrStart: 3141632
+./../ref/human_contaminant.fa : chr # 1535  "ENST00000390988" chrStart: 3143680
+./../ref/human_contaminant.fa : chr # 1536  "ENST00000363936" chrStart: 3145728
+./../ref/human_contaminant.fa : chr # 1537  "ENST00000410276" chrStart: 3147776
+./../ref/human_contaminant.fa : chr # 1538  "ENST00000391234" chrStart: 3149824
+./../ref/human_contaminant.fa : chr # 1539  "ENST00000516997" chrStart: 3151872
+./../ref/human_contaminant.fa : chr # 1540  "ENST00000516169" chrStart: 3153920
+./../ref/human_contaminant.fa : chr # 1541  "ENST00000390902" chrStart: 3155968
+./../ref/human_contaminant.fa : chr # 1542  "ENST00000621941" chrStart: 3158016
+./../ref/human_contaminant.fa : chr # 1543  "ENST00000365294" chrStart: 3160064
+./../ref/human_contaminant.fa : chr # 1544  "ENST00000384155" chrStart: 3162112
+./../ref/human_contaminant.fa : chr # 1545  "ENST00000362694" chrStart: 3164160
+./../ref/human_contaminant.fa : chr # 1546  "ENST00000364239" chrStart: 3166208
+./../ref/human_contaminant.fa : chr # 1547  "ENST00000410312" chrStart: 3168256
+./../ref/human_contaminant.fa : chr # 1548  "ENST00000410646" chrStart: 3170304
+./../ref/human_contaminant.fa : chr # 1549  "ENST00000362537" chrStart: 3172352
+./../ref/human_contaminant.fa : chr # 1550  "ENST00000364599" chrStart: 3174400
+./../ref/human_contaminant.fa : chr # 1551  "ENST00000391293" chrStart: 3176448
+./../ref/human_contaminant.fa : chr # 1552  "ENST00000364740" chrStart: 3178496
+./../ref/human_contaminant.fa : chr # 1553  "ENST00000411087" chrStart: 3180544
+./../ref/human_contaminant.fa : chr # 1554  "ENST00000364857" chrStart: 3182592
+./../ref/human_contaminant.fa : chr # 1555  "ENST00000364991" chrStart: 3184640
+./../ref/human_contaminant.fa : chr # 1556  "ENST00000410568" chrStart: 3186688
+./../ref/human_contaminant.fa : chr # 1557  "ENST00000362467" chrStart: 3188736
+./../ref/human_contaminant.fa : chr # 1558  "ENST00000364415" chrStart: 3190784
+./../ref/human_contaminant.fa : chr # 1559  "ENST00000364404" chrStart: 3192832
+./../ref/human_contaminant.fa : chr # 1560  "ENST00000516111" chrStart: 3194880
+./../ref/human_contaminant.fa : chr # 1561  "ENST00000362967" chrStart: 3196928
+./../ref/human_contaminant.fa : chr # 1562  "ENST00000581845" chrStart: 3198976
+./../ref/human_contaminant.fa : chr # 1563  "ENST00000410336" chrStart: 3201024
+./../ref/human_contaminant.fa : chr # 1564  "ENST00000362665" chrStart: 3203072
+./../ref/human_contaminant.fa : chr # 1565  "ENST00000516232" chrStart: 3205120
+./../ref/human_contaminant.fa : chr # 1566  "ENST00000515972" chrStart: 3207168
+./../ref/human_contaminant.fa : chr # 1567  "ENST00000516156" chrStart: 3209216
+./../ref/human_contaminant.fa : chr # 1568  "ENST00000363541" chrStart: 3211264
+./../ref/human_contaminant.fa : chr # 1569  "ENST00000410486" chrStart: 3213312
+./../ref/human_contaminant.fa : chr # 1570  "ENST00000517150" chrStart: 3215360
+./../ref/human_contaminant.fa : chr # 1571  "ENST00000516815" chrStart: 3217408
+./../ref/human_contaminant.fa : chr # 1572  "ENST00000410922" chrStart: 3219456
+./../ref/human_contaminant.fa : chr # 1573  "ENST00000516561" chrStart: 3221504
+./../ref/human_contaminant.fa : chr # 1574  "ENST00000515889" chrStart: 3223552
+./../ref/human_contaminant.fa : chr # 1575  "ENST00000612104" chrStart: 3225600
+./../ref/human_contaminant.fa : chr # 1576  "ENST00000365394" chrStart: 3227648
+./../ref/human_contaminant.fa : chr # 1577  "ENST00000516559" chrStart: 3229696
+./../ref/human_contaminant.fa : chr # 1578  "ENST00000458909" chrStart: 3231744
+./../ref/human_contaminant.fa : chr # 1579  "ENST00000516402" chrStart: 3233792
+./../ref/human_contaminant.fa : chr # 1580  "ENST00000390935" chrStart: 3235840
+./../ref/human_contaminant.fa : chr # 1581  "ENST00000516453" chrStart: 3237888
+./../ref/human_contaminant.fa : chr # 1582  "ENST00000365486" chrStart: 3239936
+./../ref/human_contaminant.fa : chr # 1583  "ENST00000410250" chrStart: 3241984
+./../ref/human_contaminant.fa : chr # 1584  "ENST00000516360" chrStart: 3244032
+./../ref/human_contaminant.fa : chr # 1585  "ENST00000612463" chrStart: 3246080
+./../ref/human_contaminant.fa : chr # 1586  "ENST00000365513" chrStart: 3248128
+./../ref/human_contaminant.fa : chr # 1587  "ENST00000363209" chrStart: 3250176
+./../ref/human_contaminant.fa : chr # 1588  "ENST00000516358" chrStart: 3252224
+./../ref/human_contaminant.fa : chr # 1589  "ENST00000516370" chrStart: 3254272
+./../ref/human_contaminant.fa : chr # 1590  "ENST00000364002" chrStart: 3256320
+./../ref/human_contaminant.fa : chr # 1591  "ENST00000365604" chrStart: 3258368
+./../ref/human_contaminant.fa : chr # 1592  "ENST00000391195" chrStart: 3260416
+./../ref/human_contaminant.fa : chr # 1593  "ENST00000363355" chrStart: 3262464
+./../ref/human_contaminant.fa : chr # 1594  "ENST00000618379" chrStart: 3264512
+./../ref/human_contaminant.fa : chr # 1595  "ENST00000619779" chrStart: 3266560
+./../ref/human_contaminant.fa : chr # 1596  "ENST00000362934" chrStart: 3268608
+./../ref/human_contaminant.fa : chr # 1597  "ENST00000391247" chrStart: 3270656
+./../ref/human_contaminant.fa : chr # 1598  "ENST00000410277" chrStart: 3272704
+./../ref/human_contaminant.fa : chr # 1599  "ENST00000384457" chrStart: 3274752
+./../ref/human_contaminant.fa : chr # 1600  "ENST00000391257" chrStart: 3276800
+./../ref/human_contaminant.fa : chr # 1601  "ENST00000516498" chrStart: 3278848
+./../ref/human_contaminant.fa : chr # 1602  "ENST00000363376" chrStart: 3280896
+./../ref/human_contaminant.fa : chr # 1603  "ENST00000516355" chrStart: 3282944
+./../ref/human_contaminant.fa : chr # 1604  "ENST00000363466" chrStart: 3284992
+./../ref/human_contaminant.fa : chr # 1605  "ENST00000516115" chrStart: 3287040
+./../ref/human_contaminant.fa : chr # 1606  "ENST00000362768" chrStart: 3289088
+./../ref/human_contaminant.fa : chr # 1607  "ENST00000516537" chrStart: 3291136
+./../ref/human_contaminant.fa : chr # 1608  "ENST00000365055" chrStart: 3293184
+./../ref/human_contaminant.fa : chr # 1609  "ENST00000622298" chrStart: 3295232
+./../ref/human_contaminant.fa : chr # 1610  "ENST00000364275" chrStart: 3297280
+./../ref/human_contaminant.fa : chr # 1611  "ENST00000516615" chrStart: 3299328
+./../ref/human_contaminant.fa : chr # 1612  "ENST00000363849" chrStart: 3301376
+./../ref/human_contaminant.fa : chr # 1613  "ENST00000365061" chrStart: 3303424
+./../ref/human_contaminant.fa : chr # 1614  "ENST00000362863" chrStart: 3305472
+./../ref/human_contaminant.fa : chr # 1615  "ENST00000362901" chrStart: 3307520
+./../ref/human_contaminant.fa : chr # 1616  "ENST00000516726" chrStart: 3309568
+./../ref/human_contaminant.fa : chr # 1617  "ENST00000517268" chrStart: 3311616
+./../ref/human_contaminant.fa : chr # 1618  "ENST00000364893" chrStart: 3313664
+./../ref/human_contaminant.fa : chr # 1619  "ENST00000516844" chrStart: 3315712
+./../ref/human_contaminant.fa : chr # 1620  "ENST00000362975" chrStart: 3317760
+./../ref/human_contaminant.fa : chr # 1621  "ENST00000517019" chrStart: 3319808
+./../ref/human_contaminant.fa : chr # 1622  "ENST00000362494" chrStart: 3321856
+./../ref/human_contaminant.fa : chr # 1623  "ENST00000516048" chrStart: 3323904
+./../ref/human_contaminant.fa : chr # 1624  "ENST00000619782" chrStart: 3325952
+./../ref/human_contaminant.fa : chr # 1625  "ENST00000517096" chrStart: 3328000
+./../ref/human_contaminant.fa : chr # 1626  "ENST00000516263" chrStart: 3330048
+./../ref/human_contaminant.fa : chr # 1627  "ENST00000363839" chrStart: 3332096
+./../ref/human_contaminant.fa : chr # 1628  "ENST00000364606" chrStart: 3334144
+./../ref/human_contaminant.fa : chr # 1629  "ENST00000365069" chrStart: 3336192
+./../ref/human_contaminant.fa : chr # 1630  "ENST00000411342" chrStart: 3338240
+./../ref/human_contaminant.fa : chr # 1631  "ENST00000410191" chrStart: 3340288
+./../ref/human_contaminant.fa : chr # 1632  "ENST00000362534" chrStart: 3342336
+./../ref/human_contaminant.fa : chr # 1633  "ENST00000362480" chrStart: 3344384
+./../ref/human_contaminant.fa : chr # 1634  "ENST00000363115" chrStart: 3346432
+./../ref/human_contaminant.fa : chr # 1635  "ENST00000362675" chrStart: 3348480
+./../ref/human_contaminant.fa : chr # 1636  "ENST00000391203" chrStart: 3350528
+./../ref/human_contaminant.fa : chr # 1637  "ENST00000516557" chrStart: 3352576
+./../ref/human_contaminant.fa : chr # 1638  "ENST00000619471" chrStart: 3354624
+./../ref/human_contaminant.fa : chr # 1639  "ENST00000411071" chrStart: 3356672
+./../ref/human_contaminant.fa : chr # 1640  "ENST00000364834" chrStart: 3358720
+./../ref/human_contaminant.fa : chr # 1641  "ENST00000579807" chrStart: 3360768
+./../ref/human_contaminant.fa : chr # 1642  "ENST00000364725" chrStart: 3362816
+./../ref/human_contaminant.fa : chr # 1643  "ENST00000610374" chrStart: 3364864
+./../ref/human_contaminant.fa : chr # 1644  "ENST00000365006" chrStart: 3366912
+./../ref/human_contaminant.fa : chr # 1645  "ENST00000517057" chrStart: 3368960
+./../ref/human_contaminant.fa : chr # 1646  "ENST00000362969" chrStart: 3371008
+./../ref/human_contaminant.fa : chr # 1647  "ENST00000411160" chrStart: 3373056
+./../ref/human_contaminant.fa : chr # 1648  "ENST00000516744" chrStart: 3375104
+./../ref/human_contaminant.fa : chr # 1649  "ENST00000516261" chrStart: 3377152
+./../ref/human_contaminant.fa : chr # 1650  "ENST00000363756" chrStart: 3379200
+./../ref/human_contaminant.fa : chr # 1651  "ENST00000362526" chrStart: 3381248
+./../ref/human_contaminant.fa : chr # 1652  "ENST00000365378" chrStart: 3383296
+./../ref/human_contaminant.fa : chr # 1653  "ENST00000362686" chrStart: 3385344
+./../ref/human_contaminant.fa : chr # 1654  "ENST00000611446" chrStart: 3387392
+./../ref/human_contaminant.fa : chr # 1655  "ENST00000390956" chrStart: 3389440
+./../ref/human_contaminant.fa : chr # 1656  "ENST00000515947" chrStart: 3391488
+./../ref/human_contaminant.fa : chr # 1657  "ENST00000363538" chrStart: 3393536
+./../ref/human_contaminant.fa : chr # 1658  "ENST00000363868" chrStart: 3395584
+./../ref/human_contaminant.fa : chr # 1659  "ENST00000365541" chrStart: 3397632
+./../ref/human_contaminant.fa : chr # 1660  "ENST00000617631" chrStart: 3399680
+./../ref/human_contaminant.fa : chr # 1661  "ENST00000517222" chrStart: 3401728
+./../ref/human_contaminant.fa : chr # 1662  "ENST00000362448" chrStart: 3403776
+./../ref/human_contaminant.fa : chr # 1663  "ENST00000612086" chrStart: 3405824
+./../ref/human_contaminant.fa : chr # 1664  "ENST00000362452" chrStart: 3407872
+./../ref/human_contaminant.fa : chr # 1665  "ENST00000364543" chrStart: 3409920
+./../ref/human_contaminant.fa : chr # 1666  "ENST00000613359" chrStart: 3411968
+./../ref/human_contaminant.fa : chr # 1667  "ENST00000516422" chrStart: 3414016
+./../ref/human_contaminant.fa : chr # 1668  "ENST00000363511" chrStart: 3416064
+./../ref/human_contaminant.fa : chr # 1669  "ENST00000363004" chrStart: 3418112
+./../ref/human_contaminant.fa : chr # 1670  "ENST00000391197" chrStart: 3420160
+./../ref/human_contaminant.fa : chr # 1671  "ENST00000391152" chrStart: 3422208
+./../ref/human_contaminant.fa : chr # 1672  "ENST00000517007" chrStart: 3424256
+./../ref/human_contaminant.fa : chr # 1673  "ENST00000516181" chrStart: 3426304
+./../ref/human_contaminant.fa : chr # 1674  "ENST00000517230" chrStart: 3428352
+./../ref/human_contaminant.fa : chr # 1675  "ENST00000364020" chrStart: 3430400
+./../ref/human_contaminant.fa : chr # 1676  "ENST00000365186" chrStart: 3432448
+./../ref/human_contaminant.fa : chr # 1677  "ENST00000516352" chrStart: 3434496
+./../ref/human_contaminant.fa : chr # 1678  "ENST00000364920" chrStart: 3436544
+./../ref/human_contaminant.fa : chr # 1679  "ENST00000620796" chrStart: 3438592
+./../ref/human_contaminant.fa : chr # 1680  "ENST00000365420" chrStart: 3440640
+./../ref/human_contaminant.fa : chr # 1681  "ENST00000517246" chrStart: 3442688
+./../ref/human_contaminant.fa : chr # 1682  "ENST00000516951" chrStart: 3444736
+./../ref/human_contaminant.fa : chr # 1683  "ENST00000516298" chrStart: 3446784
+./../ref/human_contaminant.fa : chr # 1684  "ENST00000362503" chrStart: 3448832
+./../ref/human_contaminant.fa : chr # 1685  "ENST00000458857" chrStart: 3450880
+./../ref/human_contaminant.fa : chr # 1686  "ENST00000515976" chrStart: 3452928
+./../ref/human_contaminant.fa : chr # 1687  "ENST00000362639" chrStart: 3454976
+./../ref/human_contaminant.fa : chr # 1688  "ENST00000364485" chrStart: 3457024
+./../ref/human_contaminant.fa : chr # 1689  "ENST00000516887" chrStart: 3459072
+./../ref/human_contaminant.fa : chr # 1690  "ENST00000364718" chrStart: 3461120
+./../ref/human_contaminant.fa : chr # 1691  "ENST00000612357" chrStart: 3463168
+./../ref/human_contaminant.fa : chr # 1692  "ENST00000364165" chrStart: 3465216
+./../ref/human_contaminant.fa : chr # 1693  "ENST00000362445" chrStart: 3467264
+./../ref/human_contaminant.fa : chr # 1694  "ENST00000363408" chrStart: 3469312
+./../ref/human_contaminant.fa : chr # 1695  "ENST00000516184" chrStart: 3471360
+./../ref/human_contaminant.fa : chr # 1696  "ENST00000364278" chrStart: 3473408
+./../ref/human_contaminant.fa : chr # 1697  "ENST00000363443" chrStart: 3475456
+./../ref/human_contaminant.fa : chr # 1698  "ENST00000391006" chrStart: 3477504
+./../ref/human_contaminant.fa : chr # 1699  "ENST00000364130" chrStart: 3479552
+./../ref/human_contaminant.fa : chr # 1700  "ENST00000516136" chrStart: 3481600
+./../ref/human_contaminant.fa : chr # 1701  "ENST00000365411" chrStart: 3483648
+./../ref/human_contaminant.fa : chr # 1702  "ENST00000364976" chrStart: 3485696
+./../ref/human_contaminant.fa : chr # 1703  "ENST00000363871" chrStart: 3487744
+./../ref/human_contaminant.fa : chr # 1704  "ENST00000364524" chrStart: 3489792
+./../ref/human_contaminant.fa : chr # 1705  "ENST00000364545" chrStart: 3491840
+./../ref/human_contaminant.fa : chr # 1706  "ENST00000620265" chrStart: 3493888
+./../ref/human_contaminant.fa : chr # 1707  "ENST00000623149" chrStart: 3495936
+./../ref/human_contaminant.fa : chr # 1708  "ENST00000390940" chrStart: 3497984
+./../ref/human_contaminant.fa : chr # 1709  "ENST00000362525" chrStart: 3500032
+./../ref/human_contaminant.fa : chr # 1710  "ENST00000364653" chrStart: 3502080
+./../ref/human_contaminant.fa : chr # 1711  "ENST00000410353" chrStart: 3504128
+./../ref/human_contaminant.fa : chr # 1712  "ENST00000391225" chrStart: 3506176
+./../ref/human_contaminant.fa : chr # 1713  "ENST00000516452" chrStart: 3508224
+./../ref/human_contaminant.fa : chr # 1714  "ENST00000410197" chrStart: 3510272
+./../ref/human_contaminant.fa : chr # 1715  "ENST00000391063" chrStart: 3512320
+./../ref/human_contaminant.fa : chr # 1716  "ENST00000391269" chrStart: 3514368
+./../ref/human_contaminant.fa : chr # 1717  "ENST00000516081" chrStart: 3516416
+./../ref/human_contaminant.fa : chr # 1718  "ENST00000516450" chrStart: 3518464
+./../ref/human_contaminant.fa : chr # 1719  "ENST00000624014" chrStart: 3520512
+./../ref/human_contaminant.fa : chr # 1720  "ENST00000515908" chrStart: 3522560
+./../ref/human_contaminant.fa : chr # 1721  "ENST00000517231" chrStart: 3524608
+./../ref/human_contaminant.fa : chr # 1722  "ENST00000364952" chrStart: 3526656
+./../ref/human_contaminant.fa : chr # 1723  "ENST00000516865" chrStart: 3528704
+./../ref/human_contaminant.fa : chr # 1724  "ENST00000516493" chrStart: 3530752
+./../ref/human_contaminant.fa : chr # 1725  "ENST00000410989" chrStart: 3532800
+./../ref/human_contaminant.fa : chr # 1726  "ENST00000516463" chrStart: 3534848
+./../ref/human_contaminant.fa : chr # 1727  "ENST00000390836" chrStart: 3536896
+./../ref/human_contaminant.fa : chr # 1728  "ENST00000516670" chrStart: 3538944
+./../ref/human_contaminant.fa : chr # 1729  "ENST00000516144" chrStart: 3540992
+./../ref/human_contaminant.fa : chr # 1730  "ENST00000365602" chrStart: 3543040
+./../ref/human_contaminant.fa : chr # 1731  "ENST00000517039" chrStart: 3545088
+./../ref/human_contaminant.fa : chr # 1732  "ENST00000363166" chrStart: 3547136
+./../ref/human_contaminant.fa : chr # 1733  "ENST00000390974" chrStart: 3549184
+./../ref/human_contaminant.fa : chr # 1734  "ENST00000363717" chrStart: 3551232
+./../ref/human_contaminant.fa : chr # 1735  "ENST00000363500" chrStart: 3553280
+./../ref/human_contaminant.fa : chr # 1736  "ENST00000365053" chrStart: 3555328
+./../ref/human_contaminant.fa : chr # 1737  "ENST00000459084" chrStart: 3557376
+./../ref/human_contaminant.fa : chr # 1738  "ENST00000391010" chrStart: 3559424
+./../ref/human_contaminant.fa : chr # 1739  "ENST00000516478" chrStart: 3561472
+./../ref/human_contaminant.fa : chr # 1740  "ENST00000365560" chrStart: 3563520
+./../ref/human_contaminant.fa : chr # 1741  "ENST00000365464" chrStart: 3565568
+./../ref/human_contaminant.fa : chr # 1742  "ENST00000411245" chrStart: 3567616
+./../ref/human_contaminant.fa : chr # 1743  "ENST00000362532" chrStart: 3569664
+./../ref/human_contaminant.fa : chr # 1744  "ENST00000362400" chrStart: 3571712
+./../ref/human_contaminant.fa : chr # 1745  "ENST00000363124" chrStart: 3573760
+./../ref/human_contaminant.fa : chr # 1746  "ENST00000410446" chrStart: 3575808
+./../ref/human_contaminant.fa : chr # 1747  "ENST00000364340" chrStart: 3577856
+./../ref/human_contaminant.fa : chr # 1748  "ENST00000364866" chrStart: 3579904
+./../ref/human_contaminant.fa : chr # 1749  "ENST00000516064" chrStart: 3581952
+./../ref/human_contaminant.fa : chr # 1750  "ENST00000391031" chrStart: 3584000
+./../ref/human_contaminant.fa : chr # 1751  "ENST00000410527" chrStart: 3586048
+./../ref/human_contaminant.fa : chr # 1752  "ENST00000612928" chrStart: 3588096
+./../ref/human_contaminant.fa : chr # 1753  "ENST00000516506" chrStart: 3590144
+./../ref/human_contaminant.fa : chr # 1754  "ENST00000516527" chrStart: 3592192
+./../ref/human_contaminant.fa : chr # 1755  "ENST00000516188" chrStart: 3594240
+./../ref/human_contaminant.fa : chr # 1756  "ENST00000410487" chrStart: 3596288
+./../ref/human_contaminant.fa : chr # 1757  "ENST00000363564" chrStart: 3598336
+./../ref/human_contaminant.fa : chr # 1758  "ENST00000362332" chrStart: 3600384
+./../ref/human_contaminant.fa : chr # 1759  "ENST00000365190" chrStart: 3602432
+./../ref/human_contaminant.fa : chr # 1760  "ENST00000390987" chrStart: 3604480
+./../ref/human_contaminant.fa : chr # 1761  "ENST00000516840" chrStart: 3606528
+./../ref/human_contaminant.fa : chr # 1762  "ENST00000517148" chrStart: 3608576
+./../ref/human_contaminant.fa : chr # 1763  "ENST00000410874" chrStart: 3610624
+./../ref/human_contaminant.fa : chr # 1764  "ENST00000516192" chrStart: 3612672
+./../ref/human_contaminant.fa : chr # 1765  "ENST00000362722" chrStart: 3614720
+./../ref/human_contaminant.fa : chr # 1766  "ENST00000363023" chrStart: 3616768
+./../ref/human_contaminant.fa : chr # 1767  "ENST00000516095" chrStart: 3618816
+./../ref/human_contaminant.fa : chr # 1768  "ENST00000517178" chrStart: 3620864
+./../ref/human_contaminant.fa : chr # 1769  "ENST00000365552" chrStart: 3622912
+./../ref/human_contaminant.fa : chr # 1770  "ENST00000516458" chrStart: 3624960
+./../ref/human_contaminant.fa : chr # 1771  "ENST00000410316" chrStart: 3627008
+./../ref/human_contaminant.fa : chr # 1772  "ENST00000363151" chrStart: 3629056
+./../ref/human_contaminant.fa : chr # 1773  "ENST00000516905" chrStart: 3631104
+./../ref/human_contaminant.fa : chr # 1774  "ENST00000362638" chrStart: 3633152
+./../ref/human_contaminant.fa : chr # 1775  "ENST00000362655" chrStart: 3635200
+./../ref/human_contaminant.fa : chr # 1776  "ENST00000516251" chrStart: 3637248
+./../ref/human_contaminant.fa : chr # 1777  "ENST00000363431" chrStart: 3639296
+./../ref/human_contaminant.fa : chr # 1778  "ENST00000516613" chrStart: 3641344
+./../ref/human_contaminant.fa : chr # 1779  "ENST00000365050" chrStart: 3643392
+./../ref/human_contaminant.fa : chr # 1780  "ENST00000365098" chrStart: 3645440
+./../ref/human_contaminant.fa : chr # 1781  "ENST00000516555" chrStart: 3647488
+./../ref/human_contaminant.fa : chr # 1782  "ENST00000364486" chrStart: 3649536
+./../ref/human_contaminant.fa : chr # 1783  "ENST00000410218" chrStart: 3651584
+./../ref/human_contaminant.fa : chr # 1784  "ENST00000364171" chrStart: 3653632
+./../ref/human_contaminant.fa : chr # 1785  "ENST00000391071" chrStart: 3655680
+./../ref/human_contaminant.fa : chr # 1786  "ENST00000517055" chrStart: 3657728
+./../ref/human_contaminant.fa : chr # 1787  "ENST00000411154" chrStart: 3659776
+./../ref/human_contaminant.fa : chr # 1788  "ENST00000516193" chrStart: 3661824
+./../ref/human_contaminant.fa : chr # 1789  "ENST00000365096" chrStart: 3663872
+./../ref/human_contaminant.fa : chr # 1790  "ENST00000391123" chrStart: 3665920
+./../ref/human_contaminant.fa : chr # 1791  "ENST00000363083" chrStart: 3667968
+./../ref/human_contaminant.fa : chr # 1792  "ENST00000390852" chrStart: 3670016
+./../ref/human_contaminant.fa : chr # 1793  "ENST00000364431" chrStart: 3672064
+./../ref/human_contaminant.fa : chr # 1794  "ENST00000410176" chrStart: 3674112
+./../ref/human_contaminant.fa : chr # 1795  "ENST00000410385" chrStart: 3676160
+./../ref/human_contaminant.fa : chr # 1796  "ENST00000516132" chrStart: 3678208
+./../ref/human_contaminant.fa : chr # 1797  "ENST00000516628" chrStart: 3680256
+./../ref/human_contaminant.fa : chr # 1798  "ENST00000411271" chrStart: 3682304
+./../ref/human_contaminant.fa : chr # 1799  "ENST00000515955" chrStart: 3684352
+./../ref/human_contaminant.fa : chr # 1800  "ENST00000364570" chrStart: 3686400
+./../ref/human_contaminant.fa : chr # 1801  "ENST00000517132" chrStart: 3688448
+./../ref/human_contaminant.fa : chr # 1802  "ENST00000517190" chrStart: 3690496
+./../ref/human_contaminant.fa : chr # 1803  "ENST00000516220" chrStart: 3692544
+./../ref/human_contaminant.fa : chr # 1804  "ENST00000517093" chrStart: 3694592
+./../ref/human_contaminant.fa : chr # 1805  "ENST00000411206" chrStart: 3696640
+./../ref/human_contaminant.fa : chr # 1806  "ENST00000365452" chrStart: 3698688
+./../ref/human_contaminant.fa : chr # 1807  "ENST00000410122" chrStart: 3700736
+./../ref/human_contaminant.fa : chr # 1808  "ENST00000363423" chrStart: 3702784
+./../ref/human_contaminant.fa : chr # 1809  "ENST00000365393" chrStart: 3704832
+./../ref/human_contaminant.fa : chr # 1810  "ENST00000459153" chrStart: 3706880
+./../ref/human_contaminant.fa : chr # 1811  "ENST00000365193" chrStart: 3708928
+./../ref/human_contaminant.fa : chr # 1812  "ENST00000362916" chrStart: 3710976
+./../ref/human_contaminant.fa : chr # 1813  "ENST00000364750" chrStart: 3713024
+./../ref/human_contaminant.fa : chr # 1814  "ENST00000363731" chrStart: 3715072
+./../ref/human_contaminant.fa : chr # 1815  "ENST00000516838" chrStart: 3717120
+./../ref/human_contaminant.fa : chr # 1816  "ENST00000410846" chrStart: 3719168
+./../ref/human_contaminant.fa : chr # 1817  "ENST00000516828" chrStart: 3721216
+./../ref/human_contaminant.fa : chr # 1818  "ENST00000410614" chrStart: 3723264
+./../ref/human_contaminant.fa : chr # 1819  "ENST00000410246" chrStart: 3725312
+./../ref/human_contaminant.fa : chr # 1820  "ENST00000362584" chrStart: 3727360
+./../ref/human_contaminant.fa : chr # 1821  "ENST00000410273" chrStart: 3729408
+./../ref/human_contaminant.fa : chr # 1822  "ENST00000516701" chrStart: 3731456
+./../ref/human_contaminant.fa : chr # 1823  "ENST00000365454" chrStart: 3733504
+Writing 3735552 bytes into StarIndex/contaminant//Genome ; empty space on disk = 1834947579904 bytes ... done
+Number of SA indices: 317634
+SA size in bytes: 1310241
+Nov 09 19:54:56 ... starting to sort  Suffix Array. This may take a long time...
+Number of chunks: 15;   chunks size limit: 181504 bytes
+Nov 09 19:54:56 ... sorting Suffix Array chunks and saving them to disk...
+Writing 67680 bytes into StarIndex/contaminant//SA_14 ; empty space on disk = 1834943832064 bytes ... done
+Writing 180008 bytes into StarIndex/contaminant//SA_13 ; empty space on disk = 1834943758336 bytes ... done
+Writing 181184 bytes into StarIndex/contaminant//SA_2 ; empty space on disk = 1834943574016 bytes ... done
+Writing 177632 bytes into StarIndex/contaminant//SA_3 ; empty space on disk = 1834943385600 bytes ... done
+Writing 176320 bytes into StarIndex/contaminant//SA_6 ; empty space on disk = 1834943201280 bytes ... done
+Writing 176128 bytes into StarIndex/contaminant//SA_10 ; empty space on disk = 1834943016960 bytes ... done
+Writing 171888 bytes into StarIndex/contaminant//SA_0 ; empty space on disk = 1834942836736 bytes ... done
+Writing 169512 bytes into StarIndex/contaminant//SA_8 ; empty space on disk = 1834942660608 bytes ... done
+Writing 175344 bytes into StarIndex/contaminant//SA_7 ; empty space on disk = 1834942484480 bytes ... done
+Writing 179848 bytes into StarIndex/contaminant//SA_4 ; empty space on disk = 1834942304256 bytes ... done
+Writing 180616 bytes into StarIndex/contaminant//SA_11 ; empty space on disk = 1834942119936 bytes ... done
+Writing 177192 bytes into StarIndex/contaminant//SA_9 ; empty space on disk = 1834941931520 bytes ... done
+Writing 175480 bytes into StarIndex/contaminant//SA_12 ; empty space on disk = 1834941747200 bytes ... done
+Writing 174920 bytes into StarIndex/contaminant//SA_1 ; empty space on disk = 1834941566976 bytes ... done
+Writing 177320 bytes into StarIndex/contaminant//SA_5 ; empty space on disk = 1834941386752 bytes ... done
+Nov 09 19:54:56 ... loading chunks from disk, packing SA...
+Nov 09 19:54:56 ... writing Suffix Array to disk ...
+Writing 1310241 bytes into StarIndex/contaminant//SA ; empty space on disk = 1834943832064 bytes ... done
+Nov 09 19:54:56 ... Finished generating suffix array
+Nov 09 19:54:56 ... starting to generate Suffix Array index...
+0%  done
+Nov 09 19:54:57 ... writing SAindex to disk
+Writing 8 bytes into StarIndex/contaminant//SAindex ; empty space on disk = 1834942517248 bytes ... done
+Writing 48 bytes into StarIndex/contaminant//SAindex ; empty space on disk = 1834942517248 bytes ... done
+Writing 5968 bytes into StarIndex/contaminant//SAindex ; empty space on disk = 1834942517248 bytes ... done
+Nov 09 19:54:57 ..... Finished successfully
+DONE: Genome generation, EXITING
