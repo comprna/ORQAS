@@ -16,18 +16,7 @@ Here you can find a set of tools for **OR**F **Q**uantification pipeline for **A
 **ORQAS** includes a modified pipeline for isoform quantification based on [Ribomap](https://github.com/Kingsford-Group/ribomap) pipeline ([Wang et al. 2016](https://academic.oup.com/bioinformatics/article/32/12/1880/1744291)) and **ORQAStoolkit**, a set of additional tools for abundance calculation and other utilities.
 
  
-```mermaid
-graph TD
-A[RNA-seq fastq]  --> B((Salmon)) 
-B--> C[RNA-seq abundance in TPM]
-G[Ribo-seq] --> H((Ribomap))
-H--> I[Ribo-seq counts]
-I --> J(ribomaptoOPM)
-J --> K[Ribo-seq abundance in OPM]
-K--> L(validateORF)
-L --> M[Uniformity and periocity values for each ORF]
-```
-
+![ORQASpipeline](img/mermaid-diagram-20190301153002.svg)
 
 ## Requirements
 
@@ -94,11 +83,9 @@ If an identifier do not appear in a file, the corresponding field will be set to
 
 The abundance values are calculated similarly to the TPM (Transcripts Per Million) values in RNA-seq, but in this case they will be called **OPM (ORFs Per Million)**.
 
-$$
- A_{i} =  10^{6}  \frac{\frac{n_{i}}{l_{i}}}{ \sum_j \frac{n_{j}}{l_{j}} }
-$$
+![opm](img/eqn.gif)
 
-Where $n_{i}$ are the Ribo-seq counts and $l_{i}$ the CDS effective length
+Where ni are the Ribo-seq counts and li the CDS effective length
 
 >The effective length is taken from the Salmon file for RNA-seq by default since this pipeline is used for a quantification of RNA-seq over a CDS annotation. If it is performed with full transcripts you should specify the directory where the effective length of the CDS can be found. 
 
@@ -154,10 +141,10 @@ python ORQAStoolkit validateORF -i input-files -o output-file -c txt-to-cds-file
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMDUyNTQ0LC0zOTQ5MzAxOTAsMTMyMT
-E5OTY2NCwyMDExNzA0MDQ0LC0xNzg0Mjc0NDIyLC0xODQ2MjEz
-NjQyLC0yMDg5NzgyOTc0LDIwODEzMzgxNjIsLTY5NTA0Mjg0OC
-wtMTQ0NjY4NDY5NCw5MDY1NTY1NjgsMzUyNjg1NDU3LDExMjU3
-ODE5MTAsMTcyNjAyOTU2NiwtMjY3NTc2ODksLTQzMDQwNjczNy
-wtMTM2NjIyNjkxXX0=
+eyJoaXN0b3J5IjpbMjcyNjY2MDMxLC0xMzEzMTQzMDY5LDEzMT
+A1MjU0NCwtMzk0OTMwMTkwLDEzMjExOTk2NjQsMjAxMTcwNDA0
+NCwtMTc4NDI3NDQyMiwtMTg0NjIxMzY0MiwtMjA4OTc4Mjk3NC
+wyMDgxMzM4MTYyLC02OTUwNDI4NDgsLTE0NDY2ODQ2OTQsOTA2
+NTU2NTY4LDM1MjY4NTQ1NywxMTI1NzgxOTEwLDE3MjYwMjk1Nj
+YsLTI2NzU3Njg5LC00MzA0MDY3MzcsLTEzNjYyMjY5MV19
 -->
