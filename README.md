@@ -11,6 +11,8 @@ Here you can find a set of tools for **OR**F **Q**uantification pipeline for **A
 	    + [validateORF](#3.4-validateorf)
 
 
+This software is distributed under the MIT license
+
 ## Overview
 
 **ORQAS** includes a modified pipeline for isoform quantification based on [Ribomap](https://github.com/Kingsford-Group/ribomap) pipeline ([Wang et al. 2016](https://academic.oup.com/bioinformatics/article/32/12/1880/1744291)) and **ORQAStoolkit**, a set of additional tools for abundance calculation and other utilities.
