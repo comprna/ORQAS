@@ -28,14 +28,11 @@ were run on workstations running Unix. The software is distributed under the MIT
 * Ribomap
 
 Pre-requisites for Ribomap compilation:
-```
-[boost](https://www.boost.org)
-[seqan (v1.4.1)](http://www.seqan.de)
-```
+- [boost](https://www.boost.org)
+- [seqan (v1.4.1)](http://www.seqan.de)
 
-* Python 3.5
 
-All Python modules used are included in th Python Standard Library. 
+* Python 3.5 - All Python modules used are included in th Python Standard Library. 
 
 
 No non-standard software is required for running **ORQAS** pipeline.
