@@ -1,0 +1,8 @@
+{
+    "salmon_version": "0.7.2",
+    "unmatedReads": "sample_data/chr21_test_rna.fastq",
+    "index": "sample_output/sm_index/",
+    "libType": "U",
+    "output": "sample_output/sm_quant/",
+    "auxDir": "aux_info"
+}

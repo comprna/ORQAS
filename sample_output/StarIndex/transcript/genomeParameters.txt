@@ -1,0 +1,12 @@
+versionGenome	20201
+genomeFastaFiles	sample_data/chr21_sample_CDS_annotation.fa 
+genomeSAindexNbases	11
+genomeChrBinNbits	12
+genomeSAsparseD	1
+sjdbOverhang	0
+sjdbFileChrStartEnd	- 
+sjdbGTFfile	-
+sjdbGTFchrPrefix	-
+sjdbGTFfeatureExon	exon
+sjdbGTFtagExonParentTranscript	transcript_id
+sjdbGTFtagExonParentGene	gene_id

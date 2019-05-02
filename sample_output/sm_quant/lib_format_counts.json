@@ -1,0 +1,22 @@
+{
+    "read_files": "sample_data/chr21_test_rna.fastq",
+    "expected_format": "U",
+    "compatible_fragment_ratio": 1,
+    "num_compatible_fragments": 229935,
+    "num_assigned_fragments": 229935,
+    "num_consistent_mappings": 1683393,
+    "num_inconsistent_mappings": 0,
+    "strand_mapping_bias": 0.49348488439716692,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 0,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 0,
+    "SF": 830729,
+    "SR": 852664,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}

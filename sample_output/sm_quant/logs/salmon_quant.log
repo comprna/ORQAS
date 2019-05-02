@@ -1,0 +1,43 @@
+[2019-05-02 20:06:16.866] [jointLog] [info] parsing read library format
+[2019-05-02 20:06:16.866] [jointLog] [info] There is 1 library.
+[2019-05-02 20:06:16.937] [jointLog] [info] Loading Quasi index
+[2019-05-02 20:06:16.937] [jointLog] [info] Loading 32-bit quasi index
+[2019-05-02 20:06:16.984] [jointLog] [info] done
+[2019-05-02 20:06:16.984] [jointLog] [info] Index contained 834 targets
+[2019-05-02 20:06:17.927] [jointLog] [info] Computed 679 rich equivalence classes for further processing
+[2019-05-02 20:06:17.927] [jointLog] [info] Counted 229935 total reads in the equivalence classes 
+[2019-05-02 20:06:17.938] [jointLog] [warning] 5.7467% of fragments were shorter than the k used to build the index (31).
+If this fraction is too large, consider re-building the index with a smaller k.
+The minimum read size found was 25.
+
+
+[2019-05-02 20:06:17.938] [jointLog] [warning] Only 229935 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2019-05-02 20:06:17.938] [jointLog] [info] Mapping rate = 92.8775%
+
+[2019-05-02 20:06:17.938] [jointLog] [info] finished quantifyLibrary()
+[2019-05-02 20:06:17.938] [jointLog] [info] Starting optimizer
+[2019-05-02 20:06:17.942] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2019-05-02 20:06:17.942] [jointLog] [info] iteration = 0 | max rel diff. = 8.58943
+[2019-05-02 20:06:17.949] [jointLog] [info] iteration = 100 | max rel diff. = 0.112244
+[2019-05-02 20:06:17.956] [jointLog] [info] iteration = 200 | max rel diff. = 0.0547118
+[2019-05-02 20:06:17.963] [jointLog] [info] iteration = 300 | max rel diff. = 0.0515602
+[2019-05-02 20:06:17.970] [jointLog] [info] iteration = 400 | max rel diff. = 0.0273019
+[2019-05-02 20:06:17.977] [jointLog] [info] iteration = 500 | max rel diff. = 0.019537
+[2019-05-02 20:06:17.983] [jointLog] [info] iteration = 600 | max rel diff. = 0.0119184
+[2019-05-02 20:06:17.928] [fileLog] [info] 
+At end of round 0
+==================
+Observed 247568 total fragments (247568 in most recent round)
+
+[2019-05-02 20:06:17.990] [jointLog] [info] iteration = 700 | max rel diff. = 0.0116547
+[2019-05-02 20:06:17.997] [jointLog] [info] iteration = 800 | max rel diff. = 0.011731
+[2019-05-02 20:06:18.003] [jointLog] [info] iteration = 900 | max rel diff. = 0.0117867
+[2019-05-02 20:06:18.010] [jointLog] [info] iteration = 1000 | max rel diff. = 0.0118286
+[2019-05-02 20:06:18.017] [jointLog] [info] iteration = 1100 | max rel diff. = 0.0118609
+[2019-05-02 20:06:18.026] [jointLog] [info] iteration = 1200 | max rel diff. = 0.0118864
+[2019-05-02 20:06:18.032] [jointLog] [info] iteration = 1287 | max rel diff. = 0.00836394
+[2019-05-02 20:06:18.032] [jointLog] [info] Finished optimizer
+[2019-05-02 20:06:18.032] [jointLog] [info] writing output 
+

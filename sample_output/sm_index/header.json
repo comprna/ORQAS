@@ -1,0 +1,10 @@
+{
+    "value0": {
+        "IndexType": 1,
+        "IndexVersion": "q3",
+        "UsesKmers": true,
+        "KmerLen": 31,
+        "BigSA": false,
+        "PerfectHash": false
+    }
+}
