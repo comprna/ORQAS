@@ -1,5 +1,5 @@
 # ORQAS
-Here you can find a set of tools for **OR**F **Q**uantification pipeline for **A**lternative **S**plicing
+This is a set of tools for **OR**F **Q**uantification pipeline for **A**lternative **S**plicing
 
 - [Overview](#overview)
 - [Requirements](#requirements)
@@ -11,7 +11,8 @@ Here you can find a set of tools for **OR**F **Q**uantification pipeline for **A
 	    + [validateORF](#3.4-validateorf)
 
 
-This software is distributed under the MIT license
+This software was described and applied to multiple datasets in [(Reixachs-Sole et al. 2019)](https://www.biorxiv.org/content/10.1101/582031v2). No non-standard hardware is required to run these analyses. All analyses 
+were run on workstations running Unix. The software is distributed under the MIT license.
 
 ## Overview
 
