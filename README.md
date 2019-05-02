@@ -162,11 +162,11 @@ To have a quick test on how ORQAS pipeline works, we have included folder with s
 For running the pipeline with sample data please execute the following commands from the ORQAS pipeline containing folder: 
 
 ```
-sh run_ORQAS.sh --rnaseq_fq sample_data/chr21_test_rna.fastq --riboseq_fq sample_data/chr21_test_ribo.fastq --cds_annotation sample_data/chr21_sample_CDS_annotation.fa --salmon_strand U --psites sample_data/sample_psites.txt --wd sample_output_test
-python ORQAStoolkit validateORF -i sample_output/outputs/chr21_test_ribo.base -o chr21_test_ribo_validateiso.txt -c sample_output/sample_output.ENSTtoCDS.txt
+sh run_ORQAS.sh --rnaseq_fq sample_data/chr21_test_rna.fastq --riboseq_fq sample_data/chr21_test_ribo.fastq --cds_annotation sample_data/chr21_sample_CDS_annotation.fa --salmon_strand U --psites sample_data/sample_psites.txt --wd sample_data_test
+python ORQAStoolkit validateORF -i sample_data_test/outputs/chr21_test_ribo.base -o sample_data_test/chr21_test_ribo_validateiso.txt -c sample_data_test/sample_output.ENSTtoCDS.txt
 ```
 
-At the end of the run the output will be located in the sample_output_test folder. 
+At the end of the run the output will be located in the sample_data_test folder. 
 
 Sample data contains:
 * 834 CDS in the annotation
@@ -175,7 +175,7 @@ Sample data contains:
 
 The expected running time for this sample dataset is arround 60 seconds.
 
-Also, in the folder sample_outputs you can explore the output formats since it contains all the expected outputs of running the pipeline with sample data.
+Also, in the folder sample_outputs you can explore the output formats since it contains all the expected outputs before running the pipeline with sample data.
 
 
 <!--stackedit_data:
