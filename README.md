@@ -21,12 +21,34 @@ were run on workstations running Unix. The software is distributed under the MIT
  
 ![ORQASpipeline](img/pipeline.png)
 
-## Requirements
+## Requirements and dependencies
 
-* Salmon(v0.7.2)
-* STAR (v2.4.0j)
+* Salmon(v0.7.2) - pre-compiled executable included
+* STAR (v2.4.0j) - pre-compiled executable included
 * Ribomap
+
+Pre-requisites for Ribomap compilation:
+```
+[boost](https://www.boost.org)
+[seqan (v1.4.1)](http://www.seqan.de)
+```
+
 * Python 3.5
+
+All Python modules used are included in th Python Standard Library. 
+
+
+No non-standard software is required for running **ORQAS** pipeline.
+
+This software has been developed and tested entirely in a Unix distribution. 
+
+
+## Installation
+
+**ORQAS** pipeline itself does not need further installation than the required software specified previously. 
+
+STAR (v2.4.0j) and Salmon(v0.7.2) pre-compiled executables are included in the downloaded pipeline. 
+Ribomap compliation details can be found [here](https://github.com/Kingsford-Group/ribomap#compile-from-source-code).
 
 ## ORQAS pipeline
 
