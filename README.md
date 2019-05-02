@@ -23,15 +23,9 @@ were run on workstations running Unix. The software is distributed under the MIT
 
 ## Requirements and dependencies
 
-* Salmon(v0.7.2) - pre-compiled executable included
-* STAR (v2.4.0j) - pre-compiled executable included
-* Ribomap
-
-Pre-requisites for Ribomap compilation:
-- [boost](https://www.boost.org)
-- [seqan (v1.4.1)](http://www.seqan.de)
-
-
+* Salmon(v0.7.2) - Pre-compiled executable included
+* STAR (v2.4.0j) - Pre-compiled executable included
+* Ribomap - Pre-requisites for Ribomap compilation: [boost](https://www.boost.org), [seqan (v1.4.1)](http://www.seqan.de)
 * Python 3.5 - All Python modules used are included in th Python Standard Library. 
 
 
