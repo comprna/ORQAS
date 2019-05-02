@@ -2,13 +2,14 @@
 This is a set of tools for **OR**F **Q**uantification pipeline for **A**lternative **S**plicing
 
 - [Overview](#overview)
-- [Requirements](#requirements)
+- [Requirements](#requirements-and-dependencies)
 -  [ORQAS pipeline](#orqas-pipeline)
 	* [ORQAStoolkit](#3-orqastoolkit)
 	   + [OPMcalculator](#3.1-OPMcalculator)
 	    + [TXTtoCDS](#3.2-txttocds)
 	    + [aggregateCDS](#3.3-aggregatecds)
 	    + [validateORF](#3.4-validateorf)
+-  [Run with sample data](#run-with-sample-data)
 
 
 This software was described and applied to multiple datasets in [(Reixachs-Sole et al. 2019)](https://www.biorxiv.org/content/10.1101/582031v2). No non-standard hardware is required to run these analyses. All analyses 
@@ -154,6 +155,27 @@ python ORQAStoolkit validateORF -i input-files -o output-file -c txt-to-cds-file
 - **-o**: output file with periodicity and uniformity values
 - **-c**: transcript to CDS equivalence as provided by  [TXTtoCDS](#txttocds).
 
+## Run with sample data
+
+To have a quick test on how ORQAS pipeline works, we have included folder with sample data (sample_data) containing the annotation for a subset of CDS in chromosome 21 (in fasta format) and also fastq files emulating RNA-seq and Ribo-seq data. 
+
+For running the pipeline with sample data please execute the following commands from the ORQAS pipeline containing folder: 
+
+```
+sh run_ORQAS.sh --rnaseq_fq sample_data/chr21_test_rna.fastq --riboseq_fq sample_data/chr21_test_ribo.fastq --cds_annotation sample_data/chr21_sample_CDS_annotation.fa --salmon_strand U --psites sample_data/sample_psites.txt --wd sample_output_test
+python ORQAStoolkit validateORF -i sample_output/outputs/chr21_test_ribo.base -o chr21_test_ribo_validateiso.txt -c sample_output/sample_output.ENSTtoCDS.txt
+```
+
+At the end of the run the output will be located in the sample_output_test folder. 
+
+Sample data contains:
+* 834 CDS in the annotation
+* ~600000 Ribo-seq reads
+* ~250000 RNA-seq reads
+
+The expected running time for this sample dataset is arround 60 seconds.
+
+Also, in the folder sample_outputs you can explore the output formats since it contains all the expected outputs of running the pipeline with sample data.
 
 
 <!--stackedit_data:
