@@ -157,9 +157,9 @@ python ORQAStoolkit validateORF -i input-files -o output-file -c txt-to-cds-file
 
 ## Run with sample data
 
-To have a quick test on how ORQAS pipeline works, we have included folder with sample data (sample_data) containing the annotation for a subset of CDS in chromosome 21 (in fasta format) and also fastq files emulating RNA-seq and Ribo-seq data. 
+To facilitate the testing of how ORQAS pipeline works, we have included a folder with sample data (sample_data) containing the annotation for a subset of CDSs in chromosome 21 (in fasta format) and fastq files emulating RNA-seq and Ribo-seq data. 
 
-For running the pipeline with sample data please execute the following commands from the ORQAS pipeline containing folder: 
+To run the pipeline with the sample data please execute the following commands from the folder containing the ORQAS pipeline: 
 
 ```
 sh run_ORQAS.sh --rnaseq_fq sample_data/chr21_test_rna.fastq --riboseq_fq sample_data/chr21_test_ribo.fastq --cds_annotation sample_data/chr21_sample_CDS_annotation.fa --salmon_strand U --psites sample_data/sample_psites.txt --wd sample_data_test
@@ -175,7 +175,7 @@ Sample data contains:
 
 The expected running time for this sample dataset is arround 60 seconds.
 
-Also, in the folder sample_outputs you can explore the output formats since it contains all the expected outputs before running the pipeline with sample data.
+Also, in the same folder sample_outputs you can find the output formats expected from running the pipeline with sample data.
 
 
 <!--stackedit_data:
