@@ -40,7 +40,7 @@ This software has been developed and tested entirely in a Unix distribution.
 **ORQAS** pipeline itself does not need further installation than the required software specified previously. 
 
 STAR (v2.4.0j) and Salmon(v0.7.2) pre-compiled executables are included in the downloaded pipeline. 
-Ribomap compliation details can be found [here](https://github.com/Kingsford-Group/ribomap#compile-from-source-code).
+Ribomap compilation details can be found [here](https://github.com/Kingsford-Group/ribomap#compile-from-source-code).
 
 ## ORQAS pipeline
 
