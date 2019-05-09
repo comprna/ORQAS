@@ -10,6 +10,8 @@ This is a set of tools for **OR**F **Q**uantification pipeline for **A**lternati
 	    + [aggregateCDS](#3.3-aggregatecds)
 	    + [validateORF](#3.4-validateorf)
 -  [Run with sample data](#run-with-sample-data)
+-  [Additional scripts](#additional-scripts)
+	* [Stable Marriage Algorithm for orthologous isoform pairs](#stable-marriage-algorithm-for-orthologous-isoform-pairs)
 
 
 This software was described and applied to multiple datasets in [(Reixachs-Sole et al. 2019)](https://www.biorxiv.org/content/10.1101/582031v2). No non-standard hardware is required to run these analyses. All analyses 
@@ -28,6 +30,7 @@ were run on workstations running Unix. The software is distributed under the MIT
 * STAR (v2.4.0j) - Pre-compiled executable included
 * Ribomap - Pre-requisites for Ribomap compilation: [boost](https://www.boost.org), [seqan (v1.4.1)](http://www.seqan.de)
 * Python 3.5 - All Python modules used are included in th Python Standard Library. 
+* Perl
 
 
 No non-standard software is required for running **ORQAS** pipeline.
@@ -176,6 +179,31 @@ Sample data contains:
 The expected running time for this sample dataset is arround 60 seconds.
 
 Also, in the same folder sample_outputs you can find the output formats expected from running the pipeline with sample data.
+
+
+## Additional scripts
+
+###Stable Marriage Algorithm for orthologous isoform pairs
+
+A symmetric version of the stable marriage algorithm has been used to calculate pairs of orthologous isoforms between human and mouse. For more information about the process check the Online Methods section in [(Reixachs-Sole et al. 2019)](https://www.biorxiv.org/content/10.1101/582031v2).
+ 
+ The perl script takes a file with the following format as an input: 
+ 
+ ```
+ ENSG00000000003 ENSMUSG00000067377      0.6122448979591837    MASR... MASP... 
+ ENSG00000000003 ENSMUSG00000067377      0.7755102040816326    MASR... MASS... 
+ ENSG00000000003 ENSMUSG00000067377      0.9306122448979591    MASR... MASR...
+```
+
+Where the number following the two gene identifiers is a the fraction of amino acid matches over the total length of the global alignment. And the sequences correspond to the protein sequence en each species. The script takes these protein sequences as identifiers to run the stable marriage algorithm. 
+
+It can be executed the following way: 
+
+```
+perl  ~/ORQAStoolkit/match_pairs_by_stable_marriage.pl human_mouse_all_uniq_protein_pairs_scores.txt > best_human_mouse_protein_pairs.txt 
+```
+
+The output will be a file with the same format as the input but containing only the best matching pairs.
 
 
 <!--stackedit_data:
