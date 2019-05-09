@@ -183,9 +183,9 @@ Also, in the same folder sample_outputs you can find the output formats expected
 
 ## Additional scripts
 
-###Stable Marriage Algorithm for orthologous isoform pairs
+### Stable Marriage Algorithm for orthologous isoform pairs
 
-A symmetric version of the stable marriage algorithm has been used to calculate pairs of orthologous isoforms between human and mouse. For more information about the process check the Online Methods section in [(Reixachs-Sole et al. 2019)](https://www.biorxiv.org/content/10.1101/582031v2).
+A symmetric version of the stable marriage algorithm has been used to calculate pairs of orthologous isoforms between human and mouse. For more information check the Online Methods section in [(Reixachs-Sole et al. 2019)](https://www.biorxiv.org/content/10.1101/582031v2).
  
  The perl script takes a file with the following format as an input: 
  
@@ -195,7 +195,7 @@ A symmetric version of the stable marriage algorithm has been used to calculate 
  ENSG00000000003 ENSMUSG00000067377      0.9306122448979591    MASR... MASR...
 ```
 
-Where the number following the two gene identifiers is a the fraction of amino acid matches over the total length of the global alignment. And the sequences correspond to the protein sequence en each species. The script takes these protein sequences as identifiers to run the stable marriage algorithm. 
+Where the number after the two gene identifiers is a the fraction of amino acid matches over the total length of the global alignment. And the sequences correspond to the protein sequence in each species. The script takes these protein sequences as identifiers to run the stable marriage algorithm. 
 
 It can be executed the following way: 
 
