@@ -88,7 +88,7 @@ ribomap/scripts/run_ribomap.sh --rnaseq_fq rnaseq_fq --riboseq_fq riboseq_fq --t
 ping false --rnaUnstranded rnaseq_strand --sailfish_dir salmon_output
 ```
 
-For a better understanding of ribomap and it's arguments please check [Ribomap GitHub page](https://github.com/Kingsford-Group/ribomap) . 
+For a better understanding of ribomap and its arguments please check [Ribomap GitHub page](https://github.com/Kingsford-Group/ribomap) . 
 
 ### 3 ORQAStoolkit
 
