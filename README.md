@@ -14,7 +14,7 @@ This is a set of tools for **OR**F **Q**uantification pipeline for **A**lternati
 	* [Stable Marriage Algorithm for orthologous isoform pairs](#stable-marriage-algorithm-for-orthologous-isoform-pairs)
 
 
-This software was described and applied to multiple datasets in [(Reixachs-Sole et al. 2019)](https://www.biorxiv.org/content/10.1101/582031v2). No non-standard hardware is required to run these analyses. All analyses 
+This software was described and applied to multiple datasets in [(Reixachs-Sole et al. Nat. Commun. 2020)](https://www.nature.com/articles/s41467-020-15634-w). No non-standard hardware is required to run these analyses. All analyses 
 were run on workstations running Unix. The software is distributed under the MIT license.
 
 ## Overview
