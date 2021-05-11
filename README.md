@@ -170,12 +170,12 @@ ENST00000341421	ENSG00000182606	5	4.94905385735	90.8296943231	0.467879139975	0.1
 - **n_cds**: number of different CDS for that gene
 - **cov_ribo**: % of bases with counts other than 0 from Ribo-seq reads (extracted from Ribomap counts per base output file) 
 - **cov_rna**: % of bases with counts other than 0 from RNA-seq reads (extracted from Ribomap counts per base output file) 
-- **f1**: proportion [0-1] of reads consisten with the annotated frame (frame 1).
-- **f2**: proportion [0-1] of reads consisten with a frame shift of +1 bases respect to the annotated frame (frame 2)*
-- **ribo_reads**: number of Ribo-seq reads as provided by Ribomap.
-- **pme**: mesure of the uniformity of the Ribo-seq reads along the transcript in terms of Percentace of Maximum entropy 
+- **f1**: proportion [0-1] of reads consistent with the annotated frame (frame 1).
+- **f2**: proportion [0-1] of reads consistent with a frame shift of +1 bases respect to the annotated frame (frame 2)*
+- **ribo_reads**: number of Ribo-seq reads as provided by Ribomap
+- **pme**: mesure of the uniformity of the Ribo-seq reads along the transcript in terms of Percentage of Maximum entropy 
 
-*f3 or % of reads consisten with a frame shift of +2 bases respect to the annotated frame is the result of 100-(f1+f2)
+*f3 or % of reads consistent with a frame shift of +2 bases respect to the annotated frame is the result of 100-(f1+f2)
 
 
 
