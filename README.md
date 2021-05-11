@@ -158,6 +158,27 @@ python ORQAStoolkit validateORF -i input-files -o output-file -c txt-to-cds-file
 - **-o**: output file with periodicity and uniformity values
 - **-c**: transcript to CDS equivalence as provided by  [TXTtoCDS](#txttocds).
 
+Output sample:
+
+```
+trans	gene	n_cds	cov_ribo	cov_rna	f1	f2	ribo_reads	pme
+ENST00000341421	ENSG00000182606	5	4.94905385735	90.8296943231	0.467879139975	0.158158619375	110.3616652	0.76071793605
+```
+
+- **trans** : transcript or transcript to CDS equivalence ids
+- **gene**: gene id
+- **n_cds**: number of different CDS for that gene
+- **cov_ribo**: % of bases with counts other than 0 from Ribo-seq reads (extracted from Ribomap counts per base output file) 
+- **cov_rna**: % of bases with counts other than 0 from RNA-seq reads (extracted from Ribomap counts per base output file) 
+- **f1**: proportion [0-1] of reads consisten with the annotated frame (frame 1).
+- **f2**: proportion [0-1] of reads consisten with a frame shift of +1 bases respect to the annotated frame (frame 2)*
+- **ribo_reads**: number of Ribo-seq reads as provided by Ribomap.
+- **pme**: mesure of the uniformity of the Ribo-seq reads along the transcript in terms of Percentace of Maximum entropy 
+
+*f3 or % of reads consisten with a frame shift of +2 bases respect to the annotated frame is the result of 100-(f1+f2)
+
+
+
 ## Run with sample data
 
 To facilitate the testing of how ORQAS pipeline works, we have included a folder with sample data (sample_data) containing the annotation for a subset of CDSs in chromosome 21 (in fasta format) and fastq files emulating RNA-seq and Ribo-seq data. 
